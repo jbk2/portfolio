@@ -8,24 +8,26 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
   <script src="../assets/javascript/script.js"></script>
 </head>
-<body class="ml-20">
-  <header class="grid grid-cols-3 mt-80 gap-y-10 items-baseline" style="grid-template-columns: 350px min-content min-content;">
+<body class="ml-5 md:ml-10 lg:ml-20">
+  <header class="grid grid-cols-[290px_minmax(400px,_max-content)] mt-80 gap-y-10 items-baseline overflow-auto">
     <div class="pr-6 text-4xl text-right self-center">
-      <span class="inline-block animate-wave">👋🏻</span>
+      <!-- <span class="inline-block animate-wave">👋🏻</span> -->
     </div>
     <div class="">
-      <h1 class="text-6xl font-extrabold text-blue-800">Hello, I'm James.</h1>
+      <h1 class="text-5xl font-extrabold text-blue-800"><span class="inline-block animate-wave pr-4">👋🏻</span>Hello, I'm James.</h1>
     </div>
-    <div class=""></div>
-    <div class="pr-5 text-nowrap text-right">
-      <p class="text-xl text-gray-900 font-light font-mono text-right">&lt;h1 class='<span id="dynamic-class-text" class="text-xl text-gray-900 font-light font-mono"></span>'&gt;
+    <div class="hidden md:inline-block pr-5 text-nowrap text-right">
+      <p class="text-lg text-gray-800 font-light font-mono text-right">&lt;h1 class='<span id="dynamic-class-text"></span>'&gt;
       </p>
     </div>
-    <div class="text-nowrap">
-      <h1 class="text-6xl font-extrabold text-blue-800">I'm a full stack Ruby web developer.</h1>
+    <div class="">
+      <h1 class="text-5xl font-extrabold text-blue-800 min-w-fit">I'm a full stack Ruby web developer.
+        <span class="hidden md:inline-block text-lg text-gray-800 font-light font-mono pl-4">
+          &lt;/h1&gt;
+        </span>
+      </h1>
     </div>
-    <div class="pl-5 text-left">
-      <p class="text-xl text-gray-900">&lt;/h1&gt;</p>
+    <div class="hidden md:inline-block pl-5 text-left max-w-fit">
     </div>
   </header>
   <br>
