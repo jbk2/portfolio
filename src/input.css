@@ -1,3 +1,59 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* -------------------------------------------- */
+
+@keyframes rotate-wave {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(15deg);
+  }
+}
+
+.animate-wave {
+  /* display: inline-block; */
+  line-height: 1;
+  animation: rotate-wave 0.75s linear 1;
+  /* transform-origin: top 80px; */
+}
+
+/* -------------------------------------------- */
+
+@keyframes typing {
+  from { width: 0%; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.typing {
+  position: relative;
+  overflow: hidden;
+  /* border-right: .15em solid orange; The cursor */
+  white-space: nowrap; /* Keep the text on a single line */
+  width: 0; /* Start with no text shown */
+  animation: typing 5s steps(40, end) 1;
+}
+
+.typing::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0.15em;
+  height: 100%;
+  background: orange;
+  animation: blink-caret 0.4s steps(1, end) infinite;
+}
