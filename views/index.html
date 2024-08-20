@@ -1,43 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JBK Portfolio Page</title>
-  <link rel="stylesheet" href="../assets/stylesheets/styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,900;1,14..32,900&family=JetBrains+Mono:ital@0;1&display=swap" rel="stylesheet">
-  <script src="../assets/javascript/script.js"></script>
-</head>
-<body class="">
-  <header class="mt-[10%]">
-    <div class="flex flex-row justify-center items-end">
-      <div class="hidden xl:inline-block min-w-[248px] text-right">
-        <p class="text-base text-gray-800 font-jetbrains pr-4 pb-1">&lt;h1 class='<span id="dynamic-class-text">ruby</span>'&gt;</p>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JBK Portfolio Page</title>
+    <link rel="stylesheet" href="../assets/stylesheets/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,900;1,14..32,900&family=JetBrains+Mono:ital@0;1&display=swap" rel="stylesheet">
+    <script src="../assets/javascript/script.js"></script>
+  </head>
+  <body class="flex justify-center">
+    
+    <main class="grid grid-cols-[min-content_minmax(400px,max-content)] xl:grid-cols-[290px_minmax(400px,max-content)] mt-[10%]">
+      
+      <div class="hidden xl:inline-block col-start-1 col-span-1 min-w-[248px] text-right self-end">
+        <p class="text-sm text-gray-800 font-jetbrains pr-4 pb-1">&lt;h1 class='<span id="dynamic-class-text">ruby</span>'&gt;</p>
       </div>
-      <div id="copy-div">
+
+      <div class="col-start-2 col-span-1 justify-self-stretch md:min-w-[800px]">
         <h1 class="text-6xl md:text-7xl font-inter font-black text-blue-800 mb-10 sm:mb-6">I'm James<span class="hidden sm:inline-block">&nbsp;Kemp</span>,<span class="hidden sm:inline-block text-5xl animate-wave delay-1s pl-4">👋🏻</span></h1>
         <h1 class="text-6xl md:text-7xl font-inter font-extrabold text-blue-800 min-w-fit inline-block"> <span class="hidden sm:inline-block">A f</span><span class="inline-block sm:hidden">F</span>ull stack <span class="hidden sm:inline-block">web&nbsp;</span>developer.</h1>
-        <span class="hidden xl:inline-block text-base text-gray-800 font-jetbrains pl-4">&lt;/h1&gt;</span>
+        <p class="hidden xl:inline-block text-sm text-gray-800 font-jetbrains pl-2">&lt;/h1&gt;</p>
       </div>
-    </div>  
-  </header>
-  <br>
-  <br>
-  <br>
-  <section>
-    Language Icons
-  </section>
-  <section>
-    Project
-    <h4 class="text-base"><a href="https://github.com/jbk2/linux-scripting" class="link">Linux scripting</a> repo ...</h4>
-  </section>
-  <section>
-    Project
-  </section>
-  <section>
-    Project
-  </section>
-</body>
+
+      <div class="col-start-2 col-span-1">
+        <p>Main content here</p>
+      </div>
+    
+    </main>
+
+<!--
+    <section>
+      Language Icons
+    </section>
+    <section>
+      Project
+      <h4 class="text-base"><a href="https://github.com/jbk2/linux-scripting" class="link">Linux scripting</a> repo ...</h4>
+    </section>
+    <section>
+      Project
+    </section>
+    <section>
+      Project
+    </section> -->
+  </body>
 </html>
