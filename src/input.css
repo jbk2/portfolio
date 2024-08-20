@@ -4,6 +4,17 @@
 
 /* -------------------------------------------- */
 
+/* @layer base {
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-display: swap;
+    src: url(/fonts/Roboto.woff2) format('woff2');
+  }
+} */
+
+/* -------------------------------------------- */
+
 @keyframes rotate-wave {
   0%, 100% {
     transform: rotate(0deg);
@@ -25,6 +36,12 @@
   animation: rotate-wave 0.75s linear 1;
   /* transform-origin: top 80px; */
 }
+
+.delay-1s { animation-delay: 1s; }
+.delay-2s { animation-delay: 2s; }
+.delay-3s { animation-delay: 3s; }
+.delay-4s { animation-delay: 4s; }
+.delay-5s { animation-delay: 5s; }
 
 /* -------------------------------------------- */
 

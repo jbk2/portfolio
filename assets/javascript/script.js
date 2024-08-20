@@ -16,12 +16,12 @@ document.addEventListener("DOMContentLoaded", function() {
             clearInterval(interval);
             dynamicClassText.classList.remove('typing');
             if (i < words.length) {
-              setTimeout(updateText, 800);
+              setTimeout(updateText, 1500);
             }
           }
         }, 90);
       }
     }
 
-    setTimeout(updateText, 1200);
+    setTimeout(updateText, 2000);
 });
