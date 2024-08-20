@@ -10,39 +10,60 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,900;1,14..32,900&family=JetBrains+Mono:ital@0;1&display=swap" rel="stylesheet">
     <script src="../assets/javascript/script.js"></script>
   </head>
-  <body class="flex justify-center">
+  <body class="flex justify-center px-6 sm:px-10">
     
-    <main class="grid grid-cols-[min-content_minmax(400px,max-content)] xl:grid-cols-[290px_minmax(400px,max-content)] mt-[10%]">
+    <main class="grid grid-cols-[min-content_minmax(220px,max-content)] xl:grid-cols-[220px_minmax(400px,max-content)] mt-[10%]">
       
-      <div class="hidden xl:inline-block col-start-1 col-span-1 min-w-[248px] text-right self-end">
+      <div class="hidden xl:inline-block col-start-1 col-span-1 text-right self-end">
         <p class="text-sm text-gray-800 font-jetbrains pr-4 pb-1">&lt;h1 class='<span id="dynamic-class-text">ruby</span>'&gt;</p>
       </div>
 
       <div class="col-start-2 col-span-1 justify-self-stretch md:min-w-[800px]">
         <h1 class="text-6xl md:text-7xl font-inter font-black text-blue-800 mb-10 sm:mb-6">I'm James<span class="hidden sm:inline-block">&nbsp;Kemp</span>,<span class="hidden sm:inline-block text-5xl animate-wave delay-1s pl-4">👋🏻</span></h1>
-        <h1 class="text-6xl md:text-7xl font-inter font-extrabold text-blue-800 min-w-fit inline-block"> <span class="hidden sm:inline-block">A f</span><span class="inline-block sm:hidden">F</span>ull stack <span class="hidden sm:inline-block">web&nbsp;</span>developer.</h1>
-        <p class="hidden xl:inline-block text-sm text-gray-800 font-jetbrains pl-2">&lt;/h1&gt;</p>
+        <div class="flex flex-wrap">
+          <h1 class="text-6xl md:text-7xl font-inter font-extrabold text-blue-800 min-w-fit">
+            <span class="hidden sm:inline-block">A f</span><span class="inline-block sm:hidden">F</span>ull stack <span class="hidden sm:inline-block">web&nbsp;</span>
+          </h1>
+          <span class="whitespace-nowrap">
+            <h1 class="text-6xl md:text-7xl font-inter font-extrabold text-blue-800 inline-block">developer.</h1>
+            <p class="hidden xl:inline-block text-sm text-gray-800 font-jetbrains pl-2 inline-block">&lt;/h1&gt;</p>
+          </span>
+        </div>
+        
       </div>
 
-      <div class="col-start-2 col-span-1">
-        <p>Main content here</p>
+      <div class="col-start-1 col-span-3 mt-12">
+        <section class="flex align-baseline">
+          <div><img src="../assets/images/technology-images/ruby-logo.svg" alt="Ruby" class="size-8 mt-3 mr-6"></div>
+          <div><img src="../assets/images/technology-images/rails_logo.svg" alt="RubyOnRails" class="size-16 mr-6"></div>
+          <div><img src="../assets/images/technology-images/rspec-logo.svg" alt="Rspec" class="size-14 mr-6"></div>
+          <div><img src="../assets/images/technology-images/selenium-logo.svg" alt="Selenium" class="size-14 mr-6"></div>
+          <div><img src="../assets/images/technology-images/hotwire.svg" alt="Hotwire" class="size-16 mt-1 mr-6"></div>
+          <div><img src="../assets/images/technology-images/html5-logo.svg" alt="Html5" class="size-14 mr-6"></div>
+          <div><img src="../assets/images/technology-images/css3-logo.svg" alt="CSS3" class="size-14 mr-6"></div>
+          <div><img src="../assets/images/technology-images/postgres-logo.svg" alt="Postgres" class="size-16 mt-1 mr-6"></div>
+          <div><img src="../assets/images/technology-images/daisyui-logotype.svg" alt="DaisyUI" class="size-20 mr-6"></div>
+          <div><img src="../assets/images/technology-images/thoughtbot-logo.svg" alt="ThougtBot" class="size-14 mr-6"></div>
+          <div><img src="../assets/images/technology-images/tailwindcss-logotype.svg" alt="TailwindCSS" class="size-20 mr-6"></div>
+          <div><img src="../assets/images/technology-images/docker-logo.svg" alt="Docker" class="size-20 mr-6"></div>
+          <div><img src="../assets/images/technology-images/linux-logo.svg" alt="Linux" class="size-14 mr-6"></div>
+          <div><img src="../assets/images/technology-images/ec2.svg" alt="EC2" class="size-14 mr-6"></div>
+        </section>
+        <section>
+          Project
+          <h4 class="text-base"><a href="https://github.com/jbk2/linux-scripting" class="link">Linux scripting</a> repo ...</h4>
+        </section>
+        <section>
+          Project
+        </section>
+        <section>
+          Project
+        </section>
+      
       </div>
     
     </main>
 
-<!--
-    <section>
-      Language Icons
-    </section>
-    <section>
-      Project
-      <h4 class="text-base"><a href="https://github.com/jbk2/linux-scripting" class="link">Linux scripting</a> repo ...</h4>
-    </section>
-    <section>
-      Project
-    </section>
-    <section>
-      Project
-    </section> -->
+
   </body>
 </html>
