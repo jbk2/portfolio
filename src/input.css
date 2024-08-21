@@ -74,3 +74,25 @@
   background: orange;
   animation: blink-caret 0.4s steps(1, end) infinite;
 }
+
+/* -------------------------------------------- */
+
+.carousel {
+  display: flex;
+  white-space: nowrap;
+  animation: scroll 60s linear infinite;
+  animation-duration: 5s;
+  min-width: 100%;
+}
+
+.carousel-item {
+  /* width: auto; or fixed width depending on design requirements */
+  /* height: 10%; adjust based on desired height */
+}
+
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); } /* Adjust based on the width of one complete set */
+}
+
+/* -------------------------------------------- */

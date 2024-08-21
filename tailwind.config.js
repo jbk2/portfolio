@@ -15,7 +15,19 @@ module.exports = {
       '4': '4s',
       '5': '5s',
     },
+    animation: {
+      'infinite-scroll': 'infinite-scroll 25s linear infinite',
+    },
+    keyframes: {
+      'infinite-scroll': {
+        from: { transform: 'translateX(0)' },
+        to: { transform: 'translateX(-100%)' },
+      }
+    }            
   },
-  plugins: [],
+  plugins: [
+    // require('@tailwindcss/typography'),
+    require('daisyui'),
+  ],
 }
 
