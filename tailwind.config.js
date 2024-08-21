@@ -16,14 +16,18 @@ module.exports = {
       '5': '5s',
     },
     animation: {
-      'infinite-scroll': 'infinite-scroll 25s linear infinite',
+      'infinite-scroll': 'infinite-scroll 50s linear infinite',
+      'gradient': 'gradient 8s linear infinite',
     },
     keyframes: {
       'infinite-scroll': {
         from: { transform: 'translateX(0)' },
         to: { transform: 'translateX(-100%)' },
-      }
-    }            
+      },
+      'gradient': {
+        to: { 'background-position': '200% center' },
+      },
+    },                             
   },
   plugins: [
     // require('@tailwindcss/typography'),
