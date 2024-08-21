@@ -2,59 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* -------------------------------------------- */
-
-/* @layer base {
-  @font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-display: swap;
-    src: url(/fonts/Roboto.woff2) format('woff2');
-  }
-} */
-
-/* -------------------------------------------- */
-
-@keyframes rotate-wave {
-  0%, 100% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: rotate(15deg);
-  }
-  50% {
-    transform: rotate(0deg);
-  }
-  75% {
-    transform: rotate(15deg);
-  }
-}
-
-.animate-wave {
-  /* display: inline-block; */
-  line-height: 1;
-  animation: rotate-wave 0.75s linear 1;
-  /* transform-origin: top 80px; */
-}
-
-.delay-1s { animation-delay: 1s; }
-.delay-2s { animation-delay: 2s; }
-.delay-3s { animation-delay: 3s; }
-.delay-4s { animation-delay: 4s; }
-.delay-5s { animation-delay: 5s; }
-
-/* -------------------------------------------- */
-
-@keyframes typing {
-  from { width: 0%; }
-  to { width: 100%; }
-}
-
-@keyframes blink-caret {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
-}
-
 .typing {
   position: relative;
   overflow: hidden;
@@ -76,5 +23,11 @@
 }
 
 /* -------------------------------------------- */
+
+.delay-1 { animation-delay: 1s; }
+.delay-2 { animation-delay: 2s; }
+.delay-3 { animation-delay: 3s; }
+.delay-4 { animation-delay: 4s; }
+.delay-5 { animation-delay: 5s; }
 
 /* -------------------------------------------- */
