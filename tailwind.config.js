@@ -12,7 +12,7 @@ module.exports = {
         'jetbrains': ["JetBrains Mono"],
       },
       animation: {
-        'infinite-scroll': 'infinite-scroll 50s linear infinite',
+        'infinite-scroll': 'infinite-scroll 55s linear infinite',
         'gradient': 'gradient 10s linear infinite',
         'rotate-wave': 'rotate-wave 0.75s linear 1',
         'typing': 'typing 5s steps(40, end) 1',
