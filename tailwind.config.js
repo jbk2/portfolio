@@ -12,7 +12,7 @@ module.exports = {
         'jetbrains': ["JetBrains Mono"],
       },
       animation: {
-        'infinite-scroll': 'infinite-scroll 55s linear infinite',
+        'infinite-scroll': 'infinite-scroll 35s linear infinite',
         'gradient': 'gradient 10s linear infinite',
         'rotate-wave': 'rotate-wave 0.75s linear 1',
         'typing': 'typing 5s steps(40, end) 1',
@@ -41,7 +41,15 @@ module.exports = {
           to: { 'background-position': '200% center' },
         },
       },
+      backgroundImage: {
+        'gradient-to-r-from-deep-blue-to-bright-teal': 'linear-gradient(90deg, hsla(236, 77%, 20%, 1) 25%, hsla(182, 100%, 42%, 1) 100%)',
+      }
     },                             
+  },
+  colors: {
+    accent: '#00d7c0',
+    deepblue: 'hsla(236, 77%, 20%, 1)',
+    brightteal: 'hsla(182, 100%, 42%, 1)',
   },
   plugins: [
     // require('@tailwindcss/typography'),
