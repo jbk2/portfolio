@@ -23,5 +23,5 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     }
 
-    setTimeout(updateText, 2000);
+    setTimeout(updateText, 3500);
 });
