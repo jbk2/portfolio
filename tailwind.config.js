@@ -43,6 +43,7 @@ module.exports = {
       },
       backgroundImage: {
         'gradient-to-r-from-deep-blue-to-bright-teal': 'linear-gradient(90deg, hsla(236, 77%, 20%, 1) 25%, hsla(182, 100%, 42%, 1) 100%)',
+        'gradient-to-r-from-bright-teal-to-deep-blue': 'linear-gradient(90deg, hsla(182, 100%, 42%, 1) 25%, hsla(236, 77%, 20%, 1) 100%)',
       }
     },                             
   },
