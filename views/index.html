@@ -21,8 +21,8 @@
       <!-- bg-[linear-gradient(to_right,theme(colors.green.300),theme(colors.green.100),theme(colors.sky.400),theme(colors.yellow.200),theme(colors.sky.400),theme(colors.green.100),theme(colors.green.300))] -->
       <!-- bg-[linear-gradient(to_right,theme(colors.purple.400),theme(colors.purple.100),theme(colors.pink.300),theme(colors.orange.400),theme(colors.pink.300),theme(colors.purple.100),theme(colors.purple.400))] -->
       
-      <div class="col-start-2 col-span-1 justify-self-stretch mx-auto xl:ml-0 md:min-w-[800px]">
-        <h1 class="text-6xl md:text-7xl font-inter font-black text-blue-900 mb-10 sm:mb-6">I'm 
+      <div class="col-start-2 col-span-1 mx-auto xl:ml-0 md:min-w-[800px]">
+        <h1 class="text-6xl md:text-7xl font-inter font-black text-blue-900 mb-8 lg:mb-10 sm:mb-6">I'm 
           <div class="inline-block bg-clip-text text-transparent
           bg-[linear-gradient(to_right,theme(colors.blue.900),theme(colors.sky.600),theme(colors.purple.400),theme(colors.sky.600),theme(colors.blue.900))]
           bg-[length:200%_auto] animate-gradient">
@@ -30,7 +30,7 @@
             <span class="hidden sm:inline-block">&nbsp;Kemp</span>
           </div>
           <span class="text-4xl -ml-3">,</span>
-          <span class="inline-block text-5xl animate-rotate-wave delay-1 pl-2 sm:pl-3">👋🏻</span>
+          <span class="hidden md:inline-block text-5xl animate-rotate-wave delay-1 pl-2 sm:pl-3">👋🏻</span>
         </h1>
         <div class="flex flex-wrap">
           <h1 class="text-6xl md:text-7xl font-inter font-extrabold text-blue-900 min-w-fit">
@@ -41,38 +41,53 @@
             <p class="hidden xl:inline-block text-sm text-gray-800 font-jetbrains pl-2">&lt;/h1&gt;</p>
           </span>
         </div>
-        
       </div>
 
       <div class="col-start-2 col-span-1 xl:col-start-1 xl:col-span-2 overflow-x-auto">
-        <section class="w-full inline-flex flex-nowrap overflow-hidden opacity-90 [mask-image:_linear-gradient(to_right,transparent_7%,_white_15%,_white_85%,transparent_93%)]">
-          <ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
-            <li><img src="../assets/images/technology-images/ruby-logo.svg" alt="Ruby" class="size-8"></li>
-            <li><img src="../assets/images/technology-images/rails_logo.svg" alt="RubyOnRails" class="size-16"></li>
-            <li><img src="../assets/images/technology-images/postgres-logo.svg" alt="Postgres" class="size-9"></li>
-            <li><img src="../assets/images/technology-images/hotwire.svg" alt="Hotwire" class="size-16 -ml-4"></li>
-            <li><img src="../assets/images/technology-images/html5-logo.svg" alt="Html5" class="size-10 -ml-3"></li>
-            <li><img src="../assets/images/technology-images/css3-logo.svg" alt="CSS3" class="size-10 -ml-2"></li>
-            <li><img src="../assets/images/technology-images/tailwindcss-logotype.svg" alt="TailwindCSS" class="size-28 -ml-4"></li>
-            <li><img src="../assets/images/technology-images/daisyui-logotype.svg" alt="DaisyUI" class="size-24 -ml-5"></li>
-            <li><img src="../assets/images/technology-images/docker-logo.svg" alt="Docker" class="size-16 -ml-4"></li>
-            <li><img src="../assets/images/technology-images/linux-logo.svg" alt="Linux" class="size-8"></li>
-            <li><img src="../assets/images/technology-images/ec2.svg" alt="EC2" class="size-7"></li>
-          </ul>
-          <ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll" aria-hidden="true">
-            <li><img src="../assets/images/technology-images/ruby-logo.svg" alt="Ruby" class="size-8"></li>
-            <li><img src="../assets/images/technology-images/rails_logo.svg" alt="RubyOnRails" class="size-16"></li>
-            <li><img src="../assets/images/technology-images/postgres-logo.svg" alt="Postgres" class="size-9"></li>
-            <li><img src="../assets/images/technology-images/hotwire.svg" alt="Hotwire" class="size-16 -ml-4"></li>
-            <li><img src="../assets/images/technology-images/html5-logo.svg" alt="Html5" class="size-10 -ml-3"></li>
-            <li><img src="../assets/images/technology-images/css3-logo.svg" alt="CSS3" class="size-10 -ml-2"></li>
-            <li><img src="../assets/images/technology-images/tailwindcss-logotype.svg" alt="TailwindCSS" class="size-28 -ml-4"></li>
-            <li><img src="../assets/images/technology-images/daisyui-logotype.svg" alt="DaisyUI" class="size-24 -ml-5"></li>
-            <li><img src="../assets/images/technology-images/docker-logo.svg" alt="Docker" class="size-16 -ml-4"></li>
-            <li><img src="../assets/images/technology-images/linux-logo.svg" alt="Linux" class="size-8"></li>
-            <li><img src="../assets/images/technology-images/ec2.svg" alt="EC2" class="size-7"></li>
-          </ul>
-        </section>
+          <section class="max-w-[85vw] 2xl:max-w-[75vw] inline-flex flex-nowrap opacity-90
+            [mask-image:_linear-gradient(to_right,transparent_3%,_white_17%,_white_83%,transparent_97%)]
+            xl:[mask-image:_linear-gradient(to_right,transparent_7%,_white_15%,_white_85%,transparent_93%)]
+            ">
+            <ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
+              <li><img src="../assets/images/technology-images/ruby-logo.svg" alt="Ruby" class="size-8"></li>
+              <li><img src="../assets/images/technology-images/rails_logo.svg" alt="RubyOnRails" class="size-16"></li>
+              <li><img src="../assets/images/technology-images/postgres-logo.svg" alt="Postgres" class="size-9"></li>
+              <li><img src="../assets/images/technology-images/hotwire.svg" alt="Hotwire" class="size-16 -ml-4"></li>
+              <li><img src="../assets/images/technology-images/html5-logo.svg" alt="Html5" class="size-10 -ml-3"></li>
+              <li><img src="../assets/images/technology-images/css3-logo.svg" alt="CSS3" class="size-10 -ml-2"></li>
+              <li><img src="../assets/images/technology-images/tailwindcss-logotype.svg" alt="TailwindCSS" class="size-28 -ml-4"></li>
+              <li><img src="../assets/images/technology-images/daisyui-logotype.svg" alt="DaisyUI" class="size-24 -ml-5"></li>
+              <li><img src="../assets/images/technology-images/docker-logo.svg" alt="Docker" class="size-16 -ml-4"></li>
+              <li><img src="../assets/images/technology-images/linux-logo.svg" alt="Linux" class="size-8"></li>
+              <li><img src="../assets/images/technology-images/ec2.svg" alt="EC2" class="size-7"></li>
+            </ul>
+            <ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll" aria-hidden="true">
+              <li><img src="../assets/images/technology-images/ruby-logo.svg" alt="Ruby" class="size-8"></li>
+              <li><img src="../assets/images/technology-images/rails_logo.svg" alt="RubyOnRails" class="size-16"></li>
+              <li><img src="../assets/images/technology-images/postgres-logo.svg" alt="Postgres" class="size-9"></li>
+              <li><img src="../assets/images/technology-images/hotwire.svg" alt="Hotwire" class="size-16 -ml-4"></li>
+              <li><img src="../assets/images/technology-images/html5-logo.svg" alt="Html5" class="size-10 -ml-3"></li>
+              <li><img src="../assets/images/technology-images/css3-logo.svg" alt="CSS3" class="size-10 -ml-2"></li>
+              <li><img src="../assets/images/technology-images/tailwindcss-logotype.svg" alt="TailwindCSS" class="size-28 -ml-4"></li>
+              <li><img src="../assets/images/technology-images/daisyui-logotype.svg" alt="DaisyUI" class="size-24 -ml-5"></li>
+              <li><img src="../assets/images/technology-images/docker-logo.svg" alt="Docker" class="size-16 -ml-4"></li>
+              <li><img src="../assets/images/technology-images/linux-logo.svg" alt="Linux" class="size-8"></li>
+              <li><img src="../assets/images/technology-images/ec2.svg" alt="EC2" class="size-7"></li>
+            </ul>
+            <ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll" aria-hidden="true">
+              <li><img src="../assets/images/technology-images/ruby-logo.svg" alt="Ruby" class="size-8"></li>
+              <li><img src="../assets/images/technology-images/rails_logo.svg" alt="RubyOnRails" class="size-16"></li>
+              <li><img src="../assets/images/technology-images/postgres-logo.svg" alt="Postgres" class="size-9"></li>
+              <li><img src="../assets/images/technology-images/hotwire.svg" alt="Hotwire" class="size-16 -ml-4"></li>
+              <li><img src="../assets/images/technology-images/html5-logo.svg" alt="Html5" class="size-10 -ml-3"></li>
+              <li><img src="../assets/images/technology-images/css3-logo.svg" alt="CSS3" class="size-10 -ml-2"></li>
+              <li><img src="../assets/images/technology-images/tailwindcss-logotype.svg" alt="TailwindCSS" class="size-28 -ml-4"></li>
+              <li><img src="../assets/images/technology-images/daisyui-logotype.svg" alt="DaisyUI" class="size-24 -ml-5"></li>
+              <li><img src="../assets/images/technology-images/docker-logo.svg" alt="Docker" class="size-16 -ml-4"></li>
+              <li><img src="../assets/images/technology-images/linux-logo.svg" alt="Linux" class="size-8"></li>
+              <li><img src="../assets/images/technology-images/ec2.svg" alt="EC2" class="size-7"></li>
+            </ul>
+          </section>
       </div>
 
       <div class="col-start-2 col-span-1 mx-auto xl:ml-0 max-w-[950px] mt-5">
