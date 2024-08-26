@@ -12,16 +12,14 @@
   </head>
   <body class="flex justify-center px-6 sm:px-10">
     
-    <main class="grid grid-cols-[min-content_minmax(220px,max-content)] xl:grid-cols-[220px_minmax(400px,max-content)] mt-[8%]">
+    <main class="grid grid-cols-1 xl:grid-cols-[220px_minmax(400px,max-content)] mt-[8%]">
       
-      <div class="hidden xl:inline-block col-start-1 col-span-1 text-right self-end">
+<!-- Header title section -->
+      <div class="hidden xl:inline-block col-start-1 text-right self-end">
         <p class="text-sm text-gray-800 font-jetbrains pr-4 pb-1">&lt;h1 class='<span id="dynamic-class-text">ruby</span>'&gt;</p>
       </div>
 
-      <!-- Other transition ideas: -->
-      <!-- bg-[linear-gradient(to_right,theme(colors.green.300),theme(colors.green.100),theme(colors.sky.400),theme(colors.yellow.200),theme(colors.sky.400),theme(colors.green.100),theme(colors.green.300))] -->
-      <!-- bg-[linear-gradient(to_right,theme(colors.purple.400),theme(colors.purple.100),theme(colors.pink.300),theme(colors.orange.400),theme(colors.pink.300),theme(colors.purple.100),theme(colors.purple.400))] -->
-      <div class="col-start-2 col-span-1 mx-auto xl:ml-0 md:min-w-[800px]">
+      <div class="col-start-1 xl:col-start-2 mx-auto xl:ml-0 md:min-w-[800px]">
         <h1 class="text-5xl sm:text-6xl md:text-7xl font-inter font-black text-blue-900 mb-5 sm:mb-6 md:mb-8 lg:mb-10">I'm 
           <div class="inline-block bg-clip-text text-transparent
           bg-[linear-gradient(to_right,theme(colors.blue.900),theme(colors.sky.700),theme(colors.cyan.600),theme(colors.sky.700),theme(colors.blue.900))]
@@ -33,9 +31,6 @@
           <span class="hidden md:inline-block text-5xl animate-rotate-wave delay-1 pl-2 sm:pl-3">👋🏻</span>
         </h1>
         <div class="flex flex-wrap">
-          <!-- <h1 class="text-6xl md:text-7xl font-inter font-extrabold text-blue-900 min-w-fit">
-            <span class="hidden sm:inline-block">A f</span><span class="inline-block sm:hidden">F</span>ull stack&nbsp;<span class="hidden sm:inline-block">web&nbsp;</span>
-          </h1> -->
           <h1 class="inline-block sm:hidden text-5xl md:text-7xl font-inter font-extrabold text-blue-900 whitespace-nowrap">A web developer
             <span class="text-4xl -ml-1">.</span>
           </h1>
@@ -48,7 +43,8 @@
         </div>
       </div>
 
-      <div class="col-start-2 col-span-1 xl:col-start-1 xl:col-span-2 overflow-x-hidden">
+<!-- Tech logo carousel section -->
+      <div class="col-start-1 col-span-1 xl:col-span-2 overflow-x-hidden">
           <section class="max-w-[85vw] 2xl:max-w-[75vw] inline-flex flex-nowrap opacity-90 
             [mask-image:_linear-gradient(to_right,transparent_3%,_white_17%,_white_83%,transparent_97%)]
             xl:[mask-image:_linear-gradient(to_right,transparent_7%,_white_15%,_white_85%,transparent_93%)]
@@ -99,7 +95,8 @@
           </section>
       </div>
 
-      <div class="col-start-2 col-span-1 mx-auto xl:ml-0 max-w-[950px] mt-4">
+<!-- Intro copy and action button sections -->
+      <div class="col-start-1 xl:col-start-2 mx-auto xl:ml-0 max-w-[950px] mt-4">
         <section class="font-inter font-light text-base text-gray-700">
           <p class="">Fifteen years in digital product management, ten years coding (since Makers
             Academy bootcamp), one and a half years full-time web development. I mainly write Ruby, Javascript,
@@ -116,12 +113,16 @@
         </section>
       </div>
 
-      <br>
-      <div class="mt-10">
+      <!-- <br> -->
+
+<!-- Portfolio card section -->
+      <div class="mt-10 col-start-1 xl:col-start-2">
         <h2 class="text-xl font-bold font-inter tracking-wide text-cyan-500">Portfolio</h2>
-        <div class="flex flex-row flex-wrap gap-8 col-start-2 col-span-1 max-w-max">  
-          <section class="flex mt-4 min-w-[450px]">
-            <div class="card bg-base-100 max-w-[600px] shadow-xl">
+        
+        <div class="flex flex-row flex-wrap gap-8 col-start-2 col-span-1 max-w-max">
+          
+          <section class="flex mt-4 min-w-[450px] max-w-[500px]">
+            <div class="card bg-base-100 shadow-xl">
               <figure class="">
                 <img src="../assets/images/project-images/fakebook.png" alt="Fakebook homepage"
                   class="rounded-t-2xl border-8 border-green-200"/>
@@ -136,8 +137,8 @@
             </div>
           </section>
           
-          <section class="flex mt-4 min-w-[450px]">
-            <div class="card bg-base-100 max-w-[600px] shadow-xl">
+          <section class="flex mt-4 min-w-[450px] max-w-[500px]">
+            <div class="card bg-base-100 shadow-xl">
               <figure class="">
                 <img src="../assets/images/project-images/flight-booker.png" alt="Fakebook homepage"
                   class="rounded-t-2xl border-8 border-green-200"/>
@@ -152,8 +153,8 @@
             </div>
           </section>
           
-          <section class="flex mt-4 min-w-[450px]">
-            <div class="card bg-base-100 max-w-[600px] shadow-xl">
+          <section class="flex mt-4 min-w-[450px] max-w-[500px]">
+            <div class="card bg-base-100 shadow-xl">
               <figure class="">
                 <img src="../assets/images/project-images/chess.png" alt="Fakebook homepage"
                   class="rounded-t-2xl border-8 border-green-200"/>
@@ -173,11 +174,11 @@
 
       <br>
 
-      <section class="col-start-2 col-span-1">
+      <section class="col-start-1 col-span-1">
         <h4 class="text-base"><a href="https://github.com/jbk2/linux-scripting" class="link">Linux scripting</a> repo ...</h4>
       </section>
         
-      <section class="col-start-2 col-span-1">
+      <section class="col-start-1 col-span-1">
         Studied:
         <ul>
           <li>The Odin Project - Completed full sylabus</li>
