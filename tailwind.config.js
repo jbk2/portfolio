@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./views/index.html"],
+  content: ["./index.html"],
   safelist: [
     'animate-typing',
     'animate-blink-caret',
