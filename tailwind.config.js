@@ -13,7 +13,7 @@ module.exports = {
       },
       animation: {
         'infinite-scroll': 'infinite-scroll 35s linear infinite',
-        'gradient': 'gradient 10s linear infinite',
+        'gradient': 'gradient 40s linear infinite',
         'rotate-wave': 'rotate-wave 0.75s linear 1',
         'typing': 'typing 5s steps(40, end) 1',
         'blink-caret': 'blink-caret 0.4s steps(1, end) infinite',
