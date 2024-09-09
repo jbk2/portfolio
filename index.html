@@ -107,8 +107,8 @@
         </div>
   
   <!-- Intro copy and action button sections -->
-        <hr class="xl:col-span-2 border-blue-100 mt-6 mb-6">
-        <div class="col-start-1 xl:col-start-2 xl:ml-0 max-w-[950px] mt-7">
+        <hr class="xl:col-span-2 w-[70vw] sm:w-[80vw] mx-auto border-blue-100 mt-6 mb-[52px]">
+        <div class="col-start-1 xl:col-start-2 xl:ml-0 max-w-[950px]">
           <!-- Summary expereince stats section -->
           <section class="font-inter font-semibold text-sm mb-9 text-sky-800">
             <div class="flex justify-between gap-2">
@@ -171,92 +171,111 @@
           
         </div>
           <!-- Buttons section -->
-        <div class="col-start-1 xl:col-start-2 mx-auto sm:ml-auto xl:mx-0 mt-8 sm:-mt-6">
+        <div class="col-start-1 xl:col-start-2 mx-auto sm:ml-auto xl:mx-0 mt-8 sm:-mt-8">
           <section class="flex flex-row gap-4 sm:gap-10 md:gap-14 items-end justify-normal" > <!--  gap-4 sm:gap-10 md:gap-14  -->
             <a href="https://github.com/jbk2" class="btn w-[132px] sm:w-[136px] bg-gradient-to-r-from-deep-blue-to-bright-teal hover:opacity-80 text-gray-200 hover:text-white">Github profile</a>
             <a href="mailto:james@bibble.com" class="btn w-[120px] sm:w-[136px] bg-teal-400 hover:bg-teal-400/80 text-gray-800">Contact me</a>
             <a href="#" class="btn w-[132px] sm:w-[136px] bg-gradient-to-r-from-bright-teal-to-deep-blue hover:opacity-80 text-gray-200">C.V.</a>
+            <!-- Terminal mock up section -->
             <div class="ml-auto hidden sm:inline-block bg-white border rounded-md mockup-code text-sm font-jetbrains">
-              <pre data-prefix="$"class="font-jetbrains"><code>puts Resources.all.map(&:title)</code></pre>
+              <pre data-prefix="$"class="font-jetbrains"><code>puts Dev.find_by(:name, 'James').locations.map(&:city)</code></pre>
               <pre data-prefix=">" class="text-warning font-jetbrains"><code>installing...</code></pre>
               <pre data-prefix=">" class="text-success font-jetbrains"><code>Done!</code></pre>
             </div>
           </section>
         </div>
-        <hr class="xl:col-span-2 border-blue-100  md:mt-12 lg:mt-16 xl:mt-20 mt-6 mb-16">
-        <h2 class="text-lg self-center font-extrabold font-inter tracking-wider text-blue-900
-        underline underline-offset-4 decoration-4 decoration-emerald-200 ">PORTFOLIO</h2>
-      
+        
+        <!-- <hr class="xl:col-span-2 w-[70vw] sm:w-[80vw] mx-auto border-blue-100 md:mt-10 lg:mt-16 xl:mt-20 mt-8 mb-16"> -->
+        <hr class="xl:col-span-2 w-[70vw] sm:w-[80vw] mx-auto border-blue-100 mt-[66px] mb-[52px]">
+        
       </div>
     </div>
     
-<!-- Carousel project section -->
-    <div class="">
-      <div class="carousel carousel-center bg-white rounded-box h-[450px] m-auto space-x-8 pt-6 pl-4">
-        <!-- <div class="absolute z-1000 flex justify-between">
-          <a href="#slide5" class="btn btn-circle bg-slate-700">❮</a>
-          <a href="#slide4" class="btn btn-circle">❯</a>
-        </div> -->
-        <div id="slide1" class="carousel-item flex flex-col">
-          <a href="https://fakebook.bibble.com" class="transition ease-in-out hover:scale-[101%]">
-            <img src="assets/images/project-images/fakebook.png" class="rounded rotate-1 h-[320px] drop-shadow-lg" /> <!-- border-4 border-green-300 -->
-          </a>
-          <div class="mt-5 font-inter text-cyan-800">
-            <h1 class="font-bold">Facebook clone SPA type app</h1>
-            <ul class="list-inside list-disc font-light text-sm text-gray-700">
-              <li class="">Rails</li>
-              <li>Hotwire</li>
-              <li>Websockets</li>
-            </ul>
+    <!-- Resources/Tutorials section -->
+    <div>
+      <div class="px-4 sm:px-10 lg:pl-[88px] xl:pl-40">
+        <h2 class="text-lg self-center font-extrabold font-inter tracking-wider text-blue-900
+        underline underline-offset-4 decoration-4 decoration-emerald-200 ">COURSES / TURORIALS / BOOKS</h2>
+      </div>
+      <hr class="w-[70vw] sm:w-[80vw] mx-auto border-blue-100 mt-8 mb-16 md:mt-10 lg:mt-16 xl:mt-20">
+    </div>
+
+
+    <!-- Carousel project section -->
+    <div>
+      <div class="pl-4 sm:pl-10 lg:pl-[88px] xl:pl-40">
+        <h2 class="text-lg self-center font-extrabold font-inter tracking-wider text-blue-900
+        underline underline-offset-4 decoration-4 decoration-emerald-200 mb-12">PORTFOLIO</h2>
+      </div>
+      
+      <!-- Project card carousel -->
+      <div class="">
+        <div class="carousel carousel-center bg-white rounded-box h-[450px] m-auto space-x-8 pl-4">
+          <!-- <div class="absolute z-1000 flex justify-between">
+            <a href="#slide5" class="btn btn-circle bg-slate-700">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div> -->
+          <div id="slide1" class="carousel-item flex flex-col">
+            <a href="https://fakebook.bibble.com" class="transition ease-in-out hover:scale-[101%]">
+              <img src="assets/images/project-images/fakebook.png" class="rounded rotate-1 h-[320px] drop-shadow-lg" /> <!-- border-4 border-green-300 -->
+            </a>
+            <div class="mt-5 font-inter text-cyan-800">
+              <h1 class="font-bold">Facebook clone SPA type app</h1>
+              <ul class="list-inside list-disc font-light text-sm text-gray-700">
+                <li class="">Rails</li>
+                <li>Hotwire</li>
+                <li>Websockets</li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div id="slide2" class="carousel-item flex flex-col ">
-          <a href="https://replit.com/@jbk1/Chess" class="transition ease-in-out hover:scale-[101%]">
-            <img src="assets/images/project-images/chess.png" class="rounded -rotate-1 h-[320px] drop-shadow-lg" /> <!-- border-4 border-orange-300 -->
-          </a>
-          <div class="mt-5 font-inter text-cyan-800">
-            <h1 class="font-bold">Command line chess game</h1>
-            <ul class="list-inside list-disc font-light text-sm text-gray-700">
-              <li class="">Pure Ruby chess app</li>
-              <li>Built TDD with Rspec</li>
-            </ul>
+          <div id="slide2" class="carousel-item flex flex-col ">
+            <a href="https://replit.com/@jbk1/Chess" class="transition ease-in-out hover:scale-[101%]">
+              <img src="assets/images/project-images/chess.png" class="rounded -rotate-1 h-[320px] drop-shadow-lg" /> <!-- border-4 border-orange-300 -->
+            </a>
+            <div class="mt-5 font-inter text-cyan-800">
+              <h1 class="font-bold">Command line chess game</h1>
+              <ul class="list-inside list-disc font-light text-sm text-gray-700">
+                <li class="">Pure Ruby chess app</li>
+                <li>Built TDD with Rspec</li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div id="slide3" class="carousel-item flex flex-col ">
-          <a href="https://flight-booker.bibble.com" class="transition ease-in-out hover:scale-[101%]">
-            <img src="assets/images/project-images/flight-booker.png" class="rounded rotate-1 h-[320px] drop-shadow-lg" /><!-- border-4 border-green-300 -->
-          </a>
-          <div class="mt-5 font-inter text-cyan-800">
-            <h1 class="font-bold">Flight booking demo app</h1>
-            <ul class="list-inside list-disc font-light text-sm text-gray-700">
-              <li class="">Rails</li>
-              <li>Stimulus</li>
-              <li>Turbo</li>
-            </ul>
+          <div id="slide3" class="carousel-item flex flex-col ">
+            <a href="https://flight-booker.bibble.com" class="transition ease-in-out hover:scale-[101%]">
+              <img src="assets/images/project-images/flight-booker.png" class="rounded rotate-1 h-[320px] drop-shadow-lg" /><!-- border-4 border-green-300 -->
+            </a>
+            <div class="mt-5 font-inter text-cyan-800">
+              <h1 class="font-bold">Flight booking demo app</h1>
+              <ul class="list-inside list-disc font-light text-sm text-gray-700">
+                <li class="">Rails</li>
+                <li>Stimulus</li>
+                <li>Turbo</li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div id="slide4" class="carousel-item flex flex-col">
-          <a href="https://forhm.com/"  class="transition ease-in-out hover:scale-[101%]">
-            <img src="assets/images/project-images/forhm.png" class="rounded -rotate-1 h-[320px] drop-shadow-lg" /><!-- border-4 border-teal-300 -->
-          </a>
-          <div class="mt-5 font-inter text-cyan-800">
-            <h1 class="font-bold">Shopify app</h1>
-            <ul class="list-inside list-disc font-light text-sm text-gray-700">
-              <li class="">Custom html & css theme</li>
-              <li>Custom JS features</li>
-            </ul>
+          <div id="slide4" class="carousel-item flex flex-col">
+            <a href="https://forhm.com/"  class="transition ease-in-out hover:scale-[101%]">
+              <img src="assets/images/project-images/forhm.png" class="rounded -rotate-1 h-[320px] drop-shadow-lg" /><!-- border-4 border-teal-300 -->
+            </a>
+            <div class="mt-5 font-inter text-cyan-800">
+              <h1 class="font-bold">Shopify app</h1>
+              <ul class="list-inside list-disc font-light text-sm text-gray-700">
+                <li class="">Custom html & css theme</li>
+                <li>Custom JS features</li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div id="slide5" class="carousel-item flex flex-col">
-          <a href="https://ubuntu.bibble.com"  class="transition ease-in-out hover:scale-[101%]">
-            <img src="assets/images/project-images/scripting-ubuntu.png" class="rounded -rotate-1 h-[320px] drop-shadow-lg" /><!-- border-4 border-teal-300 -->
-          </a>
-          <div class="mt-5 font-inter text-cyan-800">
-            <h1 class="font-bold">Bash scripting and Linux devops</h1>
-            <ul class="list-inside list-disc font-light text-sm text-gray-700">
-              <li class="">Bash scripting</li>
-              <li>Ubuntu deployment, systemd, docker</li>
-            </ul>
+          <div id="slide5" class="carousel-item flex flex-col">
+            <a href="https://ubuntu.bibble.com"  class="transition ease-in-out hover:scale-[101%]">
+              <img src="assets/images/project-images/scripting-ubuntu.png" class="rounded -rotate-1 h-[320px] drop-shadow-lg" /><!-- border-4 border-teal-300 -->
+            </a>
+            <div class="mt-5 font-inter text-cyan-800">
+              <h1 class="font-bold">Bash scripting and Linux devops</h1>
+              <ul class="list-inside list-disc font-light text-sm text-gray-700">
+                <li class="">Bash scripting</li>
+                <li>Ubuntu deployment, systemd, docker</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
