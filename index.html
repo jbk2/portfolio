@@ -114,27 +114,26 @@
             <div class="flex justify-between gap-2">
               <div class="">
                 <div class="underline underline-offset-4 decoration-4 decoration-emerald-200">
-                  <span class="text-sky-700 font-extrabold italic text-lg ">15</span>
-                  <span class="text-sky-700 font-black text-xs">YRS</span>
-                </div>
-                <p class="my-1">Digital product mgmt</p>
-              </div>
-              <div class="">
-                <div class="underline underline-offset-4 decoration-4 decoration-emerald-200">
-                  <span class="text-sky-700 font-extrabold italic text-lg">10</span>
+                  <span class="text-sky-700 font-extrabold italic text-lg">11</span>
                   <span class="text-sky-700 font-black text-xs ">YRS</span>
                 </div>
                 <p class="my-1">Coding since <a href="https://makers.tech/learn/curriculum">Makers</a> bootcamp</p>
               </div>
               <div class="">
                 <div class="underline underline-offset-4 decoration-4 decoration-emerald-200">
-                  <span class="text-sky-700 font-extrabold italic text-lg">1</span>
-                  <span class="text-sky-700 font-extrabold italic text-md">1⁄2</span>
+                  <span class="text-sky-700 font-extrabold italic text-lg">2</span>
+                  <!-- <span class="text-sky-700 font-extrabold italic text-md">1⁄2</span> -->
                   <span class="text-sky-700 font-black text-xs">YRS</span>
                 </div>
                 <p class="my-1">Full time coding</p>
               </div>
-              
+              <div class="">
+                <div class="underline underline-offset-4 decoration-4 decoration-emerald-200">
+                  <span class="text-sky-700 font-extrabold italic text-lg ">15</span>
+                  <span class="text-sky-700 font-black text-xs">YRS</span>
+                </div>
+                <p class="my-1">Digital product mgmt</p>
+              </div>
             </div>
           </section>
           
@@ -151,7 +150,7 @@
               <li class="mb-3 flex text-base">
                 <img src="assets/images/bullet-arrow.svg" alt="bullet point" class="">
                 <p class="ml-3">
-                  I mainly write Ruby, Javascript, HTML & CSS, using Rails, Hotwire, and TailwindCSS.
+                  I mainly write Javascript, Ruby, HTML & CSS, using React, Rails, Hotwire, and TailwindCSS.
                 </p>
               </li>
               <li class="mb-3 flex text-base">
@@ -172,15 +171,15 @@
         </div>
           <!-- Buttons section -->
         <div class="col-start-1 xl:col-start-2 mx-auto sm:ml-auto xl:mx-0 mt-8 sm:-mt-8">
-          <section class="flex flex-row gap-4 sm:gap-10 md:gap-14 items-end justify-normal" > <!--  gap-4 sm:gap-10 md:gap-14  -->
+          <section class="flex flex-row gap-4 sm:gap-10 md:gap-10 items-end justify-normal" > <!--  gap-4 sm:gap-10 md:gap-14  -->
             <a href="https://github.com/jbk2" class="btn w-[132px] sm:w-[136px] bg-gradient-to-r-from-deep-blue-to-bright-teal hover:opacity-80 text-gray-200 hover:text-white">Github profile</a>
             <a href="mailto:james@bibble.com" class="btn w-[120px] sm:w-[136px] bg-teal-400 hover:bg-teal-400/80 text-gray-800">Contact me</a>
             <a href="#" class="btn w-[132px] sm:w-[136px] bg-gradient-to-r-from-bright-teal-to-deep-blue hover:opacity-80 text-gray-200">C.V.</a>
             <!-- Terminal mock up section -->
             <div class="ml-auto hidden sm:inline-block bg-white border rounded-md mockup-code text-sm font-jetbrains">
-              <pre data-prefix="$"class="font-jetbrains"><code>puts Dev.find_by(:name, 'James').locations.map(&:city)</code></pre>
-              <pre data-prefix=">" class="text-warning font-jetbrains"><code>installing...</code></pre>
-              <pre data-prefix=">" class="text-success font-jetbrains"><code>Done!</code></pre>
+              <pre data-prefix="$"class="font-jetbrains"><code>puts Dev.find_by(name: 'James Kemp').locations.map(&:city)</code></pre>
+              <pre data-prefix=">" class="text-warning font-jetbrains"><code>London, England</code></pre>
+              <pre data-prefix=">" class="text-success font-jetbrains"><code>Nice, France</code></pre>
             </div>
           </section>
         </div>
@@ -205,7 +204,7 @@
     <div>
       <div class="pl-4 sm:pl-10 lg:pl-[88px] xl:pl-40">
         <h2 class="text-lg self-center font-extrabold font-inter tracking-wider text-blue-900
-        underline underline-offset-4 decoration-4 decoration-emerald-200 mb-12">PORTFOLIO</h2>
+        underline underline-offset-4 decoration-4 decoration-emerald-200 mb-10">PORTFOLIO</h2>
       </div>
       
       <!-- Project card carousel -->
@@ -219,7 +218,7 @@
             <a href="https://fakebook.bibble.com" class="transition ease-in-out hover:scale-[101%]">
               <img src="assets/images/project-images/fakebook.png" class="rounded rotate-1 h-[320px] drop-shadow-lg" /> <!-- border-4 border-green-300 -->
             </a>
-            <div class="mt-5 font-inter text-cyan-800">
+            <div class="mt-5 ml-6 font-inter text-cyan-800">
               <h1 class="font-bold">Facebook clone SPA type app</h1>
               <ul class="list-inside list-disc font-light text-sm text-gray-700">
                 <li class="">Rails</li>
@@ -232,7 +231,7 @@
             <a href="https://replit.com/@jbk1/Chess" class="transition ease-in-out hover:scale-[101%]">
               <img src="assets/images/project-images/chess.png" class="rounded -rotate-1 h-[320px] drop-shadow-lg" /> <!-- border-4 border-orange-300 -->
             </a>
-            <div class="mt-5 font-inter text-cyan-800">
+            <div class="mt-5 ml-6 font-inter text-cyan-800">
               <h1 class="font-bold">Command line chess game</h1>
               <ul class="list-inside list-disc font-light text-sm text-gray-700">
                 <li class="">Pure Ruby chess app</li>
@@ -244,7 +243,7 @@
             <a href="https://flight-booker.bibble.com" class="transition ease-in-out hover:scale-[101%]">
               <img src="assets/images/project-images/flight-booker.png" class="rounded rotate-1 h-[320px] drop-shadow-lg" /><!-- border-4 border-green-300 -->
             </a>
-            <div class="mt-5 font-inter text-cyan-800">
+            <div class="mt-5 ml-6 font-inter text-cyan-800">
               <h1 class="font-bold">Flight booking demo app</h1>
               <ul class="list-inside list-disc font-light text-sm text-gray-700">
                 <li class="">Rails</li>
@@ -257,7 +256,7 @@
             <a href="https://forhm.com/"  class="transition ease-in-out hover:scale-[101%]">
               <img src="assets/images/project-images/forhm.png" class="rounded -rotate-1 h-[320px] drop-shadow-lg" /><!-- border-4 border-teal-300 -->
             </a>
-            <div class="mt-5 font-inter text-cyan-800">
+            <div class="mt-5 ml-6 font-inter text-cyan-800">
               <h1 class="font-bold">Shopify app</h1>
               <ul class="list-inside list-disc font-light text-sm text-gray-700">
                 <li class="">Custom html & css theme</li>
@@ -269,7 +268,7 @@
             <a href="https://ubuntu.bibble.com"  class="transition ease-in-out hover:scale-[101%]">
               <img src="assets/images/project-images/scripting-ubuntu.png" class="rounded -rotate-1 h-[320px] drop-shadow-lg" /><!-- border-4 border-teal-300 -->
             </a>
-            <div class="mt-5 font-inter text-cyan-800">
+            <div class="mt-5 ml-6 font-inter text-cyan-800">
               <h1 class="font-bold">Bash scripting and Linux devops</h1>
               <ul class="list-inside list-disc font-light text-sm text-gray-700">
                 <li class="">Bash scripting</li>
@@ -304,7 +303,8 @@
           <li>Hotwire</li>
           <li><a href="https://www.learnui.design/">Learn UI</a></li>
           <li>Many Linda </li>
-          
+          <li>Attend conferences - Brighton Ruby</li>
+          <li>Add Socials </li>
         </ul>
       </section>
 
