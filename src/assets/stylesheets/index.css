@@ -1,0 +1,42 @@
+@config "../../../tailwind.config.js";
+@import "tailwindcss";
+@plugin "daisyui";
+
+:root {
+  color-scheme: light dark;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* --------------------- Classes for updateText() fn ----------------------- */
+.typing {
+  position: relative;
+  overflow: hidden;
+  /* border-right: .15em solid orange; The cursor */
+  white-space: nowrap; /* Keep the text on a single line */
+  width: 0; /* Start with no text shown */
+  animation: typing 5s steps(40, end) 1;
+}
+
+.typing::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0.15em;
+  height: 100%;
+  background: orange;
+  animation: blink-caret 0.4s steps(1, end) infinite;
+}
+
+/* -------------------------------------------- */
+
+.delay-1 { animation-delay: 1s; }
+.delay-2 { animation-delay: 2s; }
+.delay-3 { animation-delay: 3s; }
+.delay-4 { animation-delay: 4s; }
+.delay-5 { animation-delay: 5s; }
+
+/* -------------------------------------------- */
