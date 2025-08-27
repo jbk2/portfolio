@@ -4,10 +4,34 @@
 
 :root {
   color-scheme: light dark;
-  max-width: 1280px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+  /* text-align: center; */
+
+  /* base color definitions */
+  --color-emerald-light: var(--color-emerald-200);
+  /* --color-emerald-md: var(--color-emerald-300);
+  --color-emerald-dark: var(--color-emerald-400); */
+  --color-teal-light: var(--color-teal-300);
+  --color-teal-md: var(--color-teal-400);
+  --color-teal-dark: var(--color-teal-500);
+  
+  --color-primary-light: var(--color-teal-light);
+  /* --color-primary-light: hsla(182, 100%, 42%, 1); */
+  --color-primary-dark: hsla(236, 77%, 20%, 1);
+
+  /* samentic color variables */
+  --color-decoration-emerald: var(--color-emerald-light);
+  
+  --color-text-header-primary: var(--color-sky-700);
+  
+  --color-btn-light: var(--color-primary-light);
+  --color-btn-dark: var(--color-primary-dark); 
+  --color-btn-text-light: var(--color-gray-200);
+  --color-btn-text-dark: var(--color-gray-700);
+
+  
 }
 
 /* --------------------- Classes for updateText() fn ----------------------- */
