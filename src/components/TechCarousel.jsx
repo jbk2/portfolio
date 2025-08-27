@@ -3,8 +3,8 @@ export default function TechCarousel() {
 // other carousel effects? - nah this is fine?
   return(
     <div className="col-start-1 col-span-1 xl:col-span-2 overflow-x-hidden mt-5">
-      <section className="max-w-[85vw] 2xl:max-w-[75vw] inline-flex flex-nowrap opacity-90 
-      [mask-image:_linear-gradient(to_right,transparent_3%,_white_17%,_white_83%,transparent_97%)]
+      <section className="max-w-[85vw] xl:max-w-[80vw] 2xl:max-w-[70vw] inline-flex flex-nowrap opacity-90 
+      [mask-image:_linear-gradient(to_right,transparent_3%,_white_17%,_white_90%,transparent_97%)]
       xl:[mask-image:_linear-gradient(to_right,transparent_7%,_white_15%,_white_85%,transparent_93%)]
       ">
         <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">

@@ -1,7 +1,8 @@
 export default function Introduction() {
+  
   return(
     <div className="px-4 sm:px-10">
-      <hr className="mx-auto border-blue-100 mt-[66px] mb-[52px]"></hr>
+      <hr className="mx-auto border-blue-100 my-12"></hr>
       
       {/* Summary stats and intro bullet sections */}
       <div className="xl:ml-0">
