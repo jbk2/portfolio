@@ -15,7 +15,7 @@ export default function Homepage() {
       
 
       {/* Resources/Tutorials section */}
-      <div>
+      <div className='mt-20'>
         <div className="px-4 sm:px-10 lg:pl-[88px] xl:pl-40">
           <h2 className="text-lg self-center font-extrabold font-inter tracking-wider text-blue-900
           underline underline-offset-4 decoration-4 decoration-emerald-200 ">COURSES / TURORIALS / BOOKS</h2>

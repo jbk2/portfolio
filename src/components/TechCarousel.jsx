@@ -1,5 +1,6 @@
 export default function TechCarousel() {
-
+// update images
+// other carousel effects? - nah this is fine?
   return(
     <div className="col-start-1 col-span-1 xl:col-span-2 overflow-x-hidden mt-5">
       <section className="max-w-[85vw] 2xl:max-w-[75vw] inline-flex flex-nowrap opacity-90 

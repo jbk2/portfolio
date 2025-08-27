@@ -1,5 +1,6 @@
 export default function HeroSection() {
-
+// remove mark up on small screen
+// deal with spacing
   return(
     <div className="grid grid-cols-1 xl:grid-cols-[220px_minmax(400px,max-content)]">
       
