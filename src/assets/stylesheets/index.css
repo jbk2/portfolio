@@ -30,8 +30,21 @@
   --color-btn-dark: var(--color-primary-dark); 
   --color-btn-text-light: var(--color-gray-200);
   --color-btn-text-dark: var(--color-gray-700);
+}
 
-  
+/* -------------------------------------------- */
+/* Hero Header gradient & animation */
+.hero-header-gradient {
+  background-image: linear-gradient(
+    to right,
+    var(--color-teal-400),
+    var(--color-sky-500),
+    var(--color-violet-600),
+    var(--color-sky-500),
+    var(--color-teal-400)
+  );
+  background-size: 200% auto;
+  animation: gradient 10s linear infinite;
 }
 
 /* --------------------- Classes for updateText() fn ----------------------- */
@@ -56,7 +69,6 @@
 }
 
 /* -------------------------------------------- */
-
 .delay-1 { animation-delay: 1s; }
 .delay-2 { animation-delay: 2s; }
 .delay-3 { animation-delay: 3s; }
