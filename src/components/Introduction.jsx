@@ -1,33 +1,33 @@
 export default function Introduction() {
   
   return(
-    <div className="px-4 sm:px-10">
-      <hr className="mx-auto border-blue-100 my-12"></hr>
+    <div className="page-width px-4 sm:px-10 my-14">
+      <hr className="mx-auto border-[var(--color-border-primary)]"></hr>
       
       {/* Summary stats and intro bullet sections */}
-      <div className="xl:ml-0">
+      <div className="xl:ml-0 my-14">
         {/* Summary stats section */}
-        <section className="font-inter font-semibold text-sm mb-9 text-sky-800">
+        <section className="font-inter font-semibold text-sm mb-9 text-[var(--color-text-header-primary)]">
           <div className="flex justify-between md:justify-around gap-2">
             <div className="flex flex-col md:items-center">
               <div className="underline underline-offset-4 decoration-4 decoration-[var(--color-decoration-emerald)]">
-                <span className="text-[--color-header-primary] font-extrabold italic text-lg">11</span>
-                <span className="text-[--color-header-primary] font-black text-xs ">YRS</span>
+                <span className="font-extrabold italic text-lg">11</span>
+                <span className="font-black text-xs">&nbsp;YRS</span>
               </div>
               <p className="my-1">Coding since <a href="https://makers.tech/learn/curriculum">Makers</a> bootcamp</p>
             </div>
             <div className="flex flex-col md:items-center">
-              <div className="underline underline-offset-4 decoration-4 decoration-[var(--color-decoration-emerald)]">
-                <span className="text-[--color-header-primary] font-extrabold italic text-lg">2</span>
-                {/* <span className="text-sky-700 font-extrabold italic text-md">1⁄2</span> */}
-                <span className="text-[--color-header-primary] font-black text-xs">YRS</span>
+              <div className="underline underline-offset-4 decoration-4 text-[--color-text-header-primary] decoration-[var(--color-decoration-emerald)]">
+                <span className="font-extrabold italic text-lg">2</span>
+                <span className="font-extrabold italic text-sm diagonal-fractions">1/2</span>
+                <span className="font-black text-xs">&nbsp;YRS</span>
               </div>
               <p className="my-1">Full time coding</p>
             </div>
             <div className="flex flex-col md:items-center">
               <div className="underline underline-offset-4 decoration-4 decoration-[var(--color-decoration-emerald)]">
-                <span className="text-[--color-header-primary] font-extrabold italic text-lg ">15</span>
-                <span className="text-[--color-header-primary] font-black text-xs">YRS</span>
+                <span className="font-extrabold italic text-lg ">15</span>
+                <span className="font-black text-xs">&nbsp;YRS</span>
               </div>
               <p className="my-1">Digital product mgmt</p>
             </div>
@@ -89,9 +89,7 @@ export default function Introduction() {
           </div>
         </section>
       </div>
-    
-      {/* <hr className="xl:col-span-2 w-[70vw] sm:w-[80vw] mx-auto border-blue-100 md:mt-10 lg:mt-16 xl:mt-20 mt-8 mb-16"> */}
-      <hr className="xl:col-span-2 w-[70vw] sm:w-[80vw] mx-auto border-blue-100 mt-[66px] mb-[52px]"></hr>
+      <hr className="mx-auto border-[var(--color-border-primary)] my-14"></hr>
     </div>
   )
 }

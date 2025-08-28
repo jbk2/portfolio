@@ -4,9 +4,8 @@
 
 :root {
   color-scheme: light dark;
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 2rem;
+  
+  
   /* text-align: center; */
 
   /* base color definitions */
@@ -24,12 +23,20 @@
   /* samentic color variables */
   --color-decoration-emerald: var(--color-emerald-light);
   
-  --color-text-header-primary: var(--color-sky-700);
+  --color-text-header-primary: var(--color-sky-800);
+  --color-text-header-secondary: var(--color-sky-700);
   
   --color-btn-light: var(--color-primary-light);
   --color-btn-dark: var(--color-primary-dark); 
   --color-btn-text-light: var(--color-gray-200);
   --color-btn-text-dark: var(--color-gray-700);
+
+  --color-border-primary: var(--color-blue-100)
+}
+
+.page-width {
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 /* -------------------------------------------- */

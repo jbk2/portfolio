@@ -15,7 +15,7 @@ export default function HeroSection() {
   }, []) 
 
   return(
-    <div className="grid grid-cols-1 xl:grid-cols-[2fr_minmax(400px,max-content)_1fr]">
+    <div className="page-width grid grid-cols-1 xl:grid-cols-[2fr_minmax(400px,max-content)_1fr]">
       
       {/* Col-1 */}
       <div className="hidden xl:inline-block col-start-1 text-right self-end mr-3">
