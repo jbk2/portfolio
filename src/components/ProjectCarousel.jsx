@@ -1,7 +1,7 @@
 import fakebook from '/src/assets/images/project-images/fakebook.png';
 import chess from '/src/assets/images/project-images/chess.png';
-import waldo from '/src/assets/images/project-images/waldo1.png';
-import flightBooker from '/src/assets/images/project-images/flight-booker.png';
+import waldo from '/src/assets/images/project-images/waldo.png';
+// import flightBooker from '/src/assets/images/project-images/flight-booker.png';
 import forhm from '/src/assets/images/project-images/forhm.png';
 import ubuntu from '/src/assets/images/project-images/ubuntu.png';
 
