@@ -47,7 +47,7 @@ export default function Introduction() {
             <li className="mb-3 flex text-base">
               <img src="src/assets/images/bullet-arrow.svg" alt="bullet point" className="" />
               <p className="ml-3">
-                I mainly write Javascript & Ruby in React, Rails & Hotwire (HTML & CSS too of course).
+                I write Javascript & Ruby, in React, Rails & Hotwire (+HTML & CSS of course).
               </p>
             </li>
             <li className="mb-3 flex text-base">

@@ -1,58 +1,54 @@
+const FILE_IMPORTS = import.meta.glob('/src/assets/images/technology-images/*.svg', {
+  eager: true,
+  as: 'url',
+});
+
+const LOGOS_META = [
+  { fileName: 'ec2', alt: 'ec2', className: "size-7 ml-3"},
+  { fileName: 'docker', alt: 'docker logo', className: "size-18"},
+  { fileName: 'linux', alt: 'linux logo', className: "size-7 ml-3"},
+  // { fileName: 'nginx', alt: 'nginx logo', className: "size-10"},
+  { fileName: 'ruby', alt: 'ruby logo', className: "size-6 ml-3"},
+  { fileName: 'rails', alt: 'rails logo', className: "size-14"},
+  { fileName: 'hotwire', alt: 'hotwire logo', className: "size-14 mt-2"},
+  { fileName: 'javascript', alt: 'javascript logo', className: "size-8 ml-1"},
+  { fileName: 'react', alt: 'react logo', className: "size-7"},
+  { fileName: 'vite', alt: 'vite logo', className: "size-7"},
+  // { fileName: 'postgres', alt: 'postgres logo', className: "size-10"},
+  { fileName: 'html5', alt: 'html5 logo', className: "size-8"},
+  { fileName: 'css3', alt: 'css3 logo', className: "size-8"},
+  // { fileName: 'tailwindcss', alt: 'tailwindcss logo', className: "size-10"},
+  // { fileName: 'daisyui', alt: 'daisyui logo', className: "size-10"},
+]
+
+const shownLogoNames = "ec2 docker linux nginxLogo ruby rails hotwire javascript react \
+  vite html5 css3 tailwindcss daisyui postgres".split(" ");
+
+const logos = LOGOS_META.map(({fileName, ...rest}) => ({
+  src: FILE_IMPORTS[`/src/assets/images/technology-images/${fileName}.svg`],
+  ...rest,
+}));
+
+
 export default function TechCarousel() {
 // update images
 // other carousel effects? - nah this is fine?
+
   return(
-    <div className="col-start-1 col-span-1 xl:col-span-2 overflow-x-hidden mt-5">
-      <section className="max-w-[85vw] xl:max-w-[80vw] 2xl:max-w-[70vw] inline-flex flex-nowrap opacity-90 
-      [mask-image:_linear-gradient(to_right,transparent_3%,_white_17%,_white_90%,transparent_97%)]
-      xl:[mask-image:_linear-gradient(to_right,transparent_7%,_white_15%,_white_85%,transparent_93%)]
-      ">
-        <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
-          <li><img src="/src/assets/images/technology-images/ec2.svg" alt="EC2" className="size-7 -ml-2" /></li>
-          <li><img src="/src/assets/images/technology-images/docker-logo.svg" alt="Docker" className="size-16" /></li>
-          <li><img src="/src/assets/images/technology-images/linux-logo.svg" alt="Linux" className="size-7 -ml-1" /></li>
-          <li><img src="/src/assets/images/technology-images/nginx-logo.svg" alt="Nginx" className="size-14 -ml-2" /></li>
-          <li><img src="/src/assets/images/technology-images/ruby-logo.svg" alt="Ruby" className="size-6 -ml-2 mr-1" /></li>
-          <li><img src="/src/assets/images/technology-images/rails_logo.svg" alt="RubyOnRails" className="size-16" /></li>
-          <li><img src="/src/assets/images/technology-images/postgres-logo.svg" alt="Postgres" className="size-7" /></li>
-          <li><img src="/src/assets/images/technology-images/hotwire.svg" alt="Hotwire" className="size-16" /></li>
-          <li><img src="/src/assets/images/technology-images/html5-logo.svg" alt="Html5" className="size-9" /></li>
-          <li><img src="/src/assets/images/technology-images/css3-logo.svg" alt="CSS3" className="size-9" /></li>
-          <li><img src="/src/assets/images/technology-images/js.svg" alt="Javascript" className="size-7 ml-1" /></li>
-          <li><img src="/src/assets/images/technology-images/tailwindcss-logotype.svg" alt="TailwindCSS" className="size-24 -ml-1" /></li>
-          <li><img src="/src/assets/images/technology-images/daisyui-logotype.svg" alt="DaisyUI" className="size-20 -ml-2" /></li>
-        </ul>
-        <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll" aria-hidden="true">
-          <li><img src="/src/assets/images/technology-images/ec2.svg" alt="EC2" className="size-7 -ml-2" /></li>
-          <li><img src="/src/assets/images/technology-images/docker-logo.svg" alt="Docker" className="size-16" /></li>
-          <li><img src="/src/assets/images/technology-images/linux-logo.svg" alt="Linux" className="size-7 -ml-1" /></li>
-          <li><img src="/src/assets/images/technology-images/nginx-logo.svg" alt="Nginx" className="size-14 -ml-2" /></li>
-          <li><img src="/src/assets/images/technology-images/ruby-logo.svg" alt="Ruby" className="size-6 -ml-2 mr-1" /></li>
-          <li><img src="/src/assets/images/technology-images/rails_logo.svg" alt="RubyOnRails" className="size-16" /></li>
-          <li><img src="/src/assets/images/technology-images/postgres-logo.svg" alt="Postgres" className="size-7" /></li>
-          <li><img src="/src/assets/images/technology-images/hotwire.svg" alt="Hotwire" className="size-16" /></li>
-          <li><img src="/src/assets/images/technology-images/html5-logo.svg" alt="Html5" className="size-9" /></li>
-          <li><img src="/src/assets/images/technology-images/css3-logo.svg" alt="CSS3" className="size-9" /></li>
-          <li><img src="/src/assets/images/technology-images/js.svg" alt="Javascript" className="size-7 ml-1" /></li>
-          <li><img src="/src/assets/images/technology-images/tailwindcss-logotype.svg" alt="TailwindCSS" className="size-24 -ml-1" /></li>
-          <li><img src="/src/assets/images/technology-images/daisyui-logotype.svg" alt="DaisyUI" className="size-20 -ml-2" /></li>
-        </ul>
-        <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll" aria-hidden="true">
-          <li><img src="/src/assets/images/technology-images/ec2.svg" alt="EC2" className="size-7 -ml-2" /></li>
-          <li><img src="/src/assets/images/technology-images/docker-logo.svg" alt="Docker" className="size-16" /></li>
-          <li><img src="/src/assets/images/technology-images/linux-logo.svg" alt="Linux" className="size-7 -ml-1" /></li>
-          <li><img src="/src/assets/images/technology-images/nginx-logo.svg" alt="Nginx" className="size-14 -ml-2" /></li>
-          <li><img src="/src/assets/images/technology-images/ruby-logo.svg" alt="Ruby" className="size-6 -ml-2 mr-1" /></li>
-          <li><img src="/src/assets/images/technology-images/rails_logo.svg" alt="RubyOnRails" className="size-16" /></li>
-          <li><img src="/src/assets/images/technology-images/postgres-logo.svg" alt="Postgres" className="size-7" /></li>
-          <li><img src="/src/assets/images/technology-images/hotwire.svg" alt="Hotwire" className="size-16" /></li>
-          <li><img src="/src/assets/images/technology-images/html5-logo.svg" alt="Html5" className="size-9" /></li>
-          <li><img src="/src/assets/images/technology-images/css3-logo.svg" alt="CSS3" className="size-9" /></li>
-          <li><img src="/src/assets/images/technology-images/js.svg" alt="Javascript" className="size-7 ml-1" /></li>
-          <li><img src="/src/assets/images/technology-images/tailwindcss-logotype.svg" alt="TailwindCSS" className="size-24 -ml-1" /></li>
-          <li><img src="/src/assets/images/technology-images/daisyui-logotype.svg" alt="DaisyUI" className="size-20 -ml-2" /></li>
-        </ul>
-      </section>
+    <div className="overflow-x-hidden my-12
+      [mask-image:_linear-gradient(to_right,transparent_3%,_white_10%,_white_90%,transparent_97%)]">
+      <div className="flex w-fit items-center animate-infinite-scroll opacity-90">
+        {logos.map((logo) => (
+          <div className="w-30">
+            <img src={logo.src} alt={logo.alt} className={logo.className + ' max-w-none'}/>
+          </div>
+        ))}
+        {logos.map((logo) => (
+          <div className="w-30">
+            <img src={logo.src} alt={logo.alt} className={logo.className + ' max-w-none'}/>
+          </div>
+        ))}
+      </div>
     </div>
   )
 }
