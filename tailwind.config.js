@@ -17,7 +17,7 @@ export default {
         brightteal: 'hsla(182, 100%, 42%, 1)',
       },
       animation: {
-        'infinite-scroll': 'infinite-scroll 10s linear infinite',
+        'infinite-scroll': 'infinite-scroll 12s linear infinite',
         'gradient': 'gradient 40s linear infinite',
         'rotate-wave': 'rotate-wave 0.75s linear 1',
         'typing': 'typing 5s steps(40, end) 1',

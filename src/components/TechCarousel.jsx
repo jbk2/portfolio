@@ -17,7 +17,7 @@ const LOGOS_META = [
   // { fileName: 'postgres', alt: 'postgres logo', className: "size-10"},
   { fileName: 'html5', alt: 'html5 logo', className: "size-8"},
   { fileName: 'css3', alt: 'css3 logo', className: "size-8"},
-  // { fileName: 'tailwindcss', alt: 'tailwindcss logo', className: "size-10"},
+  { fileName: 'tailwindcss', alt: 'tailwindcss logo', className: "size-10"},
   // { fileName: 'daisyui', alt: 'daisyui logo', className: "size-10"},
 ]
 
@@ -35,16 +35,16 @@ export default function TechCarousel() {
 // other carousel effects? - nah this is fine?
 
   return(
-    <div className="overflow-x-hidden my-12
+    <div className="page-width overflow-x-hidden my-6 sm:my-8
       [mask-image:_linear-gradient(to_right,transparent_3%,_white_10%,_white_90%,transparent_97%)]">
       <div className="flex w-fit items-center animate-infinite-scroll opacity-90">
         {logos.map((logo) => (
-          <div className="w-30">
+          <div className="w-20 sm:w-30">
             <img src={logo.src} alt={logo.alt} className={logo.className + ' max-w-none'}/>
           </div>
         ))}
         {logos.map((logo) => (
-          <div className="w-30">
+          <div className="w-20 sm:w-30">
             <img src={logo.src} alt={logo.alt} className={logo.className + ' max-w-none'}/>
           </div>
         ))}
