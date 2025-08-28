@@ -1,4 +1,6 @@
-export function textIterator(textEl, textArray) {
+export function textIterator(textEl, textArray,
+  {letterDelay = 100, wordDelay = 900, cycleDelay = 2000} = {}
+  ) {
   let index = 0;
   let intervalId = null;
   let timeoutId = null;
@@ -16,18 +18,20 @@ export function textIterator(textEl, textArray) {
     textEl.textContent = '';
     textEl.classList.add('typing');
     
-    let j = 0;
+    let letterIndex = 0;
     intervalId = setInterval(() => {
       if (cancelled) return clearTimers();
-      if(j < word.length) {
-        textEl.textContent += word[j++]
+      if( letterIndex < word.length) {
+        textEl.textContent += word[letterIndex++]
       } else {
         clearInterval(intervalId);
         textEl.classList.remove('typing');
         index += 1;
-        timeoutId = setTimeout(typeNextLetter, 1400);
+        const completedCycle = index % textArray.length === 0;
+        const delay = completedCycle ? cycleDelay : wordDelay ;
+        timeoutId = setTimeout(typeNextLetter, delay);
       }
-    }, 100);
+    }, letterDelay);
   };
   
   typeNextLetter();
