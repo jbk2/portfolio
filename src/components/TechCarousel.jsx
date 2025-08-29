@@ -35,7 +35,7 @@ export default function TechCarousel() {
 // other carousel effects? - nah this is fine?
 
   return(
-    <div className="page-width overflow-x-hidden my-6 sm:my-8
+    <div className="page-width overflow-x-hidden my-6 sm:my-14
       [mask-image:_linear-gradient(to_right,transparent_3%,_white_10%,_white_90%,transparent_97%)]">
       <div className="flex w-fit items-center animate-infinite-scroll opacity-90">
         {logos.map((logo) => (

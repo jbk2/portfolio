@@ -8,13 +8,13 @@ export default function Introduction() {
       <div className="xl:ml-0 my-14">
         {/* Summary stats section */}
         <section className="font-inter font-semibold text-sm mb-9 text-[var(--color-text-header-primary)]">
-          <div className="flex justify-between md:justify-around gap-2">
+          <div className="flex justify-between md:justify-around gap-8 p-6">
             <div className="flex flex-col md:items-center">
               <div className="underline underline-offset-4 decoration-4 decoration-[var(--color-decoration-emerald)]">
                 <span className="font-extrabold italic text-lg">11</span>
                 <span className="font-black text-xs">&nbsp;YRS</span>
               </div>
-              <p className="my-1">Coding since <a href="https://makers.tech/learn/curriculum">Makers</a> bootcamp</p>
+              <p className="my-1 w-32 sm:w-fit">Coding since <a href="https://makers.tech/learn/curriculum">Makers</a> bootcamp</p>
             </div>
             <div className="flex flex-col md:items-center">
               <div className="underline underline-offset-4 decoration-4 text-[--color-text-header-primary] decoration-[var(--color-decoration-emerald)]">
@@ -82,7 +82,7 @@ export default function Introduction() {
             C.V.
           </a>
           {/* Terminal mock up section */}
-          <div className="mockup-code hidden xl:inline-block ml-auto -mb-3 bg-white border rounded-md text-sm font-jetbrains">
+          <div className="mockup-code hidden xl:inline-block ml-24 mr-6 -mb-3 bg-white border rounded-md text-sm font-jetbrains">
             <pre data-prefix="$" className="font-jetbrains"><code>puts Dev.find_by(name: 'James Kemp').locations.map(&:city)</code></pre>
             <pre data-prefix=">" className="text-[var(--color-teal-dark)] font-jetbrains"><code>London, England</code></pre>
             <pre data-prefix=">" className="text-warning font-jetbrains"><code>Nice, France</code></pre>
