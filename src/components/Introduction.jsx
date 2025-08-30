@@ -5,7 +5,7 @@ export default function Introduction() {
       <hr className="mx-auto border-[var(--color-border-primary)]"></hr>
       
       {/* Summary stats and intro bullet sections */}
-      <div className="xl:ml-0 my-14">
+      <div className="xl:ml-0 mt-6">
         {/* Summary stats section */}
         <section className="font-inter font-semibold text-sm mb-9 text-[var(--color-text-header-primary)]">
           <div className="flex justify-between md:justify-around gap-8 p-6">
@@ -89,7 +89,7 @@ export default function Introduction() {
           </div>
         </section>
       </div>
-      <hr className="mx-auto border-[var(--color-border-primary)] my-14"></hr>
+      <hr className="mx-auto border-[var(--color-border-primary)] mt-20"></hr>
     </div>
   )
 }

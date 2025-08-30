@@ -8,15 +8,15 @@ import ubuntu from '/src/assets/images/project-images/ubuntu.png';
 export default function ProjectCarousel() {
 
   return(
-    <div className=''>
+    <div className='my-14'>
       <div className="page-width pl-40 sm:pl-10 lg:pl-[88px] xl:pl-40">
         <h2 className="text-lg self-center font-extrabold font-inter tracking-wider text-blue-900
-        underline underline-offset-4 decoration-4 decoration-emerald-200 mb-10">PROJECTS</h2>
+        underline underline-offset-4 decor4tion-4 decoration-emerald-200 mb-10">PROJECTS</h2>
       </div>
     
       {/* Project card carousel */}
-      <div className='flex justify-center p-10'>
-        <div className="carousel carousel-center max-w-fit h-[450px] bg-white rounded-box space-x-8">
+      <div className='flex justify-center px-10'>
+        <div className="carousel carousel-center max-w-fit bg-white rounded-box space-x-8">
           <div id="slide1" className="carousel-item flex flex-col">
             <div className='rotate-1 p-1'>
               <a href="https://fakebook.bibble.com">
@@ -94,7 +94,6 @@ export default function ProjectCarousel() {
             </div>
           </div>
         </div>
-
       </div>
     </div>
   )
