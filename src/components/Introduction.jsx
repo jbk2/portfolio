@@ -66,7 +66,7 @@ export default function Introduction() {
         </section>
       </div>
 
-      {/* Buttons & mockup code section */}
+      {/* Buttons & terminal mockup section */}
       <div className="mt-8">
         <section className="flex w-full gap-4 sm:gap-14 justify-center xl:items-end xl:-mt-18" > {/*  gap-4 sm:gap-10 md:gap-14  */}
           <a href="https://github.com/jbk2" className="btn w-[132px] sm:w-[136px] rounded-lg
@@ -84,8 +84,8 @@ export default function Introduction() {
           {/* Terminal mock up section */}
           <div className="mockup-code hidden xl:inline-block ml-24 mr-6 -mb-3 bg-white border rounded-md text-sm font-jetbrains">
             <pre data-prefix="$" className="font-jetbrains"><code>puts Dev.find_by(name: 'James Kemp').locations.map(&:city)</code></pre>
-            <pre data-prefix=">" className="text-[var(--color-teal-dark)] font-jetbrains"><code>London, England</code></pre>
-            <pre data-prefix=">" className="text-warning font-jetbrains"><code>Nice, France</code></pre>
+            <pre data-prefix=">" className="text-[var(--color-teal-dark)] font-jetbrains"><code>London, England.</code></pre>
+            <pre data-prefix=">" className="text-warning font-jetbrains"><code>Nice, France.</code></pre>
           </div>
         </section>
       </div>

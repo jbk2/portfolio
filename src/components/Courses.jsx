@@ -1,3 +1,6 @@
+import { courses } from '../data/courses'
+import Course from './Course'
+
 export default function Courses() {
 
   return(
@@ -17,8 +20,8 @@ export default function Courses() {
               <ul>
                 <li>Agile Web Development</li>
                 <li>Effective tesing with Rspec</li>
-                <li></li>
-                <li></li>
+                <li>Javascrip the best bits</li>
+                <li>Ruby the best bits</li>
               </ul>
             </li>
             <li>AWS Cert</li>
@@ -30,8 +33,20 @@ export default function Courses() {
             <li>Many Linda </li>
             <li>Attend conferences - Brighton Ruby</li>
             <li>Add Socials </li>
+            <li>React docs </li>
+            <li>Hotwire Docs </li>
+            <li>Rails guides </li>
+            <li>Add Socials </li>
           </ul>
         </section>
+        {
+          courses.map(course => (
+            <section key={course.id}>
+              <Course {...course} />
+            </section>
+            )
+          )
+        }
       </div>
   )
 }
