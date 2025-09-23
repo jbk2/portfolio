@@ -1,5 +1,6 @@
 import { textIterator } from '../utils/textIterator';
 import { useEffect, useRef } from "react";
+import NavLinks from './NavLinks';
 
 export default function HeroSection() {
 // remove mark up on small screenction 
@@ -15,8 +16,7 @@ export default function HeroSection() {
   }, []) 
 
   return(
-    <div className="page-width grid grid-cols-1 xl:grid-cols-[2fr_minmax(400px,max-content)_1fr]">
-      
+    <div className="page-width mt-10 grid grid-cols-1 xl:grid-cols-[2fr_minmax(400px,max-content)_1fr]">
       {/* Col-1 */}
       <div className="hidden xl:inline-block col-start-1 text-right self-end mr-3">
         <p className="text-sm text-gray-600 font-jetbrains pr-4 pb-1">
@@ -49,11 +49,11 @@ export default function HeroSection() {
             <p className="hidden xl:inline-block text-sm text-gray-600 font-jetbrains ml-6">&lt;/h1&gt;</p>
           </span>
         </div>
+      </div>
 
-        {/* Col-3 */}
-        <div>
-        </div>
-      
+      {/* Col-3 */}
+      <div>
+        <NavLinks />
       </div>
     </div>
   )

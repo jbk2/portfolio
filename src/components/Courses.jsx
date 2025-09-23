@@ -10,7 +10,7 @@ export default function Courses() {
           <h2 className="text-lg self-center font-extrabold font-inter tracking-wider text-blue-900
           underline underline-offset-4 decoration-4 decoration-emerald-200 ">COURSES / TURORIALS / BOOKS</h2>
         </div>
-        <section className="flex justify-center gap-20">
+        {/* <section className="flex justify-center gap-20">
           <h2>Studied:</h2>
           <ul>
             <li>The Odin Project - Completed full sylabus</li>
@@ -38,15 +38,17 @@ export default function Courses() {
             <li>Rails guides </li>
             <li>Add Socials </li>
           </ul>
-        </section>
-        {
-          courses.map(course => (
-            <section key={course.id}>
-              <Course {...course} />
-            </section>
+        </section> */}
+        <section className='grid grid-rows-2 grid-cols-4 justify-center gap-6 mt-10 max-w-[80vw] mx-auto'>
+          {
+            courses.map(course => (
+              <div key={course.id} className=''>
+                <Course {...course} />
+              </div>
+              )
             )
-          )
-        }
+          }
+        </section>
       </div>
   )
 }

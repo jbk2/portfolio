@@ -1,4 +1,3 @@
-import Navbar from './Navbar';
 import HeroSection from './HeroSection';
 import TechCarousel from './TechCarousel';
 import Introduction from './Introduction';
@@ -10,7 +9,6 @@ export default function Homepage() {
 
   return(
     <div>
-      <Navbar />
       <HeroSection />
       <TechCarousel />
       <Introduction />

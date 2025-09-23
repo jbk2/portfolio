@@ -9,20 +9,12 @@ import topImg from '../assets/images/course-images/top.jpg';
 
 export const courses = [
   {
-    id: 'rails-tutorial',
-    title: 'Ruby on Rails Tutorial',
-    progress: 100,
-    image: railsTutorialImg,
-    link: 'https://www.railstutorial.org/',
-    description: `Hartl's classic Rails introduction. MVC, testing, deployment, Rails 7.`,
-  },
-  {
     id: 'makers-academy',
-    title: 'Makers Academy',
+    title: 'Makers Academy Bootcamp',
     progress: 100,
     image: makersImg,
     link: 'https://makers.tech/',
-    description: `Bootcamp: Ruby, TDD with RSpec, pair programming, agile practices.`,
+    description: `Ruby, TDD with RSpec, pair programming, agile practices.`,
   },
   {
     id: 'odin-project',
@@ -31,6 +23,14 @@ export const courses = [
     image: topImg,
     link: 'https://www.theodinproject.com/',
     description: `Full-stack path completed: HTML/CSS/JS, Ruby, and Rails projects.`,
+  },
+  {
+    id: 'rails-tutorial',
+    title: 'Ruby on Rails Tutorial',
+    progress: 100,
+    image: railsTutorialImg,
+    link: 'https://www.railstutorial.org/',
+    description: `Hartl's classic Rails introduction. MVC, testing, deployment, Rails 7.`,
   },
   {
     id: 'agile-web-dev-rails-7-2',
