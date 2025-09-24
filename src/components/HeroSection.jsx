@@ -16,7 +16,8 @@ export default function HeroSection() {
   }, []) 
 
   return(
-    <div className="page-width mt-10 grid grid-cols-1 xl:grid-cols-[2fr_minmax(400px,max-content)_1fr]">
+    <div className="page-width mt-10
+      grid grid-cols-1 xl:grid-cols-[2fr_minmax(400px,max-content)_1fr]">
       {/* Col-1 */}
       <div className="hidden xl:inline-block col-start-1 text-right self-end mr-3">
         <p className="text-sm text-gray-600 font-jetbrains pr-4 pb-1">
@@ -25,6 +26,7 @@ export default function HeroSection() {
           '&gt;
         </p>
       </div>
+      
       
       {/* Col-2 */}
       <div className="col-start-1 xl:col-start-2 mx-auto xl:ml-0 md:min-w-[800px]">
@@ -52,7 +54,7 @@ export default function HeroSection() {
       </div>
 
       {/* Col-3 */}
-      <div>
+      <div className="absolute right-1 top-2 md:right-3 md:top-3 xl:right-8 xl:top-6">
         <NavLinks />
       </div>
     </div>

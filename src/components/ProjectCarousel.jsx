@@ -15,7 +15,7 @@ export default function ProjectCarousel() {
       </div>
     
       {/* Project card carousel */}
-      <div className='flex justify-center px-10'>
+      <div className='flex justify-center px-10 py-2'>
         <div className="carousel carousel-center max-w-fit bg-white rounded-box space-x-8">
           <div id="slide1" className="carousel-item flex flex-col">
             <div className='rotate-1 p-1'>
