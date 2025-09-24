@@ -8,7 +8,7 @@ export default function Courses() {
         <hr className="mx-auto border-[var(--color-border-primary)]"></hr>
         <div className="px-4 sm:px-10 lg:pl-[88px] xl:pl-40 my-16">
           <h2 className="text-lg self-center font-extrabold font-inter tracking-wider text-blue-900
-          underline underline-offset-4 decoration-4 decoration-emerald-200 ">COURSES / TURORIALS / BOOKS</h2>
+          underline underline-offset-4 decoration-4 decoration-emerald-200 ">COURSES / TUTORIALS / BOOKS</h2>
         </div>
         {/* <section className="flex justify-center gap-20">
           <h2>Studied:</h2>

@@ -1,3 +1,5 @@
+import bulletArrow from '../assets/images/bullet-arrow.svg';
+
 export default function Introduction() {
   
   return(
@@ -45,19 +47,19 @@ export default function Introduction() {
               </p>
             </li> */}
             <li className="mb-3 flex text-base">
-              <img src="src/assets/images/bullet-arrow.svg" alt="bullet point" className="" />
+              <img src={bulletArrow} alt="bullet point" className="" />
               <p className="ml-3">
                 I write Javascript & Ruby, in React, Rails & Hotwire (+HTML & CSS of course).
               </p>
             </li>
             <li className="mb-3 flex text-base">
-              <img src="src/assets/images/bullet-arrow.svg" alt="bullet point" className="" />
+              <img src={bulletArrow} alt="bullet point" className="" />
               <p className="ml-3">
                 I'm also comfortable with bash, Docker, Linux, and AWS.
               </p>
             </li>
             <li className="flex text-base">
-              <img src="src/assets/images/bullet-arrow.svg" alt="bullet point" className="" />
+              <img src={bulletArrow} alt="bullet point" className="" />
               <p className="ml-3">
                 I'm always keen to learn new technologies.
               </p>
