@@ -2,14 +2,14 @@ export default function Course({title, progress, image, link, description}) {
 
   return(
     <div className="card bg-base-100 w-70 h-80 shadow-sm overflow-hidden">
-      <figure className="w-30 overflow-hidden mx-auto rounded-none">
+      <figure className="w-34 overflow-hidden mx-auto rounded-none">
         <a href={link} target="_blank" rel="noopener">
           <img src={image}
             alt={title}
             className="object-cover object-center"/>
         </a>
       </figure>
-      <div className="card-body">
+      <div className="card-body pt-4">
         <h2 className="card-title">{title}</h2>
         <p>{description}</p>
         {/* <div className="card-actions justify-end">
