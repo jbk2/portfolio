@@ -5,6 +5,7 @@
 :root {
   color-scheme: light dark;
   
+  --scroll-shift: 0px;
   
   /* text-align: center; */
 

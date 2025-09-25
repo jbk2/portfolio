@@ -15,13 +15,6 @@ export default function ProjectCarousel() {
     const el = projectsRef.current;
     if(!el) return;
     
-    const intersectionOptions = {
-      root: null,
-      rootMargin: "0px",
-      scrollMargin: "0px",
-      threshold: 0.1,
-    };  
-    
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {

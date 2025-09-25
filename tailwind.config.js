@@ -47,7 +47,7 @@ export default {
           to: { 'background-position': '200% center' },
         },
         'projects-in': {
-          '0%': {opacity: 0.7, transform: 'translateY(50px)', gap: '4rem'},
+          '0%': {opacity: 0.7, transform: 'translateY(50px)', gap: '8rem'},
           '100%': {opacity: 1, transform: 'translateY(0px)', gap: '2rem'},
         },
       },
