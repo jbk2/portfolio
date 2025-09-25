@@ -4,8 +4,43 @@ import waldo from '/src/assets/images/project-images/waldo.png';
 // import flightBooker from '/src/assets/images/project-images/flight-booker.png';
 import forhm from '/src/assets/images/project-images/forhm.png';
 import ubuntu from '/src/assets/images/project-images/ubuntu.png';
+import { useState, useRef, useEffect } from 'react';
 
 export default function ProjectCarousel() {
+
+  const projectsRef = useRef(null);
+  const [projectsInView, setProjectsInView] = useState(false);
+  
+  useEffect(() => {
+    const el = projectsRef.current;
+    if(!el) return;
+    
+    const intersectionOptions = {
+      root: null,
+      rootMargin: "0px",
+      scrollMargin: "0px",
+      threshold: 0.1,
+    };  
+    
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          console.log('animateIn callback received entry', entry);
+          setProjectsInView(true);
+          observer.unobserve(el);
+        }
+      },
+      {
+        root: null,
+        rootMargin: "0px",
+        scrollMargin: "0px",
+        // threshold: 0.05,
+      }
+    );
+
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [])
 
   return(
     <div className='my-14'>
@@ -15,8 +50,9 @@ export default function ProjectCarousel() {
       </div>
     
       {/* Project card carousel */}
-      <div className='flex justify-center px-10 py-2'>
-        <div className="carousel carousel-center max-w-fit bg-white rounded-box space-x-8">
+      <div ref={projectsRef} className='flex justify-center px-10 py-2'>
+        <div className={`carousel carousel-center max-w-fit bg-white rounded-box
+          ${projectsInView ? `animate-projects-in` : ``}`}>
           <div id="slide1" className="carousel-item flex flex-col">
             <div className='rotate-1 p-1'>
               <a href="https://fakebook.bibble.com">

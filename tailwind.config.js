@@ -22,6 +22,7 @@ export default {
         'rotate-wave': 'rotate-wave 0.75s linear 1',
         'typing': 'typing 5s steps(40, end) 1',
         'blink-caret': 'blink-caret 0.4s steps(1, end) infinite',
+        'projects-in': 'projects-in 0.8s ease-in-out forwards',
       },
       keyframes: {
         'rotate-wave': {
@@ -44,6 +45,10 @@ export default {
         },
         'gradient': {
           to: { 'background-position': '200% center' },
+        },
+        'projects-in': {
+          '0%': {opacity: 0.7, transform: 'translateY(50px)', gap: '4rem'},
+          '100%': {opacity: 1, transform: 'translateY(0px)', gap: '2rem'},
         },
       },
       backgroundImage: {
