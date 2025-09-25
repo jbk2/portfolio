@@ -6,6 +6,7 @@ import poodrImg from '../assets/images/course-images/poodr.webp';
 import railsTutorialImg from '../assets/images/course-images/ror-tutorial-7.jpeg';
 import rspecImg from '../assets/images/course-images/testing-rspec-3.jpg';
 import topImg from '../assets/images/course-images/top.jpg';
+import leetImg from '../assets/images/course-images/leet.jpg';
 
 export const courses = [
   {
@@ -14,7 +15,7 @@ export const courses = [
     progress: 100,
     image: makersImg,
     link: 'https://makers.tech/',
-    description: `Ruby, TDD with RSpec, pair programming, agile practices.`,
+    description: `UK's best renowned in person immersive Bootcamp, full stack Ruby & JS syllabus with TDD & agile practices.`,
   },
   {
     id: 'odin-project',
@@ -70,6 +71,14 @@ export const courses = [
     progress: 100,
     image: poodrImg,
     link: 'https://www.poodr.com/',
+    description: `OO design principles in Ruby: flexibility, SOLID, and maintainability.`,
+  },
+  {
+    id: 'leet',
+    title: 'LeedCode challenges',
+    progress: 20,
+    image: leetImg,
+    link: 'https://www.leetcode.com/',
     description: `OO design principles in Ruby: flexibility, SOLID, and maintainability.`,
   },
 ];
