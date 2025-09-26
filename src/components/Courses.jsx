@@ -1,86 +1,20 @@
 import { courses } from '../data/courses'
 import Course from './Course'
-import { useEffect, useRef } from 'react'
+import { useRef } from 'react'
+import { useScrollShift } from '../utils/useScrollShift';
 
 export default function Courses() {
   const coursesRef = useRef(null);
-  const tickingRef = useRef(false);
-  const rafIdRef = useRef(null);
-  const maxShiftRef = useRef(50);
   
-  const clamp = (v, min, max) => Math.min(max, Math.max(min, v));
-
-  function getShiftVal(el) {
-    const startHeight = window.innerHeight;
-    const finishHeight = startHeight - (startHeight / 3);
-    const range = startHeight - finishHeight;
-
-    const currentShift = parseFloat(
-      getComputedStyle(el).getPropertyValue('--scroll-shift')
-    ) || 0;
-    const elTop = el.getBoundingClientRect().top;
-    const elTopUnshifted = elTop - currentShift;
-
-    const progress = 1 - (startHeight - elTopUnshifted) / range
-    const shift = maxShiftRef.current * progress;
-    return shift;
-  }
-
-  function setShift(el, px) {
-    el.style.setProperty('--scroll-shift', `${Math.round(px)}px`);
-  }
-
-  function onScroll() {
-    const el = coursesRef.current;
-    if (!el) return;
-    if (tickingRef.current) return;
-    tickingRef.current = true;
-
-    rafIdRef.current = requestAnimationFrame(() => {
-      tickingRef.current = false;
-      const shiftVal = getShiftVal(el)
-
-      if (shiftVal <= 0) {
-        setShift(el, 0)
-        return;
-      }
-
-      setShift(el, getShiftVal(el));
-    });
-  }
-
-  useEffect(() => {
-    if (!coursesRef.current) return;
-
-    const coursesObserver = new IntersectionObserver(
-      ([entry]) => {
-        if(entry.isIntersecting) {
-          window.addEventListener('scroll', onScroll, { passive: true });
-          onScroll();
-          console.log('started listener for scroll event')
-        } else {
-          window.removeEventListener('scroll', onScroll);
-          if (rafIdRef.current) cancelAnimationFrame(rafIdRef.current);
-          tickingRef.current = false;
-        }
-      },
-      {
-        root: null,
-        rootMargin: "0px",
-        threshold: 0,
-      }
-    )
-    
-    coursesObserver.observe(coursesRef.current)
-
-    return () => {
-      window.removeEventListener("scroll", onScroll);
-      coursesObserver.disconnect();
-    }
-  }, [])
+  useScrollShift(coursesRef, {
+    maxShift: 50,
+    startVH: 1,
+    endVH: 2 / 3,
+    cssVar: "--scroll-shift",
+  });
 
   return(
-      <div className='my-18 page-width'>
+      <div className='my-18 page-width px-4 sm:px-10'>
         <hr className="mx-auto border-[var(--color-border-primary)]"></hr>
         <div className="px-4 sm:px-10 lg:pl-[88px] xl:pl-40 my-16">
           <h2 className="text-lg self-center font-extrabold font-inter tracking-wider text-blue-900
@@ -115,7 +49,7 @@ export default function Courses() {
             <li>Add Socials </li>
           </ul>
         </section> */}
-        <section ref={coursesRef} className='grid grid-rows-2 grid-cols-4 justify-center
+        <section ref={coursesRef} className='flex flex-wrap
           gap-6 mt-10 max-w-[80vw] mx-auto translate-y-[var(--scroll-shift,0px)]'>
           {
             courses.map(course => (
