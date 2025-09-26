@@ -19,8 +19,8 @@ export default function Courses() {
         {/* <hr className="mx-auto border-[var(--color-border-primary)]"></hr> */}
         <hr className="section-hr"></hr>
         <div className="pl-40 sm:pl-10 lg:pl-[88px] xl:pl-40 mt-14">
-          <h2 className="text-lg self-center font-extrabold font-inter tracking-wider text-blue-900
-          underline underline-offset-4 decoration-4 decoration-emerald-200 ">COURSES / TUTORIALS / BOOKS</h2>
+          <h2 className="text-lg self-center font-extrabold font-inter tracking-wider text-[var(--color-text-header-primary)]
+          underline underline-offset-4 decoration-4 decoration-[var(--color-decoration-emerald)] ">COURSES / TUTORIALS / BOOKS</h2>
         </div>
         {/* <section className="flex justify-center gap-20">
           <h2>Studied:</h2>
