@@ -1,7 +1,7 @@
 export default function Content() {
 
   return(
-    <div className='my-18 page-width'>
+    <div className='my-18 page-width px-4 sm:px-10'>
       <hr className="mx-auto border-[var(--color-border-primary)] my-14"></hr>
       <div className="px-4 sm:px-10 lg:pl-[88px] xl:pl-40 my-6">
         <h2 className="text-lg self-center font-extrabold font-inter tracking-wider text-blue-900
