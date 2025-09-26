@@ -4,7 +4,7 @@ export default function Introduction() {
   
   return(
     <div className="page-width px-4 sm:px-10 my-14">
-      <hr className="mx-auto border-[var(--color-border-primary)]"></hr>
+      <hr className="section-hr"></hr>
       
       {/* Summary stats and intro bullet sections */}
       <div className="xl:ml-0 mt-6">
@@ -91,7 +91,7 @@ export default function Introduction() {
           </div>
         </section>
       </div>
-      <hr className="mx-auto border-[var(--color-border-primary)] mt-20"></hr>
+      <hr className="section-hr mt-20"></hr>
     </div>
   )
 }

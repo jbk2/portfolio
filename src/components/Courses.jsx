@@ -14,9 +14,11 @@ export default function Courses() {
   });
 
   return(
-      <div className='my-18 page-width px-4 sm:px-10'>
-        <hr className="mx-auto border-[var(--color-border-primary)]"></hr>
-        <div className="px-4 sm:px-10 lg:pl-[88px] xl:pl-40 my-16">
+    <>
+      <div className='my-18 page-width'>
+        {/* <hr className="mx-auto border-[var(--color-border-primary)]"></hr> */}
+        <hr className="section-hr"></hr>
+        <div className="pl-40 sm:pl-10 lg:pl-[88px] xl:pl-40 mt-14">
           <h2 className="text-lg self-center font-extrabold font-inter tracking-wider text-blue-900
           underline underline-offset-4 decoration-4 decoration-emerald-200 ">COURSES / TUTORIALS / BOOKS</h2>
         </div>
@@ -49,17 +51,16 @@ export default function Courses() {
             <li>Add Socials </li>
           </ul>
         </section> */}
-        <section ref={coursesRef} className='flex flex-wrap
-          gap-6 mt-10 max-w-[80vw] mx-auto translate-y-[var(--scroll-shift,0px)]'>
-          {
-            courses.map(course => (
-              <div key={course.id} className=''>
-                <Course {...course} />
-              </div>
-              )
-            )
-          }
-        </section>
       </div>
+      <section ref={coursesRef} className='grid [grid-template-columns:repeat(auto-fit,minmax(18rem,18rem))]
+        max-w-[2000px] gap-6 mt-10 mx-auto px-4 sm:px-10 justify-center
+        translate-y-[var(--scroll-shift,0px)]'>
+        {
+          courses.map(course => (
+            <Course key={course.id} {...course} />
+          ))
+        }
+      </section>
+    </>
   )
 }

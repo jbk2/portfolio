@@ -1,7 +1,7 @@
-export default function Course({title, progress, image, link, description}) {
+export default function Course({key, title, progress, image, link, description}) {
 
   return(
-    <div className="card bg-base-100 w-70 h-80 shadow-sm overflow-hidden">
+    <div key={key} className="card bg-base-100 w-70 h-80 shadow-sm overflow-hidden">
       <figure className="w-34 overflow-hidden mx-auto rounded-none">
         <a href={link} target="_blank" rel="noopener">
           <img src={image}
