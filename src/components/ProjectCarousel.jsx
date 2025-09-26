@@ -36,15 +36,15 @@ export default function ProjectCarousel() {
   }, [])
 
   return(
-    <div className='my-14'>
+    <div className='my-14 bg-transparent'>
       <div className="page-width pl-40 sm:pl-10 lg:pl-[88px] xl:pl-40">
-        <h2 className="text-lg self-center font-extrabold font-inter tracking-wider text-blue-900
-        underline underline-offset-4 decor4tion-4 decoration-emerald-200 mb-10">PROJECTS</h2>
+        <h2 className="text-lg self-center font-extrabold font-inter tracking-wider text-[var(--color-text-header-primary)]
+        underline underline-offset-4 decor4tion-4 decoration-[var(--color-decoration-emerald)] mb-10">PROJECTS</h2>
       </div>
     
       {/* Project card carousel */}
-      <div ref={projectsRef} className='flex justify-center px-10 py-2'>
-        <div className={`carousel carousel-center max-w-fit bg-white rounded-box
+      <div ref={projectsRef} className='flex justify-center px-10 py-2 bg-transparent'>
+        <div className={`carousel carousel-center max-w-fit bg-transparent rounded-box
           ${projectsInView ? `animate-projects-in` : ``}`}>
           <div id="slide1" className="carousel-item flex flex-col">
             <div className='rotate-1 p-1'>
@@ -53,9 +53,9 @@ export default function ProjectCarousel() {
                   transition ease-in-out hover:scale-[101%]"/>
               </a>
             </div>
-            <div className="mt-5 ml-6 font-inter text-cyan-800">
+            <div className="mt-5 ml-6 font-inter text-[var(--color-text-header-primary)]">
               <h1 className="font-bold">Facebook clone SPA type app</h1>
-              <ul className="list-inside list-disc font-light text-sm text-gray-700">
+              <ul className="list-inside list-disc font-light text-sm text-[var(--color-text-header-secondary)]">
                 <li className="">Rails</li>
                 <li>Hotwire</li>
                 <li>Websockets</li>
@@ -69,9 +69,9 @@ export default function ProjectCarousel() {
                   transition ease-in-out hover:scale-[101%]"/>
               </a>
             </div>
-            <div className="mt-5 ml-6 font-inter text-cyan-800">
+            <div className="mt-5 ml-6 font-inter text-[var(--color-text-header-primary)]">
               <h1 className="font-bold">Wheres Waldo toy game app</h1>
-              <ul className="list-inside list-disc font-light text-sm text-gray-700">
+              <ul className="list-inside list-disc font-light text-sm text-[var(--color-text-header-secondary)]">
                 <li className="">React</li>
                 <li>Rails API</li>
               </ul>
@@ -84,9 +84,9 @@ export default function ProjectCarousel() {
                 transition ease-in-out hover:scale-[101%]"/>
               </a>
             </div>
-            <div className="mt-5 ml-6 font-inter text-cyan-800">
+            <div className="mt-5 ml-6 font-inter text-[var(--color-text-header-primary)]">
               <h1 className="font-bold">Command line chess game</h1>
-              <ul className="list-inside list-disc font-light text-sm text-gray-700">
+              <ul className="list-inside list-disc font-light text-sm text-[var(--color-text-header-secondary)]">
                 <li className="">Pure Ruby chess app</li>
                 <li>Built TDD with Rspec</li>
               </ul>
@@ -99,9 +99,9 @@ export default function ProjectCarousel() {
                   transition ease-in-out hover:scale-[101%]"/>
               </a>
             </div>
-            <div className="mt-5 ml-6 font-inter text-cyan-800">
+            <div className="mt-5 ml-6 font-inter text-[var(--color-text-header-primary)]">
               <h1 className="font-bold">Shopify app</h1>
-              <ul className="list-inside list-disc font-light text-sm text-gray-700">
+              <ul className="list-inside list-disc font-light text-sm text-[var(--color-text-header-secondary)]">
                 <li className="">Custom html & css theme</li>
                 <li>Custom JS features</li>
               </ul>
@@ -114,9 +114,9 @@ export default function ProjectCarousel() {
                   transition ease-in-out hover:scale-[101%]"/>
               </a>
             </div>
-            <div className="mt-5 ml-6 font-inter text-cyan-800">
+            <div className="mt-5 ml-6 font-inter text-[var(--color-text-header-primary)]">
               <h1 className="font-bold">Bash scripting and Linux devops</h1>
-              <ul className="list-inside list-disc font-light text-sm text-gray-700">
+              <ul className="list-inside list-disc font-light text-sm text-[var(--color-text-header-secondary)]">
                 <li className="">Bash scripting</li>
                 <li>Ubuntu deployment, systemd, docker</li>
               </ul>

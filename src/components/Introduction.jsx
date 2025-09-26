@@ -37,7 +37,7 @@ export default function Introduction() {
         </section>
 
         {/* Intro bullet section */}
-        <section className="font-inter font-light text-lg text-gray-600">
+        <section className="font-inter font-light text-lg text-[var(--color-text-header-secondary)]">
           <ul className="">
             {/* <li className="mb-5 flex"> */}
               {/* <img src="assets/images/bullet-arrow.svg" alt="bullet point" className=""> */}
@@ -48,19 +48,19 @@ export default function Introduction() {
             </li> */}
             <li className="mb-3 flex text-base">
               <img src={bulletArrow} alt="bullet point" className="" />
-              <p className="ml-3">
+              <p className="ml-3 text-[var(--color-text-header-primary)]">
                 I write Javascript & Ruby, in React, Rails & Hotwire (+HTML & CSS of course).
               </p>
             </li>
             <li className="mb-3 flex text-base">
               <img src={bulletArrow} alt="bullet point" className="" />
-              <p className="ml-3">
+              <p className="ml-3 text-[var(--color-text-header-primary)]">
                 I'm also comfortable with bash, Docker, Linux, and AWS.
               </p>
             </li>
             <li className="flex text-base">
               <img src={bulletArrow} alt="bullet point" className="" />
-              <p className="ml-3">
+              <p className="ml-3 text-[var(--color-text-header-primary)]">
                 I'm always keen to learn new technologies.
               </p>
             </li>
