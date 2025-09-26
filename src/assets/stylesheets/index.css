@@ -3,36 +3,49 @@
 @plugin "daisyui";
 
 :root {
-  color-scheme: light dark;
+  color-scheme: light;
   
+  /* Layout */
   --scroll-shift: 0px;
   
-  /* text-align: center; */
-
-  /* base color definitions */
+  /* Base palette (from Tailwind) */
   --color-emerald-light: var(--color-emerald-200);
-  /* --color-emerald-md: var(--color-emerald-300);
-  --color-emerald-dark: var(--color-emerald-400); */
   --color-teal-light: var(--color-teal-300);
   --color-teal-md: var(--color-teal-400);
   --color-teal-dark: var(--color-teal-500);
   
-  --color-primary-light: var(--color-teal-light);
-  /* --color-primary-light: hsla(182, 100%, 42%, 1); */
+  /* Brand palette (light defaults) */
+  --color-primary-light: var(--color-teal-300);
   --color-primary-dark: hsla(236, 77%, 20%, 1);
-
-  /* samentic color variables */
-  --color-decoration-emerald: var(--color-emerald-light);
   
-  --color-text-header-primary: var(--color-sky-800);
-  --color-text-header-secondary: var(--color-sky-700);
-  
+  /* Semantic (light defaults) */
+  --color-decoration-emerald: var(--color-emerald-200);
+  --color-text-header-primary: var(--color-blue-900);
+  --color-text-header-secondary: var(--color-gray-600);
   --color-btn-light: var(--color-primary-light);
-  --color-btn-dark: var(--color-primary-dark); 
+  --color-btn-dark: var(--color-primary-dark);
   --color-btn-text-light: var(--color-gray-200);
   --color-btn-text-dark: var(--color-gray-700);
+  --color-border-primary: var(--color-blue-100);
+}
 
-  --color-border-primary: var(--color-blue-100)
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    /* Semantic overrides only for dark mode */
+    --color-decoration-emerald: var(--color-emerald-400);
+    --color-text-header-primary: var(--color-sky-100);
+    --color-text-header-secondary: var(--color-slate-300);
+    --color-btn-light: var(--color-sky-600);
+    --color-btn-dark: var(--color-slate-800);
+    --color-btn-text-light: var(--color-gray-100);
+    --color-btn-text-dark: var(--color-gray-200);
+    --color-border-primary: var(--color-slate-700);
+  }
+  html, body {
+    background-color: var(--color-slate-900);
+    color: var(--color-gray-200);
+  }
 }
 
 .page-width {
@@ -40,12 +53,20 @@
   margin-inline: auto;
 }
 
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
 .section-hr { 
   width: 100%;
-  max-width: 1280px;         /* match Tailwind's max-w-screen-xl */
-  margin-left: auto;         /* center horizontally */
+  max-width: 1280px;
+  margin-left: auto;
   margin-right: auto;
-  border: 0;                 /* reset default hr */
+  border: 0;
   border-top: 1px solid var(--color-border-primary);
 }
 
