@@ -2,34 +2,42 @@ import { useRef, useEffect } from "react";
 
 export function useScrollShift(ref, options = {}) {
   const {
-    endVH = 2 / 3,
+    startVH = 1,
+    endVH = 1 / 3,
     maxShift = 50,
     cssVar = '--scroll-shift',
     enabled = true
-  } = options
+  } = options;
 
   const tickingRef = useRef(false);
   const rafIdRef = useRef(null);
   const maxShiftRef = useRef(maxShift);
 
   const clamp = (v, min, max) => Math.min(max, Math.max(min, v))
-  // const handleOnScroll = () => onScroll(el);
 
   function getShiftVal(el) {
-    const startHeight = window.innerHeight;
-    const finishHeight = startHeight - (startHeight / 3);
-    const range = startHeight - finishHeight;
+    const viewHeight = window.innerHeight;
+    const shiftStartHeight = viewHeight * startVH
+    const shiftFinishHeight = viewHeight * endVH;
+    const range = shiftStartHeight - shiftFinishHeight;
 
+    const elTop = el.getBoundingClientRect().top;
     const currentShift = parseFloat(
       getComputedStyle(el).getPropertyValue('--scroll-shift')
     ) || 0;
-
-    const elTop = el.getBoundingClientRect().top;
     const elTopUnshifted = elTop - currentShift;
 
-    const progress = 1 - (startHeight - elTopUnshifted) / range
-    const shift = maxShiftRef.current * progress;
-    return shift;
+    let shiftFactor = 0;
+    if (elTopUnshifted <= shiftFinishHeight) {
+      shiftFactor = 0;
+    } else if (elTopUnshifted >= shiftStartHeight) {
+      shiftFactor = 1;
+    } else {
+      shiftFactor = (elTopUnshifted - shiftFinishHeight)  / range;
+    };
+  
+    const shiftPixelVal = maxShiftRef.current * clamp(shiftFactor, 0, 1);
+    return shiftPixelVal;
   }
 
   function setShift(el, px) {

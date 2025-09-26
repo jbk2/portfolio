@@ -7,9 +7,9 @@ export default function Courses() {
   const coursesRef = useRef(null);
   
   useScrollShift(coursesRef, {
-    maxShift: 50,
-    startVH: 1,
-    endVH: 2 / 3,
+    maxShift: 70,
+    startVH: 4 / 4, // e.g. 3/4 of view height - from from top of page!
+    endVH: 3 / 5,   // e.g. 1/2 of view height - from from top of page!
     cssVar: "--scroll-shift",
   });
 
