@@ -16,12 +16,13 @@
   
   /* Brand palette (light defaults) */
   --color-primary-light: var(--color-teal-300);
-  --color-primary-dark: hsla(236, 77%, 20%, 1);
+  --color-primary-dark: var(--color-slate-900);
   
   /* Semantic (light defaults) */
   --color-decoration-emerald: var(--color-emerald-200);
   --color-text-header-primary: var(--color-blue-900);
   --color-text-header-secondary: var(--color-gray-600);
+  --color-surface-card: var(--color-white);
   --color-btn-light: var(--color-primary-light);
   --color-btn-dark: var(--color-primary-dark);
   --color-btn-text-light: var(--color-gray-200);
@@ -36,6 +37,7 @@
     --color-decoration-emerald: var(--color-emerald-400);
     --color-text-header-primary: var(--color-sky-100);
     --color-text-header-secondary: var(--color-slate-300);
+    --color-surface-card: var(--color-slate-800);
     --color-btn-light: var(--color-sky-600);
     --color-btn-dark: var(--color-slate-800);
     --color-btn-text-light: var(--color-gray-100);

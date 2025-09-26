@@ -1,7 +1,7 @@
 export default function Course({key, title, progress, image, link, description}) {
 
   return(
-    <div key={key} className="card w-70 h-80 shadow-lg overflow-hidden bg-white/95 dark:bg-slate-800/80 border border-[var(--color-border-primary)] backdrop-blur-sm">
+    <div key={key} className="card w-70 h-80 shadow-lg overflow-hidden bg-[var(--color-surface-card)] border border-[var(--color-border-primary)] backdrop-blur-sm">
       <figure className="w-34 overflow-hidden mx-auto rounded-none">
         <a href={link} target="_blank" rel="noopener">
           <img src={image}
