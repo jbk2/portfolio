@@ -1,6 +1,6 @@
 const FILE_IMPORTS = import.meta.glob('/src/assets/images/technology-images/*.svg', {
   eager: true,
-  as: 'url',
+  query: 'url',
 });
 
 const LOGOS_META = [
