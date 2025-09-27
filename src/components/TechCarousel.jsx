@@ -11,7 +11,7 @@ const LOGOS_META = [
   // { fileName: 'nginx', alt: 'nginx logo', className: "size-10"},
   { fileName: 'ruby', alt: 'ruby logo', className: "size-6 ml-3"},
   { fileName: 'rails', alt: 'rails logo', className: "size-14"},
-  { fileName: 'hotwire', alt: 'hotwire logo', className: "size-14 mt-2"},
+  { fileName: 'hotwire-white', alt: 'hotwire logo', className: "size-14 mt-2"},
   { fileName: 'javascript', alt: 'javascript logo', className: "size-8 ml-1"},
   { fileName: 'react', alt: 'react logo', className: "size-7"},
   { fileName: 'vite', alt: 'vite logo', className: "size-7"},
