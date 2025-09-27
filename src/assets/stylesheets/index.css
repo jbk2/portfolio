@@ -28,6 +28,7 @@
   --color-btn-text-light: var(--color-gray-200);
   --color-btn-text-dark: var(--color-gray-700);
   --color-border-primary: var(--color-blue-100);
+  --color-bg-socials: var(--color-zinc-400)
 }
 
 @media (prefers-color-scheme: dark) {
@@ -43,6 +44,7 @@
     --color-btn-text-light: var(--color-gray-100);
     --color-btn-text-dark: var(--color-gray-200);
     --color-border-primary: var(--color-slate-700);
+    --color-bg-socials: var(--color-zinc-200)
   }
   html, body {
     background-color: var(--color-slate-900);
