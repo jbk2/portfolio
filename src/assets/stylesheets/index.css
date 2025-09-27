@@ -2,11 +2,20 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-:root {
+:root[data-theme='light'] {
   color-scheme: light;
   
   /* Layout */
-  --scroll-shift: 0px;
+  --scroll-shift: 0px; /* variable which the scroll animation adjusts */
+  
+  /* Text */
+  --color-text-header-primary: var(--color-blue-900);
+  --color-text-header-secondary: #04076d; /* a darker blue */
+  /* --color-text-primary: var(--color-blue-800); */
+  --color-text-primary: #000128;
+  --color-text-secondary: var(--color-gray-600);
+
+
   
   /* Base palette (from Tailwind) */
   --color-emerald-light: var(--color-emerald-200);
@@ -16,40 +25,43 @@
   
   /* Brand palette (light defaults) */
   --color-primary-light: var(--color-teal-300);
-  --color-primary-dark: var(--color-slate-900);
+  /* Deep blue used by gradients (fallback to HSLA if custom var absent) */
+  --color-primary-dark: var(--color-deepblue, hsla(236, 77%, 20%, 1));
   
   /* Semantic (light defaults) */
   --color-decoration-emerald: var(--color-emerald-200);
-  --color-text-header-primary: var(--color-blue-900);
-  --color-text-header-secondary: var(--color-gray-600);
   --color-surface-card: var(--color-white);
-  --color-btn-light: var(--color-primary-light);
-  --color-btn-dark: var(--color-primary-dark);
-  --color-btn-text-light: var(--color-gray-200);
-  --color-btn-text-dark: var(--color-gray-700);
+  /* Unified button tokens */
+  --btn-bg: var(--color-primary-light);
+  --btn-bg-hover: var(--color-teal-400);
+  --btn-text: var(--color-gray-700);
   --color-border-primary: var(--color-blue-100);
-  --color-bg-socials: var(--color-zinc-400)
+  --color-socials: var(--color-zinc-400);
+  /* Page background */
+  --color-bg: var(--color-white);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    color-scheme: dark;
-    /* Semantic overrides only for dark mode */
-    --color-decoration-emerald: var(--color-emerald-400);
-    --color-text-header-primary: var(--color-sky-100);
-    --color-text-header-secondary: var(--color-slate-300);
-    --color-surface-card: var(--color-slate-800);
-    --color-btn-light: var(--color-sky-600);
-    --color-btn-dark: var(--color-slate-800);
-    --color-btn-text-light: var(--color-gray-100);
-    --color-btn-text-dark: var(--color-gray-200);
-    --color-border-primary: var(--color-slate-700);
-    --color-bg-socials: var(--color-zinc-200)
-  }
-  html, body {
-    background-color: var(--color-slate-900);
-    color: var(--color-gray-200);
-  }
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+
+  /* Text */
+  --color-text-header-primary: var(--color-sky-100);
+  --color-text-secondary: var(--color-slate-300);
+
+  /* Semantic overrides only for dark mode */
+  --color-socials: var(--color-zinc-200);
+  /* Page background */
+  --color-bg: var(--color-slate-900);
+  /* Keep gradients consistent in dark mode */
+  --color-primary-dark: var(--color-deepblue, hsla(236, 77%, 20%, 1));
+  /* Unified button tokens */
+  --btn-bg: var(--color-teal-400);
+  --btn-bg-hover: var(--color-teal-300);
+  --btn-text: var(--color-gray-100);
+  --color-decoration-emerald: var(--color-emerald-400);
+  --color-surface-card: var(--color-slate-800);
+  --color-border-primary: var(--color-slate-700);
 }
 
 .page-width {
@@ -59,6 +71,7 @@
 
 html, body {
   height: 100%;
+  background-color: var(--color-bg);
 }
 
 body {

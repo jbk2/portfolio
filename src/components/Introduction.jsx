@@ -9,17 +9,21 @@ export default function Introduction() {
       {/* Summary stats and intro bullet sections */}
       <div className="xl:ml-0 mt-6">
         {/* Summary stats section */}
-        <section className="font-inter font-semibold text-sm mb-9 text-[var(--color-text-header-primary)]">
-          <div className="flex justify-between md:justify-around gap-8 p-6">
+        <section className="font-inter font-semibold text-sm mb-9">
+          <div className="flex justify-between md:justify-around gap-8 p-6
+            text-[var(--color-text-header-secondary)] decoration-[var(--color-decoration-emerald)]">
             <div className="flex flex-col md:items-center">
-              <div className="underline underline-offset-4 decoration-4 decoration-[var(--color-decoration-emerald)]">
+              <div className="underline underline-offset-4 decoration-4">
                 <span className="font-extrabold italic text-lg">11</span>
                 <span className="font-black text-xs">&nbsp;YRS</span>
               </div>
-              <p className="my-1 w-32 sm:w-fit">Coding since <a href="https://makers.tech/learn/curriculum">Makers</a> bootcamp</p>
+              <p className="my-1 w-32 sm:w-fit">Coding since
+                <a href="https://makers.tech/learn/curriculum">Makers</a>
+                bootcamp
+              </p>
             </div>
             <div className="flex flex-col md:items-center">
-              <div className="underline underline-offset-4 decoration-4 text-[--color-text-header-primary] decoration-[var(--color-decoration-emerald)]">
+              <div className="underline underline-offset-4 decoration-4">
                 <span className="font-extrabold italic text-lg">2</span>
                 <span className="font-extrabold italic text-sm diagonal-fractions">1/2</span>
                 <span className="font-black text-xs">&nbsp;YRS</span>
@@ -27,7 +31,7 @@ export default function Introduction() {
               <p className="my-1">Full time coding</p>
             </div>
             <div className="flex flex-col md:items-center">
-              <div className="underline underline-offset-4 decoration-4 decoration-[var(--color-decoration-emerald)]">
+              <div className="underline underline-offset-4 decoration-4">
                 <span className="font-extrabold italic text-lg ">15</span>
                 <span className="font-black text-xs">&nbsp;YRS</span>
               </div>
@@ -37,7 +41,7 @@ export default function Introduction() {
         </section>
 
         {/* Intro bullet section */}
-        <section className="font-inter font-light text-lg text-[var(--color-text-header-secondary)]">
+        <section className="font-inter font-light text-lg text-[var(--color-text-primary)]">
           <ul className="">
             {/* <li className="mb-5 flex"> */}
               {/* <img src="assets/images/bullet-arrow.svg" alt="bullet point" className=""> */}
@@ -48,19 +52,19 @@ export default function Introduction() {
             </li> */}
             <li className="mb-3 flex text-base">
               <img src={bulletArrow} alt="bullet point" className="" />
-              <p className="ml-3 text-[var(--color-text-header-primary)]">
+              <p className="ml-3">
                 I write Javascript & Ruby, in React, Rails & Hotwire (+HTML & CSS of course).
               </p>
             </li>
             <li className="mb-3 flex text-base">
               <img src={bulletArrow} alt="bullet point" className="" />
-              <p className="ml-3 text-[var(--color-text-header-primary)]">
+              <p className="ml-3">
                 I'm also comfortable with bash, Docker, Linux, and AWS.
               </p>
             </li>
             <li className="flex text-base">
               <img src={bulletArrow} alt="bullet point" className="" />
-              <p className="ml-3 text-[var(--color-text-header-primary)]">
+              <p className="ml-3">
                 I'm always keen to learn new technologies.
               </p>
             </li>
@@ -76,7 +80,7 @@ export default function Introduction() {
             Github profile
           </a>
           <a href="mailto:james@bibble.com" className="btn w-[120px] sm:w-[136px] rounded-lg
-            bg-[var(--color-primary-light)] hover:bg-teal-400/80 text-[var(--color-btn-text-dark)]">
+            bg-teal-300 hover:bg-teal-400/80 text-gray-700 dark:bg-teal-400 dark:hover:bg-teal-300 dark:text-gray-100 transition-colors">
             Contact me
           </a>
           <a href="#" className="btn w-[132px] sm:w-[136px] rounded-lg

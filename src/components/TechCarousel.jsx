@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const FILE_IMPORTS = import.meta.glob('/src/assets/images/technology-images/*.svg', {
   eager: true,
   query: '?url',
@@ -22,9 +24,6 @@ const LOGOS_META = [
   // { fileName: 'daisyui', alt: 'daisyui logo', className: "size-10"},
 ]
 
-const shownLogoNames = "ec2 docker linux nginxLogo ruby rails hotwire javascript react \
-  vite html5 css3 tailwindcss daisyui postgres".split(" ");
-
 const logos = LOGOS_META.map(({fileName, ...rest}) => ({
   src: FILE_IMPORTS[`/src/assets/images/technology-images/${fileName}.svg`],
   ...rest,
@@ -32,8 +31,9 @@ const logos = LOGOS_META.map(({fileName, ...rest}) => ({
 
 
 export default function TechCarousel() {
-// update images
-// other carousel effects? - nah this is fine?
+  const [dark, setDark] = useState(() =>
+    window.matchMedia('(prefers-color-scheme: dark)').matches
+  );
 
   return(
     <div className="page-width overflow-x-hidden my-6 sm:my-14
