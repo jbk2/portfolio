@@ -1,26 +1,42 @@
+const THEME_KEY = 'theme';
+
+export function getLocalThemePreference() {
+  return localStorage.getItem(THEME_KEY);
+};
+
+export function storeLocalThemePreference(preference) {
+  localStorage.setItem(THEME_KEY, preference)
+}
+
+function getSystemTheme() {
+  if (window.matchMedia('(prefers-color-scheme: dark)').matches == true) {
+    return 'dark'
+  } else {
+    return 'light'
+  }
+}
+
+export function applyTheme(theme) {
+  document.documentElement.setAttribute('data-theme', theme);
+};
+
 export function initSystemThemeSync() {
   if (typeof window === 'undefined' || !window.matchMedia) return;
-
   // Avoid double-binding during HMR
   if (window.__jbkThemeSynced) return;
   window.__jbkThemeSynced = true;
 
-  const mq = window.matchMedia('(prefers-color-scheme: dark)');
+  const localTheme = getLocalThemePreference();
+  const systemTheme = getSystemTheme();
 
-  const applyTheme = () => {
-    document.documentElement.setAttribute('data-theme', mq.matches ? 'dark' : 'light');
-  };
+  applyTheme(localTheme ?? systemTheme);
 
-  applyTheme();
-
-  if (mq.addEventListener) {
-    mq.addEventListener('change', applyTheme);
-  } else if ('onchange' in mq) {
-    mq.onchange = applyTheme;
-  } else {
-    // @ts-ignore legacy Safari
-    mq.addListener(applyTheme);
-  }
+  listenForSystemThemeChange();
 }
+  
+function listenForSystemThemeChange() {
+  const mq = window.matchMedia('(prefers-color-scheme: dark)');
+  const changeHandler = (e) => applyTheme(e.matches ? 'dark' : 'light')
 
-
+  mq.addEventListener('change', changeHandler);
+}
