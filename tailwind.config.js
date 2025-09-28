@@ -13,8 +13,6 @@ export default {
       colors: {
         debug: '#ff00ff',
         accent: '#00d7c0',
-        deepblue: 'hsla(236, 77%, 20%, 1)',
-        brightteal: 'hsla(182, 100%, 42%, 1)',
       },
       animation: {
         'infinite-scroll': 'infinite-scroll 12s linear infinite',
