@@ -49,8 +49,8 @@ export default function Introduction() {
               </p>
             </li> */}
             <li className="mb-3 flex items-center text-base">
-              <svg className='' width="17px" height="17px" viewBox="0 -4 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <g id="Vivid.JS" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <svg className='' width="17px" height="17px" viewBox="0 -4 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+                <g id="Vivid.JS" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
                   <g id="Vivid-Icons" transform="translate(-515.000000, -651.000000)">
                     <g id="Icons" transform="translate(37.000000, 169.000000)">
                       <g id="arrow-right" transform="translate(468.000000, 468.000000)">
@@ -68,8 +68,8 @@ export default function Introduction() {
               </p>
             </li>
             <li className="mb-3 flex items-center text-base">
-              <svg className='' width="17px" height="17px" viewBox="0 -4 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <g id="Vivid.JS" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <svg className='' width="17px" height="17px" viewBox="0 -4 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+                <g id="Vivid.JS" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
                   <g id="Vivid-Icons" transform="translate(-515.000000, -651.000000)">
                     <g id="Icons" transform="translate(37.000000, 169.000000)">
                       <g id="arrow-right" transform="translate(468.000000, 468.000000)">
@@ -87,8 +87,8 @@ export default function Introduction() {
               </p>
             </li>
             <li className="flex items-center text-base">
-              <svg className='' width="17px" height="17px" viewBox="0 -4 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <g id="Vivid.JS" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <svg className='' width="17px" height="17px" viewBox="0 -4 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+                <g id="Vivid.JS" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
                   <g id="Vivid-Icons" transform="translate(-515.000000, -651.000000)">
                     <g id="Icons" transform="translate(37.000000, 169.000000)">
                       <g id="arrow-right" transform="translate(468.000000, 468.000000)">
@@ -114,17 +114,16 @@ export default function Introduction() {
         <section className="flex w-full gap-4 sm:gap-14 justify-center xl:items-end xl:-mt-18" > {/*  gap-4 sm:gap-10 md:gap-14  */}
           <a href="https://github.com/jbk2" className="btn w-[120px] sm:w-[136px] rounded-lg border-none
             bg-[image:var(--btn-gradient-primary-darktolight)] text-[var(--btn-light-text)] hover:opacity-90
-            hover:scale-99 shadow-xl/20">
+            hover:scale-99">
             Github profile
           </a>
           <a href="mailto:james@bibble.com" className="btn w-[120px] sm:w-[136px] rounded-lg border-none
-            bg-[var(--color-btn-primary)] text-[var(--btn-dark-text)] hover:opacity-90 hover:scale-99
-            shadow-xl/20 hover:inset-shadow-2xs">
+            bg-[var(--color-btn-primary)] text-[var(--btn-dark-text)] hover:opacity-90 hover:scale-99">
             Contact me
           </a>
           <a href="#" className="btn w-[120px] sm:w-[136px] rounded-lg border-none
             bg-[image:var(--btn-gradient-primary-lighttodark)] text-[var(--btn-light-text)]
-            hover:opacity-90 hover:scale-99 shadow-xl/20">
+            hover:opacity-90 hover:scale-99">
             C.V.
           </a>
           {/* Terminal mock up section */}
