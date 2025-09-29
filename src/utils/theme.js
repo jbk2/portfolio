@@ -18,6 +18,7 @@ function getSystemTheme() {
 
 export function applyTheme(theme) {
   document.documentElement.setAttribute('data-theme', theme);
+  window.dispatchEvent(new CustomEvent('themeChange', { detail: theme }));
 };
 
 export function initSystemThemeSync() {

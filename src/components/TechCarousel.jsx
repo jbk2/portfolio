@@ -1,39 +1,41 @@
-import { useState } from "react";
-
+import { useEffect, useState } from "react";
 const FILE_IMPORTS = import.meta.glob('/src/assets/images/technology-images/*.svg', {
   eager: true,
   query: '?url',
   import: 'default', 
 });
 
-const LOGOS_META = [
-  { fileName: 'ec2', alt: 'ec2', className: "size-7 ml-3"},
-  { fileName: 'docker', alt: 'docker logo', className: "size-18"},
-  { fileName: 'linux', alt: 'linux logo', className: "size-7 ml-3"},
-  // { fileName: 'nginx', alt: 'nginx logo', className: "size-10"},
-  { fileName: 'ruby', alt: 'ruby logo', className: "size-6 ml-3"},
-  { fileName: 'rails', alt: 'rails logo', className: "size-14"},
-  { fileName: 'hotwire-white', alt: 'hotwire logo', className: "size-14 mt-2"},
-  { fileName: 'javascript', alt: 'javascript logo', className: "size-8 ml-1"},
-  { fileName: 'react', alt: 'react logo', className: "size-7"},
-  { fileName: 'vite', alt: 'vite logo', className: "size-7"},
-  // { fileName: 'postgres', alt: 'postgres logo', className: "size-10"},
-  { fileName: 'html5', alt: 'html5 logo', className: "size-8"},
-  { fileName: 'css3', alt: 'css3 logo', className: "size-8"},
-  { fileName: 'tailwindcss', alt: 'tailwindcss logo', className: "size-10"},
-  // { fileName: 'daisyui', alt: 'daisyui logo', className: "size-10"},
-]
-
-const logos = LOGOS_META.map(({fileName, ...rest}) => ({
-  src: FILE_IMPORTS[`/src/assets/images/technology-images/${fileName}.svg`],
-  ...rest,
-}));
-
-
 export default function TechCarousel() {
-  const [dark, setDark] = useState(() =>
-    window.matchMedia('(prefers-color-scheme: dark)').matches
-  );
+  const dataTheme = () => document.documentElement.getAttribute('data-theme');
+  const [theme, setTheme] = useState(() => dataTheme());
+  const LOGOS_META = [
+    { fileName: 'ec2', alt: 'ec2', className: "size-7 ml-3"},
+    { fileName: 'docker', alt: 'docker logo', className: "size-18"},
+    { fileName: 'linux', alt: 'linux logo', className: "size-7 ml-3"},
+    // { fileName: 'nginx', alt: 'nginx logo', className: "size-10"},
+    { fileName: 'ruby', alt: 'ruby logo', className: "size-6 ml-3"},
+    { fileName: 'rails', alt: 'rails logo', className: "size-14"},
+    { fileName: theme == 'dark' ? 'hotwire-dark' : 'hotwire-light',
+      alt: 'hotwire logo', className: "size-14 mt-2"},
+    { fileName: 'javascript', alt: 'javascript logo', className: "size-8 ml-1"},
+    { fileName: 'react', alt: 'react logo', className: "size-7"},
+    { fileName: 'vite', alt: 'vite logo', className: "size-7"},
+    // { fileName: 'postgres', alt: 'postgres logo', className: "size-10"},
+    { fileName: 'html5', alt: 'html5 logo', className: "size-8"},
+    { fileName: 'css3', alt: 'css3 logo', className: "size-8"},
+    { fileName: 'tailwindcss', alt: 'tailwindcss logo', className: "size-10"},
+    // { fileName: 'daisyui', alt: 'daisyui logo', className: "size-10"},
+  ]
+  const logos = LOGOS_META.map(({fileName, ...rest}) => ({
+    src: FILE_IMPORTS[`/src/assets/images/technology-images/${fileName}.svg`],
+    ...rest,
+  }));
+
+  useEffect(() => {
+    const onThemeChangeEvent = (e) => setTheme(e.detail)
+    window.addEventListener('themeChange', onThemeChangeEvent);
+    return() => window.removeEventListener('themeChange', onThemeChangeEvent);
+  }, [])
 
   return(
     <div className="page-width overflow-x-hidden my-6 sm:my-14
