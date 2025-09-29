@@ -113,20 +113,24 @@ export default function Introduction() {
       <div className="mt-8">
         <section className="flex w-full gap-4 sm:gap-14 justify-center xl:items-end xl:-mt-18" > {/*  gap-4 sm:gap-10 md:gap-14  */}
           <a href="https://github.com/jbk2" className="btn w-[120px] sm:w-[136px] rounded-lg border-none
-            bg-[image:var(--btn-gradient-primary-darktolight)] text-[var(--btn-light-text)] hover:opacity-90 hover:scale-99">
+            bg-[image:var(--btn-gradient-primary-darktolight)] text-[var(--btn-light-text)] hover:opacity-90
+            hover:scale-99 shadow-xl/20">
             Github profile
           </a>
           <a href="mailto:james@bibble.com" className="btn w-[120px] sm:w-[136px] rounded-lg border-none
-            bg-[var(--color-btn-primary)] text-[var(--btn-dark-text)] hover:opacity-90 hover:scale-99">
+            bg-[var(--color-btn-primary)] text-[var(--btn-dark-text)] hover:opacity-90 hover:scale-99
+            shadow-xl/20 hover:inset-shadow-2xs">
             Contact me
           </a>
           <a href="#" className="btn w-[120px] sm:w-[136px] rounded-lg border-none
-            bg-[image:var(--btn-gradient-primary-lighttodark)] text-[var(--btn-light-text)] hover:opacity-90 hover:scale-99">
+            bg-[image:var(--btn-gradient-primary-lighttodark)] text-[var(--btn-light-text)]
+            hover:opacity-90 hover:scale-99 shadow-xl/20">
             C.V.
           </a>
           {/* Terminal mock up section */}
-          <div className="mockup-code hidden xl:inline-block ml-24 mr-6 -mb-3 rounded-md text-sm bg-white
-           font-jetbrains border border-[var(--color-border-primary)]/60 [html[data-theme=dark]_&]:border-none">
+          <div className="mockup-code hidden xl:inline-block ml-24 mr-6 -mb-3 rounded-md text-sm
+            bg-[var(--color-foreground-light)] font-jetbrains border
+            border-[var(--color-border-primary)]/60 [html[data-theme=dark]_&]:border-none">
             <pre data-prefix="$" className="font-jetbrains text-[var(--color-text-tertiary)]">
               <code>puts Dev.find_by(name: 'James Kemp').locations.map(&:city)</code></pre>
             <pre data-prefix=">" className="text-[var(--color-teal-dark)] font-jetbrains"><code>London, England.</code></pre>

@@ -18,7 +18,7 @@
   --color-text-header-secondary: hsl(from var(--color-text-header-primary) h s l / 90%);
   --color-text-primary: hsl(239, 100%, 8%);
   --color-text-secondary: var(--color-gray-600);
-  --color-text-tertiary: var(--color-gray-200);
+  --color-text-tertiary: var(--color-gray-300);
 
   /* Elements */
   --color-btn-primary: var(--color-teal-300);
@@ -31,6 +31,7 @@
   --color-border-primary: var(--color-blue-100);
   --color-decoration-emerald: var(--color-emerald-200);
   --color-teal-dark: var(--color-teal-500);
+  --color-foreground-light: var(--color-neutral-50);
 
   /* gradients */
 
@@ -65,7 +66,7 @@
   --color-text-header-secondary: hsl(from var(--color-sky-100) h s l/0.9);
   --color-text-primary: var(--color-slate-200);
   --color-text-secondary: var(--color-slate-300);
-  --color-text-tertiary: var(--color-gray-200);
+  --color-text-tertiary: var(--color-gray-300);
 
   /* Elements */
   --color-btn-primary: var(--color-teal-300);
@@ -73,6 +74,7 @@
   --btn-light-text: var(--color-text-tertiary);
   --btn-gradient-primary-darktolight: linear-gradient(90deg, var(--color-dark-blue) 20%, var(--color-btn-primary) 100%);
   --btn-gradient-primary-lighttodark: linear-gradient(90deg, var(--color-btn-primary) 5%, var(--color-dark-blue) 95%);
+  --color-foreground-light: var(--color-neutral-50);
 
   /* Accenting / decoration */
   --color-decoration-emerald: hsl(from var(--color-emerald-400) h s l/0.8);
