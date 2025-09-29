@@ -21,8 +21,10 @@ export default function TechCarousel() {
     { fileName: 'react', alt: 'react logo', className: "size-7"},
     { fileName: 'vite', alt: 'vite logo', className: "size-7"},
     // { fileName: 'postgres', alt: 'postgres logo', className: "size-10"},
-    { fileName: 'html5', alt: 'html5 logo', className: "size-8"},
-    { fileName: 'css3', alt: 'css3 logo', className: "size-8"},
+    { fileName: theme == 'dark' ? 'html5-dark' : 'html5-light',
+      alt: 'html5 logo', className: "size-8"},
+    { fileName: theme == 'dark' ? 'css3-dark' : 'css3-light',
+      alt: 'css3 logo', className: "size-8"},
     { fileName: 'tailwindcss', alt: 'tailwindcss logo', className: "size-10"},
     // { fileName: 'daisyui', alt: 'daisyui logo', className: "size-10"},
   ]
