@@ -38,7 +38,7 @@ export default function ProjectCarousel() {
   return(
     <div className='my-14 bg-transparent'>
       <div className="page-width pl-40 sm:pl-10 lg:pl-[88px] xl:pl-40">
-        <h2 className="text-lg self-center font-extrabold font-inter tracking-wider text-[var(--color-text-header-primary)]
+        <h2 className="text-lg self-center font-extrabold font-inter tracking-wider text-[var(--color-text-header-secondary)]
         underline underline-offset-4 decoration-4 decoration-[var(--color-decoration-emerald)] mb-10">PROJECTS</h2>
       </div>
     
@@ -46,16 +46,19 @@ export default function ProjectCarousel() {
       <div ref={projectsRef} className='flex justify-center px-10 py-2 bg-transparent'>
         <div className={`carousel carousel-center max-w-fit bg-transparent rounded-box
           ${projectsInView ? `animate-projects-in` : ``}`}>
-          <div id="slide1" className="carousel-item flex flex-col">
+          <div id="slide1" className="carousel-item flex flex-col font-inter">
             <div className='rotate-1 p-1'>
               <a href="https://fakebook.bibble.com">
                 <img src={fakebook} className="rounded h-[280px] drop-shadow-lg
                   transition ease-in-out hover:scale-[101%]"/>
               </a>
             </div>
-            <div className="mt-5 ml-6 font-inter text-[var(--color-text-header-primary)]">
-              <h1 className="font-bold">Facebook clone SPA type app</h1>
-              <ul className="list-inside list-disc font-light text-sm text-[var(--color-text-header-secondary)]">
+            <div className="mt-5 ml-6 text-[var(--color-text-secondary)]">
+              <h1 className="font-bold text-[var(--color-text-header-secondary)]
+                [html[data-theme=dark]_&]:text-[var(--color-text-header-primary)]">
+                Facebook clone SPA type app
+              </h1>
+              <ul className="list-inside list-disc font-light text-sm">
                 <li className="">Rails</li>
                 <li>Hotwire</li>
                 <li>Websockets</li>
@@ -69,9 +72,12 @@ export default function ProjectCarousel() {
                   transition ease-in-out hover:scale-[101%]"/>
               </a>
             </div>
-            <div className="mt-5 ml-6 font-inter text-[var(--color-text-header-primary)]">
-              <h1 className="font-bold">Wheres Waldo toy game app</h1>
-              <ul className="list-inside list-disc font-light text-sm text-[var(--color-text-header-secondary)]">
+            <div className="mt-5 ml-6 text-[var(--color-text-secondary)]">
+              <h1 className="font-bold text-[var(--color-text-header-secondary)]
+                [html[data-theme=dark]_&]:text-[var(--color-text-header-primary)]">
+                Wheres Waldo toy game app
+              </h1>
+              <ul className="list-inside list-disc font-light text-sm">
                 <li className="">React</li>
                 <li>Rails API</li>
               </ul>
@@ -84,9 +90,12 @@ export default function ProjectCarousel() {
                 transition ease-in-out hover:scale-[101%]"/>
               </a>
             </div>
-            <div className="mt-5 ml-6 font-inter text-[var(--color-text-header-primary)]">
-              <h1 className="font-bold">Command line chess game</h1>
-              <ul className="list-inside list-disc font-light text-sm text-[var(--color-text-header-secondary)]">
+            <div className="mt-5 ml-6 text-[var(--color-text-secondary)]">
+              <h1 className="font-bold text-[var(--color-text-header-secondary)]
+                [html[data-theme=dark]_&]:text-[var(--color-text-header-primary)]">
+                Command line chess game
+              </h1>
+              <ul className="list-inside list-disc font-light text-sm">
                 <li className="">Pure Ruby chess app</li>
                 <li>Built TDD with Rspec</li>
               </ul>
@@ -99,9 +108,12 @@ export default function ProjectCarousel() {
                   transition ease-in-out hover:scale-[101%]"/>
               </a>
             </div>
-            <div className="mt-5 ml-6 font-inter text-[var(--color-text-header-primary)]">
-              <h1 className="font-bold">Shopify app</h1>
-              <ul className="list-inside list-disc font-light text-sm text-[var(--color-text-header-secondary)]">
+            <div className="mt-5 ml-6 text-[var(--color-text-secondary)]">
+              <h1 className="font-bold text-[var(--color-text-header-secondary)]
+                [html[data-theme=dark]_&]:text-[var(--color-text-header-primary)]">
+                Shopify app
+              </h1>
+              <ul className="list-inside list-disc font-light text-sm">
                 <li className="">Custom html & css theme</li>
                 <li>Custom JS features</li>
               </ul>
@@ -114,9 +126,12 @@ export default function ProjectCarousel() {
                   transition ease-in-out hover:scale-[101%]"/>
               </a>
             </div>
-            <div className="mt-5 ml-6 font-inter text-[var(--color-text-header-primary)]">
-              <h1 className="font-bold">Bash scripting and Linux devops</h1>
-              <ul className="list-inside list-disc font-light text-sm text-[var(--color-text-header-secondary)]">
+            <div className="mt-5 ml-6 text-[var(--color-text-secondary)]">
+              <h1 className="font-bold text-[var(--color-text-header-primary)]
+                [html[data-theme=dark]_&]:text-[var(--color-text-header-primary)]">
+                Bash scripting and Linux devops
+              </h1>
+              <ul className="list-inside list-disc font-light text-sm">
                 <li className="">Bash scripting</li>
                 <li>Ubuntu deployment, systemd, docker</li>
               </ul>

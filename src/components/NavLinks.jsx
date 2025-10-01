@@ -23,7 +23,7 @@ export default function NavLinks() {
 
   return(
     <ul className="flex md:gap-1 xl:gap-2 justify-end items-center">
-      <div className='flex items-center mr-4'>
+      <div className='flex items-center mr-2'>
         <label className="toggle border-[var(--color-socials)] hover:border-[hsl(from_var(--color-socials)_h_s_calc(l*0.85))]
           text-[var(--color-socials)] hover:text-[hsl(from_var(--color-socials)_h_s_calc(l*0.85))]">
           <input ref={themeToggle} type="checkbox" value="dark" className="theme-controller"
