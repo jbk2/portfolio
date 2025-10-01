@@ -1,19 +1,32 @@
-import { getLocalThemePreference, storeLocalThemePreference, applyTheme } from '../utils/theme';
+import { useRef, useEffect } from 'react';
+import { storeLocalThemePreference, applyTheme } from '../utils/theme';
 
 export default function NavLinks() {
+  const themeToggle = useRef(null)
   
   function handleThemeToggle(e) {
     const chosenTheme = e.target.checked ? 'dark' : 'light';
     applyTheme(chosenTheme);
     storeLocalThemePreference(chosenTheme);
   }
+  
+  function synchToggleWithDataTheme() {
+    const dataTheme = document.documentElement.getAttribute('data-theme') || 'light';
+    if (themeToggle.current) themeToggle.current.checked = (dataTheme === 'dark');
+  }
+
+  useEffect(() => {
+    synchToggleWithDataTheme();
+    window.addEventListener('themeChange', synchToggleWithDataTheme);
+    return () => window.removeEventListener('themeChange', synchToggleWithDataTheme);
+  }, []);
 
   return(
     <ul className="flex md:gap-1 xl:gap-2 justify-end items-center">
       <div className='flex items-center mr-4'>
         <label className="toggle border-[var(--color-socials)] hover:border-[hsl(from_var(--color-socials)_h_s_calc(l*0.85))]
           text-[var(--color-socials)] hover:text-[hsl(from_var(--color-socials)_h_s_calc(l*0.85))]">
-          <input type="checkbox" value="dark" className="theme-controller"
+          <input ref={themeToggle} type="checkbox" value="dark" className="theme-controller"
             onChange={handleThemeToggle} />
           <svg aria-label="sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g strokeLinejoin="round" strokeLinecap="round" strokeWidth="2" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></g></svg>
           <svg aria-label="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g strokeLinejoin="round" strokeLinecap="round" strokeWidth="2" fill="none" stroke="currentColor"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></g></svg>

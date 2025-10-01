@@ -36,6 +36,7 @@ export default function TechCarousel() {
   useEffect(() => {
     const onThemeChangeEvent = (e) => setTheme(e.detail)
     window.addEventListener('themeChange', onThemeChangeEvent);
+    
     return() => window.removeEventListener('themeChange', onThemeChangeEvent);
   }, [])
 

@@ -1,14 +1,14 @@
 const THEME_KEY = 'theme';
 
 export function getLocalThemePreference() {
-  return localStorage.getItem(THEME_KEY);
+  return sessionStorage.getItem(THEME_KEY);
 };
 
 export function storeLocalThemePreference(preference) {
-  localStorage.setItem(THEME_KEY, preference)
+  sessionStorage.setItem(THEME_KEY, preference)
 }
 
-function getSystemTheme() {
+export function getSystemTheme() {
   if (window.matchMedia('(prefers-color-scheme: dark)').matches == true) {
     return 'dark'
   } else {
@@ -37,7 +37,10 @@ export function initSystemThemeSync() {
   
 function listenForSystemThemeChange() {
   const mq = window.matchMedia('(prefers-color-scheme: dark)');
-  const changeHandler = (e) => applyTheme(e.matches ? 'dark' : 'light')
+  const onChange = (e) => {
+    sessionStorage.removeItem('theme');
+    applyTheme(e.matches ? 'dark' : 'light');
+  };
 
-  mq.addEventListener('change', changeHandler);
+  mq.addEventListener('change', onChange);
 }
