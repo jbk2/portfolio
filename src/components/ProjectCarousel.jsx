@@ -6,12 +6,16 @@ import forhm from '/src/assets/images/project-images/forhm.png';
 import ubuntu from '/src/assets/images/project-images/ubuntu.png';
 import { useState, useRef, useEffect } from 'react';
 import  railsLogo from '../assets/images/technology-images/rails.svg';
+import  rubyLogo from '../assets/images/technology-images/ruby.svg';
 import  hotwireLogoLight from '../assets/images/technology-images/hotwire-light.svg';
 import  hotwireLogoDark from '../assets/images/technology-images/hotwire-dark.svg';
 import  reactLogo from '../assets/images/technology-images/react.svg';
 import  rspecLogo from '../assets/images/technology-images/rspec.svg';
 import  viteLogo from '../assets/images/technology-images/vite.svg';
 import  tailwindLogo from '../assets/images/technology-images/tailwindcss.svg';
+import  linuxLogo from '../assets/images/technology-images/linux.svg';
+import  ubuntuLogo from '../assets/images/technology-images/ubuntu.svg';
+import  bashLogo from '../assets/images/technology-images/bash-light.svg';
 
 export default function ProjectCarousel() {
   const dataTheme = () => document.documentElement.getAttribute('data-theme');
@@ -72,7 +76,7 @@ export default function ProjectCarousel() {
               <div className='flex flex-col items-center'>
                 <h1 className="flex font-bold text-[var(--color-text-header-secondary)]
                   [html[data-theme=dark]_&]:text-[var(--color-text-header-primary)]">
-                  Facebook clone SPA type app
+                  Facebook clone SPA app
                 </h1>
                 <div className='flex items-center gap-2 text-[var(--color-text-header-secondary)]'>
                   <img src={railsLogo} alt="rails logo" className='size-10 -mt-[13px]'/>
@@ -108,15 +112,15 @@ export default function ProjectCarousel() {
               <div className='flex flex-col items-center'>
                 <h1 className="font-bold text-[var(--color-text-header-secondary)]
                   [html[data-theme=dark]_&]:text-[var(--color-text-header-primary)]">
-                  Wheres Waldo toy game app
+                  Wheres Waldo game app
                 </h1>
                 <div className='flex items-center gap-2 mb-2 text-[var(--color-text-header-secondary)]'>
                   <img src={reactLogo} alt="react logo" className='size-5 -mt-[4px]'/>
-                  <p className='text-xs -mt-[3px]'>+</p>
+                  <p className='text-xs -mt-[5px]'>+</p>
                   <img src={viteLogo} alt="vite logo" className='size-4 -mt-[7px]'/>
-                  <p className='text-xs -mt-[3px]'>+</p>
+                  <p className='text-xs -mt-[5px]'>+</p>
                   <img src={railsLogo} alt="rails logo" className='size-10 -mt-[7px]'/>
-                  <p className='text-xs -mt-[3px]'>+</p>
+                  <p className='text-xs -mt-[5px]'>+</p>
                   <img src={tailwindLogo} alt="tailwind logo" className='size-5 -mt-[7px]'/>
                 </div>
               </div>
@@ -129,7 +133,7 @@ export default function ProjectCarousel() {
                 <ul className="font-light text-sm">
                   <li className="[&::marker]:content-['•'] [&::marker]:text-[var(--color-teal-dark)]">&nbsp;Rails API + Postgres</li>
                   <li className="[&::marker]:content-['•'] [&::marker]:text-[var(--color-teal-dark)]">&nbsp;Rails 8 auth served via React</li>
-                  <li className="[&::marker]:content-['•'] [&::marker]:text-[var(--color-teal-dark)]">&nbsp;Unit and integration tested</li>
+                  <li className="[&::marker]:content-['•'] [&::marker]:text-[var(--color-teal-dark)]">&nbsp;Full unit & integration tests</li>
                 </ul>
               </div>
             </div>
@@ -137,26 +141,76 @@ export default function ProjectCarousel() {
           <div id="slide3" className="carousel-item flex flex-col w-108">
             <div className='rotate-1 p-1'>
               <a href="https://replit.com/@jbk1/Chess">
-                <img src={chess} className="h-[280px] rounded drop-shadow-lg
+                <img src={chess} className="mx-auto h-[280px] rounded drop-shadow-lg
                 transition ease-in-out hover:scale-[101%]"/>
               </a>
             </div>
             <div className="mt-5 ml-6 text-[var(--color-text-secondary)]">
-              <h1 className="font-bold text-[var(--color-text-header-secondary)]
-                [html[data-theme=dark]_&]:text-[var(--color-text-header-primary)]">
-                Command line chess game
-              </h1>
-              <ul className="list-inside list-disc font-light text-sm">
-                <li className="">Pure Ruby chess app</li>
-                <li>Built TDD with Rspec</li>
-              </ul>
+              <div className='flex flex-col items-center'>
+                <h1 className="font-bold text-[var(--color-text-header-secondary)]
+                  [html[data-theme=dark]_&]:text-[var(--color-text-header-primary)]">
+                  Command line chess game
+                </h1>
+                <div className='flex items-center gap-2 mb-2 text-[var(--color-text-header-secondary)]'>
+                  <img src={rubyLogo} alt="ruby logo" className='size-[13px]'/>
+                  <p className='text-xs -mt-[3px]'>+</p>
+                  <img src={rspecLogo} alt="rspec logo" className='size-4'/>
+                </div>
+              </div>
+              <div className='grid grid-cols-2 gap-3'>
+                <ul className="font-light text-sm">
+                  <li className="[&::marker]:content-['•'] [&::marker]:text-[var(--color-teal-dark)]">&nbsp;Chess - written in pure Ruby</li>
+                  <li className="[&::marker]:content-['•'] [&::marker]:text-[var(--color-teal-dark)]">&nbsp;Built via TDD & rspec</li>
+                  {/* <li className="[&::marker]:content-['•'] [&::marker]:text-[var(--color-teal-dark)]">&nbsp;</li> */}
+                </ul>
+                <ul className="font-light text-sm">
+                  <li className="[&::marker]:content-['•'] [&::marker]:text-[var(--color-teal-dark)]">&nbsp;Game persistency</li>
+                  <li className="[&::marker]:content-['•'] [&::marker]:text-[var(--color-teal-dark)]">&nbsp;Full unit & integration tests</li>
+                  {/* <li className="[&::marker]:content-['•'] [&::marker]:text-[var(--color-teal-dark)]">&nbsp;</li> */}
+                </ul>
+              </div>
             </div>
           </div>
           <div id="slide4" className="carousel-item flex flex-col w-108">
+            <div className='rotate-1 p-1'>
+              <a href="https://ubuntu.bibble.com">
+                <img src={ubuntu} className="mx-auto h-[280px] rounded drop-shadow-lg
+                transition ease-in-out hover:scale-[101%]"/>
+              </a>
+            </div>
+            <div className="mt-5 ml-6 text-[var(--color-text-secondary)]">
+              <div className='flex flex-col items-center'>
+                <h1 className="font-bold text-[var(--color-text-header-primary)]
+                  [html[data-theme=dark]_&]:text-[var(--color-text-header-primary)]">
+                  Bash scripting and Linux devops
+                </h1>
+                <div className='flex items-center gap-2 mb-2 text-[var(--color-text-header-secondary)]'>
+                  <img src={linuxLogo} alt="linux logo" className='size-[17px]'/>
+                  <p className='text-xs -mt-[3px]'>+</p>
+                  <img src={ubuntuLogo} alt="ubuntu logo" className='size-[15px]'/>
+                  <p className='text-xs -mt-[3px]'>+</p>
+                  <img src={bashLogo} alt="bash logo" className='size-[22px]'/>
+                </div>
+              </div>
+              <div className='grid grid-cols-2 gap-3'>
+                <ul className="font-light text-sm">
+                  <li className="[&::marker]:content-['•'] [&::marker]:text-[var(--color-teal-dark)]">&nbsp;Server provisioning</li>
+                  <li className="[&::marker]:content-['•'] [&::marker]:text-[var(--color-teal-dark)]">&nbsp;Ubuntu instance maintenance</li>
+                  <li className="[&::marker]:content-['•'] [&::marker]:text-[var(--color-teal-dark)]">&nbsp;DNS management</li>
+                </ul>
+                <ul className="font-light text-sm">
+                  <li className="[&::marker]:content-['•'] [&::marker]:text-[var(--color-teal-dark)]">&nbsp;Nginx, docker</li>
+                  <li className="[&::marker]:content-['•'] [&::marker]:text-[var(--color-teal-dark)]">&nbsp;ssh, systemd, docker</li>
+                  <li className="[&::marker]:content-['•'] [&::marker]:text-[var(--color-teal-dark)]">&nbsp;Git hooks</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="slide5" className="carousel-item flex flex-col w-108">
             <div className="-rotate-1 p-1">
               <a href="https://forhm.com/">
-                <img src={forhm} className="rounded h-[280px] drop-shadow-lg
-                  transition ease-in-out hover:scale-[101%]"/>
+                <img src={forhm} className="mx-auto h-[280px] rounded drop-shadow-lg
+                transition ease-in-out hover:scale-[101%]"/>
               </a>
             </div>
             <div className="mt-5 ml-6 text-[var(--color-text-secondary)]">
@@ -167,24 +221,6 @@ export default function ProjectCarousel() {
               <ul className="list-inside list-disc font-light text-sm">
                 <li className="">Custom html & css theme</li>
                 <li>Custom JS features</li>
-              </ul>
-            </div>
-          </div>
-          <div id="slide5" className="carousel-item flex flex-col w-108">
-            <div className='rotate-1 p-1'>
-              <a href="https://ubuntu.bibble.com">
-                <img src={ubuntu} className="rounded h-[280px] drop-shadow-lg
-                  transition ease-in-out hover:scale-[101%]"/>
-              </a>
-            </div>
-            <div className="mt-5 ml-6 text-[var(--color-text-secondary)]">
-              <h1 className="font-bold text-[var(--color-text-header-primary)]
-                [html[data-theme=dark]_&]:text-[var(--color-text-header-primary)]">
-                Bash scripting and Linux devops
-              </h1>
-              <ul className="list-inside list-disc font-light text-sm">
-                <li className="">Bash scripting</li>
-                <li>Ubuntu deployment, systemd, docker</li>
               </ul>
             </div>
           </div>
