@@ -19,36 +19,21 @@ export default function Courses() {
         {/* <hr className="mx-auto border-[var(--color-border-primary)]"></hr> */}
         <hr className="section-hr"></hr>
         <div className="pl-40 sm:pl-10 lg:pl-[88px] xl:pl-40 mt-14">
-          <h2 className="text-lg self-center font-extrabold font-inter tracking-wider text-[var(--color-text-header-primary)]
+          <h2 className="text-lg font-extrabold tracking-wider text-[var(--color-text-header-secondary)]
           underline underline-offset-4 decoration-4 decoration-[var(--color-decoration-emerald)] ">COURSES / TUTORIALS / BOOKS</h2>
         </div>
         {/* <section className="flex justify-center gap-20">
           <h2>Studied:</h2>
           <ul>
-            <li>The Odin Project - Completed full sylabus</li>
-            <li>Hartls' Rails Tutorial (x3)</li>
-            <li>Makers Academy</li>
-            <li>Prag Prog books;
-              <ul>
-                <li>Agile Web Development</li>
-                <li>Effective tesing with Rspec</li>
-                <li>Javascrip the best bits</li>
-                <li>Ruby the best bits</li>
-              </ul>
-            </li>
-            <li>AWS Cert</li>
+
             <li><a href="https://deploymentfromscratch.com/">Deployment from Scratch</a></li>
-          </ul>
-          <ul>
+            <li>AWS Cert</li>
             <li>Hotwire</li>
             <li><a href="https://www.learnui.design/">Learn UI</a></li>
-            <li>Many Linda </li>
             <li>Attend conferences - Brighton Ruby</li>
-            <li>Add Socials </li>
             <li>React docs </li>
             <li>Hotwire Docs </li>
             <li>Rails guides </li>
-            <li>Add Socials </li>
           </ul>
         </section> */}
       </div>

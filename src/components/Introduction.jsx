@@ -7,7 +7,7 @@ export default function Introduction() {
       {/* Summary stats and intro bullet sections */}
       <div className="xl:ml-0 mt-6">
         {/* Summary stats section */}
-        <section className="font-inter font-semibold text-sm mb-9">
+        <section className="font-semibold text-sm mb-9">
           <div className="flex justify-between md:justify-around gap-8 p-6
             text-[var(--color-text-header-secondary)]">
             <div className="flex flex-col md:items-center">
@@ -16,8 +16,8 @@ export default function Introduction() {
                 <span className="font-black text-xs">&nbsp;YRS</span>
               </div>
               <p className="my-1 w-32 sm:w-fit">Coding since
-                <a href="https://makers.tech/learn/curriculum">Makers</a>
-                bootcamp
+                <a href="https://makers.tech/learn/curriculum">&nbsp;Makers</a>
+                &nbsp;bootcamp
               </p>
             </div>
             <div className="flex flex-col md:items-center">
@@ -39,7 +39,7 @@ export default function Introduction() {
         </section>
 
         {/* Intro bullet section */}
-        <section className="font-inter font-light text-lg text-[var(--color-text-secondary)]">
+        <section className="font-light text-lg text-[var(--color-text-secondary)]">
           <ul className="">
             {/* <li className="mb-5 flex"> */}
               {/* <img src="assets/images/bullet-arrow.svg" alt="bullet point" className=""> */}

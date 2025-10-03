@@ -30,7 +30,7 @@ export default function HeroSection() {
       
       {/* Col-2 */}
       <div className="col-start-1 xl:col-start-2 mx-auto xl:ml-0 md:min-w-[800px]">
-        <h1 className="text-5xl sm:text-6xl md:text-7xl font-inter font-black
+        <h1 className="text-5xl sm:text-6xl md:text-7xl font-black
           text-[var(--color-text-header-primary)] sm:mb-6 md:mb-8 lg:mb-10">I'm 
           <div className="inline-block bg-clip-text text-transparent hero-header-gradient">
             &nbsp;James
@@ -43,12 +43,12 @@ export default function HeroSection() {
         </h1>
 
         <div className="flex flex-wrap">
-          <h1 className="inline-block sm:hidden text-5xl md:text-7xl font-inter font-extrabold
+          <h1 className="inline-block sm:hidden text-5xl md:text-7xl font-extrabold
             text-[var(--color-text-header-primary)] whitespace-nowrap">a web developer
             <span className="text-4xl -ml-1">.</span>
           </h1>
           <span className="whitespace-nowrap">
-            <h1 className="hidden sm:inline-block text-6xl md:text-7xl font-inter font-extrabold
+            <h1 className="hidden sm:inline-block text-6xl md:text-7xl font-extrabold
               text-[var(--color-text-header-primary)]">Full stack developer
               <span className="text-5xl -ml-1">.</span>
             </h1>
