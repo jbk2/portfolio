@@ -18,7 +18,7 @@ import  viteLogo from '../assets/images/technology-images/vite.svg';
 import  tailwindLogo from '../assets/images/technology-images/tailwindcss.svg';
 import  linuxLogo from '../assets/images/technology-images/linux.svg';
 import  ubuntuLogo from '../assets/images/technology-images/ubuntu.svg';
-import  bashLogo from '../assets/images/technology-images/bash-light.svg';
+import  bashLogo from '../assets/images/technology-images/bash-dark.svg';
 
 export default function ProjectCarousel() {
   const dataTheme = () => document.documentElement.getAttribute('data-theme');
