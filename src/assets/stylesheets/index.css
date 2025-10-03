@@ -5,14 +5,19 @@
 :root {
   --color-dark-blue: hsla(236, 77%, 20%, 1);
   --color-light-teal: hsla(182, 100%, 42%, 1);
+  /* Layout */
+  --scroll-shift: 70px; /* variable which the scroll animation adjusts */
 }
 
 :root[data-theme='light'] {
   color-scheme: light;
-
-  /* Layout */
-  --scroll-shift: 0px; /* variable which the scroll animation adjusts */
   
+  /* Surfaces */
+  --btn-gradient-primary-darktolight: linear-gradient(90deg, var(--color-dark-blue) 30%, var(--color-btn-primary) 95%);
+  --btn-gradient-primary-lighttodark: linear-gradient(90deg, var(--color-btn-primary) 5%, var(--color-dark-blue) 70%);
+  --color-bg: var(--color-white);
+
+
   /* Text */
   --color-text-header-primary: var(--color-blue-900);
   --color-text-header-secondary: hsl(from var(--color-text-header-primary) h s l / 90%);
@@ -24,8 +29,8 @@
   --color-btn-primary: var(--color-teal-300);
   --btn-dark-text: hsl(from var(--color-blue-900) h s l / 95%);
   --btn-light-text: var(--color-text-tertiary);
-  --btn-gradient-primary-darktolight: linear-gradient(90deg, var(--color-dark-blue) 30%, var(--color-btn-primary) 95%);
-  --btn-gradient-primary-lighttodark: linear-gradient(90deg, var(--color-btn-primary) 5%, var(--color-dark-blue) 70%);
+  --color-surface-card: var(--color-white);
+  --color-socials: var(--color-zinc-400);
 
   /* Accenting / decoration */
   --color-border-primary: var(--color-blue-100);
@@ -38,28 +43,30 @@
 /* ---- above are sorted -----  */
   
   /* Base palette (from Tailwind) */
-  --color-emerald-light: var(--color-emerald-200);
-  --color-teal-light: var(--color-teal-300);
-  --color-teal-md: var(--color-teal-400);
+  /* --color-emerald-light: var(--color-emerald-200); */
+  /* --color-teal-light: var(--color-teal-300); */
+  /* --color-teal-md: var(--color-teal-400); */
   
   /* Brand palette (light defaults) */
-  --color-primary-light: var(--color-teal-300);
+  /* --color-primary-light: var(--color-teal-300); */
   /* Deep blue used by gradients (fallback to HSLA if custom var absent) */
-  --color-primary-dark: var(--color-deep-blue, hsl(236, 76%, 20%));
+  /* --color-primary-dark: var(--color-deep-blue, hsl(236, 76%, 20%)); */
   
   /* Semantic (light defaults) */
-  --color-surface-card: var(--color-white);
   /* Unified button tokens */
-  --btn-bg: var(--color-primary-light);
-  --btn-bg-hover: var(--color-teal-400);
-  --color-socials: var(--color-zinc-400);
+  /* --btn-bg: var(--color-primary-light); */
+  /* --btn-bg-hover: var(--color-teal-400); */
   /* Page background */
-  --color-bg: var(--color-white);
 }
 
 
 :root[data-theme='dark'] {
   color-scheme: dark;
+
+  /* Surfaces */
+  --btn-gradient-primary-darktolight: linear-gradient(90deg, var(--color-dark-blue) 20%, var(--color-btn-primary) 100%);
+  --btn-gradient-primary-lighttodark: linear-gradient(90deg, var(--color-btn-primary) 5%, var(--color-dark-blue) 95%);
+  --color-bg: var(--color-slate-900);
 
   /* Text */
   --color-text-header-primary: var(--color-sky-100);
@@ -72,9 +79,9 @@
   --color-btn-primary: var(--color-teal-300);
   --btn-dark-text: hsl(from var(--color-blue-900) h s l / 95%);
   --btn-light-text: var(--color-text-tertiary);
-  --btn-gradient-primary-darktolight: linear-gradient(90deg, var(--color-dark-blue) 20%, var(--color-btn-primary) 100%);
-  --btn-gradient-primary-lighttodark: linear-gradient(90deg, var(--color-btn-primary) 5%, var(--color-dark-blue) 95%);
   --color-foreground-light: var(--color-neutral-50);
+  --color-surface-card: var(--color-slate-800);
+  --color-socials: var(--color-zinc-200);
 
   /* Accenting / decoration */
   --color-decoration-emerald: hsl(from var(--color-emerald-400) h s l/0.8);
@@ -83,16 +90,13 @@
 
 
   /* Semantic overrides only for dark mode */
-  --color-socials: var(--color-zinc-200);
   /* Page background */
-  --color-bg: var(--color-slate-900);
   /* Keep gradients consistent in dark mode */
-  --color-primary-dark: var(--color-deepblue, hsla(236, 77%, 20%, 1));
+  /* --color-primary-dark: var(--color-deepblue, hsla(236, 77%, 20%, 1)); */
   /* Unified button tokens */
-  --btn-bg: var(--color-teal-400);
-  --btn-bg-hover: var(--color-teal-300);
-  --btn-text: var(--color-gray-100);
-  --color-surface-card: var(--color-slate-800);
+  /* --btn-bg: var(--color-teal-400); */
+  /* --btn-bg-hover: var(--color-teal-300); */
+  /* --btn-text: var(--color-gray-100); */
 }
 
 .page-width {
