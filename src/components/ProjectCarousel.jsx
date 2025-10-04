@@ -65,11 +65,11 @@ export default function ProjectCarousel() {
       </div>
     
       {/* Project card carousel */}
-      <div ref={projectsRef} className='flex justify-center px-10 py-2 bg-transparent'>
-        <div className={`carousel carousel-center max-w-fit bg-transparent rounded-box
+      <div ref={projectsRef} className='py-2 bg-transparent'>
+        <div className={`flex overflow-x-auto pl-6 pb-6
           ${projectsInView ? `animate-projects-in` : ``}`}>
 
-          <div id="slide1" className="carousel-item flex flex-col w-108">
+          <div id="slide1" className="carousel-item flex flex-col">
             <div className='rotate-1 p-1'>
               <a href="https://fakebook.bibble.com">
                 <img src={fakebook} className="mx-auto rounded h-[280px] drop-shadow-lg
@@ -105,7 +105,7 @@ export default function ProjectCarousel() {
               </div>
             </div>
           </div>
-          <div id="slide2" className="carousel-item flex flex-col w-108">
+          <div id="slide2" className="carousel-item flex flex-col">
             <div className='-rotate-1 p-1'>
               <a href="https://waldo.bibble.com">
                 <img src={waldo} className="mx-auto rounded h-[280px] drop-shadow-lg
@@ -132,13 +132,13 @@ export default function ProjectCarousel() {
                 </ul>
                 <ul className="font-light text-sm">
                   <li className="[&::marker]:content-['•'] [&::marker]:text-[var(--color-teal-dark)]">&nbsp;Rails API + Postgres</li>
-                  <li className="[&::marker]:content-['•'] [&::marker]:text-[var(--color-teal-dark)]">&nbsp;Rails 8 auth served via React</li>
+                  <li className="[&::marker]:content-['•'] [&::marker]:text-[var(--color-teal-dark)]">&nbsp;Rails 8 auth via React</li>
                   <li className="[&::marker]:content-['•'] [&::marker]:text-[var(--color-teal-dark)]">&nbsp;Full unit & integration tests</li>
                 </ul>
               </div>
             </div>
           </div>
-          <div id="slide3" className="carousel-item flex flex-col w-108">
+          <div id="slide3" className="carousel-item flex flex-col">
             <div className='rotate-1 p-1'>
               <a href="https://replit.com/@jbk1/Chess">
                 <img src={chess} className="mx-auto h-[280px] rounded drop-shadow-lg
@@ -159,19 +159,19 @@ export default function ProjectCarousel() {
               </div>
               <div className='grid grid-cols-2 gap-5 w-fit mx-auto'>
                 <ul className="font-light text-sm">
-                  <li className="[&::marker]:content-['•'] [&::marker]:text-[var(--color-teal-dark)]">&nbsp;Chess - written in pure Ruby</li>
+                  <li className="[&::marker]:content-['•'] [&::marker]:text-[var(--color-teal-dark)]">&nbsp;Chess in pure Ruby</li>
                   <li className="[&::marker]:content-['•'] [&::marker]:text-[var(--color-teal-dark)]">&nbsp;Built via TDD & rspec</li>
                   {/* <li className="[&::marker]:content-['•'] [&::marker]:text-[var(--color-teal-dark)]">&nbsp;</li> */}
                 </ul>
                 <ul className="font-light text-sm">
-                  <li className="[&::marker]:content-['•'] [&::marker]:text-[var(--color-teal-dark)]">&nbsp;Full unit & integration tests</li>
+                  <li className="[&::marker]:content-['•'] [&::marker]:text-[var(--color-teal-dark)]">&nbsp;Unit & integration tested</li>
                   <li className="[&::marker]:content-['•'] [&::marker]:text-[var(--color-teal-dark)]">&nbsp;Game persistency</li>
                   {/* <li className="[&::marker]:content-['•'] [&::marker]:text-[var(--color-teal-dark)]">&nbsp;</li> */}
                 </ul>
               </div>
             </div>
           </div>
-          <div id="slide4" className="carousel-item flex flex-col w-108">
+          <div id="slide4" className="carousel-item flex flex-col">
             <div className='rotate-1 p-1'>
               <a href="https://ubuntu.bibble.com">
                 <img src={ubuntu} className="mx-auto h-[280px] rounded drop-shadow-lg
@@ -206,7 +206,7 @@ export default function ProjectCarousel() {
               </div>
             </div>
           </div>
-          <div id="slide5" className="carousel-item flex flex-col w-108">
+          <div id="slide5" className="carousel-item flex flex-col">
             <div className="-rotate-1 p-1">
               <a href="https://forhm.com/">
                 <img src={forhm} className="mx-auto h-[280px] rounded drop-shadow-lg
