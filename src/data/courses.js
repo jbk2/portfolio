@@ -15,7 +15,7 @@ export const courses = [
     progress: 100,
     image: makersImg,
     link: 'https://makers.tech/',
-    description: `UK's best renowned in person immersive Bootcamp, full stack Ruby & JS syllabus with TDD & agile practices.`,
+    description: `UK's best renowned in person immersive Bootcamp, full stack Ruby & JS syllabus via TDD & agile.`,
   },
   {
     id: 'odin-project',
@@ -23,7 +23,7 @@ export const courses = [
     progress: 100,
     image: topImg,
     link: 'https://www.theodinproject.com/',
-    description: `Full-stack path completed: HTML/CSS/JS, Ruby, and Rails projects.`,
+    description: 'Full stack career web dev curriculum, all modules & projects completed; Ruby, Rails, JS, React, HTML, CSS.',
   },
   {
     id: 'rails-tutorial',
@@ -31,7 +31,7 @@ export const courses = [
     progress: 100,
     image: railsTutorialImg,
     link: 'https://www.railstutorial.org/',
-    description: `Hartl's classic Rails introduction. MVC, testing, deployment, Rails 7.`,
+    description: `Renowned Rails tutorial; MVC, TDD, auth, Active-Record|Storage|Jobs, Mailers, front end, performance, security, deployment.`,
   },
   {
     id: 'agile-web-dev-rails-7-2',
@@ -39,7 +39,7 @@ export const courses = [
     progress: 100,
     image: agileRailsImg,
     link: 'https://pragprog.com/titles/rails7/agile-web-development-with-rails-7/',
-    description: `Pragmatic patterns, Rails architecture, testing, and agile workflows.`,
+    description: `Patterns, Hotwire-Turbo/Stimulus, APIs, WebSockets & ActionCable, jobs, testing, security, and deployment.`,
   },
   {
     id: 'effective-testing-rspec-3',
@@ -47,7 +47,7 @@ export const courses = [
     progress: 80,
     image: rspecImg,
     link: 'https://pragprog.com/titles/rspec3/effective-testing-with-rspec-3/',
-    description: `Unit, integration, and feature testing strategies in Ruby with RSpec.`,
+    description: `BDD, unit, integration & feature testing, mocks & stubs, shared e.g's, testing best practices.`,
   },
   {
     id: 'eloquent-javascript',
@@ -55,7 +55,7 @@ export const courses = [
     progress: 40,
     image: eloquentJsImg,
     link: 'https://eloquentjavascript.net/',
-    description: `Deep-dive into modern JavaScript fundamentals and programming techniques.`,
+    description: `Deep-dive into modern JS fundamentals, functional and OOP, closures, prototypes, classes, modules, DOM, events, async, promises.`,
   },
   {
     id: 'eloquent-ruby',
@@ -63,15 +63,15 @@ export const courses = [
     progress: 100,
     image: eloquentRubyImg,
     link: 'https://www.pearson.com/en-us/subject-catalog/p/eloquent-ruby/P200000002736/',
-    description: `Idiomatic Ruby style, metaprogramming basics, and practical patterns.`,
+    description: `Ruby idioms and style, classes, modules, mixins, procs, metaprogramming, DSLs, practical patterns.`,
   },
   {
     id: 'poodr',
-    title: 'Practical Object-Oriented Design in Ruby (POODR)',
+    title: 'P.O.O.D.R.',
     progress: 100,
     image: poodrImg,
     link: 'https://www.poodr.com/',
-    description: `OO design principles in Ruby: flexibility, SOLID, and maintainability.`,
+    description: `OOP, encapsulation, inheritance, composition, duck typing, polymorphism, and crafting flexible, maintainable Ruby.`,
   },
   {
     id: 'leet',
@@ -79,6 +79,6 @@ export const courses = [
     progress: 20,
     image: leetImg,
     link: 'https://www.leetcode.com/',
-    description: `OO design principles in Ruby: flexibility, SOLID, and maintainability.`,
+    description: `DSA practice - so far I've completed recursion, DP, linked list and binary tree modules.`,
   },
 ];
