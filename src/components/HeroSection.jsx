@@ -30,20 +30,22 @@ export default function HeroSection() {
       
       {/* Col-2 */}
       <div className="col-start-1 xl:col-start-2 mx-auto xl:ml-0 md:min-w-[800px]">
-        <h1 className="text-5xl sm:text-6xl md:text-7xl font-black
+        <h1 className="text-6xl md:text-7xl font-black
           text-[var(--color-text-header-primary)] sm:mb-6 md:mb-8 lg:mb-10">I'm 
           <div className="inline-block bg-clip-text text-transparent hero-header-gradient">
             &nbsp;James
             <span className="hidden sm:inline-block">&nbsp;Kemp</span>
           </div>
           <span className="text-3xl sm:text-4xl ">,</span>
-          <span className="hidden md:inline-block text-3xl animate-rotate-wave
-            delay-1 ml-5 lg:ml-8">👋🏻</span>
-          <span className="hidden md:inline-block text-5xl -ml-3">👨🏻‍💻</span>
+          <div className='inline'>
+            <span className="relative hidden md:inline-block text-3xl animate-rotate-wave
+              delay-1 ml-5 lg:ml-8 z-10">👋🏻</span>
+            <span className="relative hidden md:inline-block text-5xl -ml-3 z-20">👨🏻‍💻</span>
+          </div>
         </h1>
 
         <div className="flex flex-wrap">
-          <h1 className="inline-block sm:hidden text-5xl md:text-7xl font-extrabold
+          <h1 className="inline-block sm:hidden text-6xl md:text-7xl font-extrabold
             text-[var(--color-text-header-primary)] whitespace-nowrap">a web developer
             <span className="text-4xl -ml-1">.</span>
           </h1>
