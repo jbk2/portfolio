@@ -114,16 +114,17 @@ export default function Introduction() {
         <section className="flex w-full gap-4 sm:gap-14 justify-center xl:items-end xl:-mt-18" > {/*  gap-4 sm:gap-10 md:gap-14  */}
           <a href="https://github.com/jbk2" className="btn w-[120px] sm:w-[136px] rounded-lg border-none
             bg-[image:var(--btn-gradient-primary-darktolight)] text-[var(--btn-light-text)] hover:opacity-90
-            hover:scale-99">
+            hover:scale-99" title="My Github Profile">
             Github profile
           </a>
           <a href="mailto:james@bibble.com" className="btn w-[120px] sm:w-[136px] rounded-lg border-none
-            bg-[var(--color-btn-primary)] text-[var(--btn-dark-text)] hover:opacity-90 hover:scale-99">
+            bg-[var(--color-btn-primary)] text-[var(--btn-dark-text)] hover:opacity-90 hover:scale-99"
+            title="Email Me">
             Contact me
           </a>
           <a href="#" className="btn w-[120px] sm:w-[136px] rounded-lg border-none
             bg-[image:var(--btn-gradient-primary-lighttodark)] text-[var(--btn-light-text)]
-            hover:opacity-90 hover:scale-99">
+            hover:opacity-90 hover:scale-99" title="Download My C.V.">
             C.V.
           </a>
           {/* Terminal mock up section */}
