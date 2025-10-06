@@ -3,11 +3,17 @@ import { useEffect, useRef } from "react";
 import NavLinks from './NavLinks';
 
 export default function HeroSection() {
-// remove mark up on small screenction 
-// deal with spacing
-
   const words = ["ruby", "rails", "javascript", "react", "hotwire"]; // Words to cycle through
   let ref = useRef(null);
+  let waveEmojiRef = useRef(null);
+
+  function rerunWaveAnimation() {
+    const el = waveEmojiRef.current;
+    if (!el) return;
+    el.classList.remove('animate-rotate-wave', 'delay-1');
+    void el.offsetWidth;
+    el.classList.add('animate-rotate-wave');
+  }
 
   useEffect(() => {
     if(!ref.current) return;
@@ -37,8 +43,9 @@ export default function HeroSection() {
             <span className="hidden sm:inline-block">&nbsp;Kemp</span>
           </div>
           <span className="text-3xl sm:text-4xl ">,</span>
-          <div className='inline'>
-            <span className="relative hidden md:inline-block text-3xl animate-rotate-wave
+          <div onClick={rerunWaveAnimation}  title="Click me to say hi"
+            className='inline hover:cursor-pointer'>
+            <span ref={waveEmojiRef} className="relative hidden md:inline-block text-3xl animate-rotate-wave
               delay-1 ml-5 lg:ml-8 z-10">👋🏻</span>
             <span className="relative hidden md:inline-block text-5xl -ml-3 z-20">👨🏻‍💻</span>
           </div>
