@@ -19,10 +19,6 @@ export default function HeroSection() {
     <div className="page-width mt-10
       grid grid-cols-1 xl:grid-cols-[2fr_minmax(400px,max-content)_1fr]">
       {/* Col-1 */}
-      <div className="absolute left-1 top-2 md:left-3 md:top-3 xl:left-8 xl:top-7">
-        <a href="#" className='text-[var(--color-socials)] text-2xl hover:cursor-pointer'>🖋️</a>
-        <p className='text-xs'>my blog</p>
-      </div>
       <div className="hidden xl:inline-block col-start-1 text-right self-end mr-3">
         <p className="text-sm text-[var(--color-text-secondary)] font-jetbrains pr-4 pb-1">
           &lt;h1 data-lang='

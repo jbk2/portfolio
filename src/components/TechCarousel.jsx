@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { getDataTheme } from "../utils/theme";
 const FILE_IMPORTS = import.meta.glob('/src/assets/images/technology-images/*.svg', {
   eager: true,
   query: '?url',
@@ -6,8 +7,9 @@ const FILE_IMPORTS = import.meta.glob('/src/assets/images/technology-images/*.sv
 });
 
 export default function TechCarousel() {
-  const dataTheme = () => document.documentElement.getAttribute('data-theme');
-  const [theme, setTheme] = useState(() => dataTheme());
+  const dataTheme = getDataTheme();
+  const [theme, setTheme] = useState(dataTheme);
+  
   const LOGOS_META = [
     { fileName: 'ec2', alt: 'ec2', className: "size-7 ml-3"},
     { fileName: 'docker', alt: 'docker logo', className: "size-18"},

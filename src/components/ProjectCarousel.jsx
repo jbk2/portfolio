@@ -1,7 +1,7 @@
+// import flightBooker from '/src/assets/images/project-images/flight-booker.png';
 import fakebook from '/src/assets/images/project-images/fakebook.png';
 import chess from '/src/assets/images/project-images/chess.png';
 import waldo from '/src/assets/images/project-images/waldo.png';
-// import flightBooker from '/src/assets/images/project-images/flight-booker.png';
 import forhm from '/src/assets/images/project-images/forhm.jpg';
 import ubuntu from '/src/assets/images/project-images/ubuntu.png';
 import { useState, useRef, useEffect } from 'react';
@@ -19,10 +19,12 @@ import  tailwindLogo from '../assets/images/technology-images/tailwindcss.svg';
 import  linuxLogo from '../assets/images/technology-images/linux.svg';
 import  ubuntuLogo from '../assets/images/technology-images/ubuntu.svg';
 import  bashLogo from '../assets/images/technology-images/bash-dark.svg';
+import { getDataTheme } from '../utils/theme';
 
 export default function ProjectCarousel() {
-  const dataTheme = () => document.documentElement.getAttribute('data-theme');
-  const [theme, setTheme] = useState(() => dataTheme());
+  const dataTheme = getDataTheme();
+  const [theme, setTheme] = useState(dataTheme);
+
   const projectsRef = useRef(null);
   const [projectsInView, setProjectsInView] = useState(false);
   
@@ -33,7 +35,6 @@ export default function ProjectCarousel() {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          console.log('animateIn callback received entry', entry);
           setProjectsInView(true);
           observer.unobserve(el);
         }
@@ -51,11 +52,10 @@ export default function ProjectCarousel() {
   }, [])
 
   useEffect(() => {
-    const onThemeChangeEvent = (e) => setTheme(e.detail)
-    window.addEventListener('themeChange', onThemeChangeEvent);
-    
-    return() => window.removeEventListener('themeChange', onThemeChangeEvent);
-  }, [])
+    const onThemeChange = (e) => setTheme(e.detail);
+    window.addEventListener('themeChange', onThemeChange);
+    return () => window.removeEventListener('themeChange', onThemeChange);
+  }, []);
 
   return(
     <div className='my-14 bg-transparent'>

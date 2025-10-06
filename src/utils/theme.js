@@ -1,25 +1,29 @@
 const THEME_KEY = 'theme';
 
-export function getLocalThemePreference() {
+export function getSessionThemePreference() {
   return sessionStorage.getItem(THEME_KEY);
-};
-
-export function storeLocalThemePreference(preference) {
-  sessionStorage.setItem(THEME_KEY, preference)
 }
 
-export function getSystemTheme() {
+export function getSystemThemePreference() {
   if (window.matchMedia('(prefers-color-scheme: dark)').matches == true) {
     return 'dark'
   } else {
     return 'light'
-  }
+  };
 }
 
-export function applyTheme(theme) {
+export function getDataTheme() {
+  return document.documentElement.getAttribute('data-theme');
+}
+
+export function storeSessionThemePreference(preference) {
+  sessionStorage.setItem(THEME_KEY, preference);
+}
+
+export function applyDataTheme(theme) {
   document.documentElement.setAttribute('data-theme', theme);
   window.dispatchEvent(new CustomEvent('themeChange', { detail: theme }));
-};
+}
 
 export function initSystemThemeSync() {
   if (typeof window === 'undefined' || !window.matchMedia) return;
@@ -27,19 +31,19 @@ export function initSystemThemeSync() {
   if (window.__jbkThemeSynced) return;
   window.__jbkThemeSynced = true;
 
-  const localTheme = getLocalThemePreference();
-  const systemTheme = getSystemTheme();
+  const sessionTheme = getSessionThemePreference();
+  const systemThemePreference = getSystemThemePreference();
 
-  applyTheme(localTheme ?? systemTheme);
+  applyDataTheme(sessionTheme ?? systemThemePreference);
 
-  listenForSystemThemeChange();
+  listenForSystemThemePreferenceChange();
 }
   
-function listenForSystemThemeChange() {
+function listenForSystemThemePreferenceChange() {
   const mq = window.matchMedia('(prefers-color-scheme: dark)');
   const onChange = (e) => {
     sessionStorage.removeItem('theme');
-    applyTheme(e.matches ? 'dark' : 'light');
+    applyDataTheme(e.matches ? 'dark' : 'light');
   };
 
   mq.addEventListener('change', onChange);
