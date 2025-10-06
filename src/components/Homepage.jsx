@@ -14,7 +14,7 @@ export default function Homepage() {
       <Introduction />
       <ProjectCarousel />
       <Courses />
-      <Content />
+      {/* <Content /> */}
     </div>
   )
 }

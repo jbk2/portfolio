@@ -46,6 +46,7 @@ export default function Courses() {
           ))
         }
       </section>
+      <hr className="section-hr my-14 pb-6"></hr>
     </>
   )
 }

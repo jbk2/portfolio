@@ -31,7 +31,7 @@ export const courses = [
     progress: 100,
     image: railsTutorialImg,
     link: 'https://www.railstutorial.org/',
-    description: `Renowned Rails tutorial; MVC, TDD, auth, Active-Record|Storage|Jobs, Mailers, front end, performance, security, deployment.`,
+    description: `Renowned Rails tutorial; MVC, TDD, auth, Active-Record, Storage, Jobs, Mailers, front end, performance, security, deployment.`,
   },
   {
     id: 'agile-web-dev-rails-7-2',
@@ -67,7 +67,7 @@ export const courses = [
   },
   {
     id: 'poodr',
-    title: 'P.O.O.D.R.',
+    title: 'P.O.O.D. Ruby',
     progress: 100,
     image: poodrImg,
     link: 'https://www.poodr.com/',
