@@ -65,8 +65,8 @@ export default function ProjectCarousel() {
       </div>
     
       {/* Project card carousel */}
-      <div ref={projectsRef} className='py-2 bg-transparent'>
-        <div className={`flex overflow-x-auto pl-6 pb-6
+      <div ref={projectsRef} className='py-2 bg-transparent overflow-x-auto pl-6 pb-6'>
+        <div className={`flex w-max mx-auto gap-8 snap-x snap-mandatory
           ${projectsInView ? `animate-projects-in` : ``}`}>
 
           <div id="slide1" className="carousel-item flex flex-col">
