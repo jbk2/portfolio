@@ -24,10 +24,10 @@ export default {
       },
       keyframes: {
         'rotate-wave': {
-          '0%, 100%': { transform: 'rotate(0deg)' },
-          '25%': { transform: 'rotate(15deg)' },
-          '50%': { transform: 'rotate(0deg)' },
-          '75%': { transform: 'rotate(15deg)' },
+          '0%, 100%': { transform: 'rotate(0deg) scale(1)' },
+          '25%': { transform: 'rotate(15deg) scale(1.1)' },
+          '50%': { transform: 'rotate(0deg) scale(1.1)' },
+          '75%': { transform: 'rotate(15deg) scale(1.1)' },
         },
         'typing': {
           from: { width: '0' },
