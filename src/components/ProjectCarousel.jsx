@@ -5,23 +5,19 @@ import waldo from '/src/assets/images/project-images/waldo.png';
 import forhm from '/src/assets/images/project-images/forhm.jpg';
 import ubuntu from '/src/assets/images/project-images/ubuntu.png';
 import { useState, useRef, useEffect } from 'react';
-import  railsLogo from '../assets/images/technology-images/rails.svg';
-import  rubyLogo from '../assets/images/technology-images/ruby.svg';
-import  hotwireLogoLight from '../assets/images/technology-images/hotwire-light.svg';
-import  hotwireLogoDark from '../assets/images/technology-images/hotwire-dark.svg';
-import  shopifyLogoLight from '../assets/images/technology-images/shopify-light.svg';
-import  shopifyLogoDark from '../assets/images/technology-images/shopify-dark.svg';
-import  javascriptLogo from '../assets/images/technology-images/javascript.svg';
-import  reactLogo from '../assets/images/technology-images/react.svg';
-import  rspecLogo from '../assets/images/technology-images/rspec.svg';
-import  viteLogo from '../assets/images/technology-images/vite.svg';
-import  tailwindLogo from '../assets/images/technology-images/tailwindcss.svg';
-import  linuxLogo from '../assets/images/technology-images/linux.svg';
-import  ubuntuLogo from '../assets/images/technology-images/ubuntu.svg';
-import  bashLogo from '../assets/images/technology-images/bash-dark.svg';
 import { getDataTheme } from '../utils/theme';
+const techFiles = import.meta.glob('../assets/images/technology-images/*.svg', {eager: true, import: 'default'});
+const techLogos = Object.fromEntries(
+  Object.entries(techFiles).map(([path, url]) => {
+    const name = path.split('/').pop().replace(/\.svg$/,'');
+    return [name, url];
+  })
+);
 
 export default function ProjectCarousel() {
+  Object.entries(techLogos).forEach(([path, url]) => {
+    console.log('tech logo:', path, url)
+  })
   const dataTheme = getDataTheme();
   const [theme, setTheme] = useState(dataTheme);
 
@@ -83,12 +79,12 @@ export default function ProjectCarousel() {
                   Facebook clone SPA app
                 </h1>
                 <div className='flex items-center gap-2 -mt-[9px] text-[var(--color-text-header-secondary)]'>
-                  <img src={railsLogo} alt="rails logo" className='size-10 -mt-[5px]'/>
+                  <img src={techLogos['rails']} alt="rails logo" className='size-10 -mt-[5px]'/>
                   <p className='text-xs'>+</p>
-                  <img src={ theme == 'dark' ? hotwireLogoDark : hotwireLogoLight}
+                  <img src={ theme == 'dark' ? techLogos['hotwire-dark'] : techLogos['hotwire-light'] }
                     alt="hotwire logo" className='size-10'/>
                   <p className='text-xs'>+</p>
-                  <img src={rspecLogo} alt="rspec logo" className='size-4'/>
+                  <img src={techLogos['rspec']} alt="rspec logo" className='size-4'/>
                 </div>
               </div>
               <div className='grid grid-cols-2 gap-5 w-fit mx-auto'>
@@ -119,9 +115,9 @@ export default function ProjectCarousel() {
                   Wheres Waldo game app
                 </h1>
                 <div className='flex items-center gap-2 -mt-[10px] text-[var(--color-text-header-secondary)]'>
-                  <img src={reactLogo} alt="react logo" className='size-4'/>
+                  <img src={techLogos['react']} alt="react logo" className='size-4'/>
                   <p className='text-xs'>+</p>
-                  <img src={railsLogo} alt="rails logo" className='size-10'/>
+                  <img src={techLogos['rails']} alt="rails logo" className='size-10'/>
                 </div>
               </div>
               <div className='grid grid-cols-2 gap-5 w-fit mx-auto'>
@@ -152,9 +148,9 @@ export default function ProjectCarousel() {
                   Command line chess game
                 </h1>
                 <div className='flex items-center gap-2 mb-2 mt-[2px] text-[var(--color-text-header-secondary)]'>
-                  <img src={rubyLogo} alt="ruby logo" className='size-[13px]'/>
+                  <img src={techLogos['ruby']} alt="ruby logo" className='size-[13px]'/>
                   <p className='text-xs -mt-[3px]'>+</p>
-                  <img src={rspecLogo} alt="rspec logo" className='size-4'/>
+                  <img src={techLogos['rspec']} alt="rspec logo" className='size-4'/>
                 </div>
               </div>
               <div className='grid grid-cols-2 gap-5 w-fit mx-auto'>
@@ -185,11 +181,11 @@ export default function ProjectCarousel() {
                   Bash scripting and Linux devops
                 </h1>
                 <div className='flex items-center gap-2 mb-1 text-[var(--color-text-header-secondary)]'>
-                  <img src={linuxLogo} alt="linux logo" className='size-[17px]'/>
+                  <img src={techLogos['linux']} alt="linux logo" className='size-[17px]'/>
                   <p className='text-xs'>+</p>
-                  <img src={ubuntuLogo} alt="ubuntu logo" className='size-[15px]'/>
+                  <img src={techLogos['ubuntu']} alt="ubuntu logo" className='size-[15px]'/>
                   <p className='text-xs'>+</p>
-                  <img src={bashLogo} alt="bash logo" className='size-[22px]'/>
+                  <img src={techLogos['bash-dark']} alt="bash logo" className='size-[22px]'/>
                 </div>
               </div>
               <div className='grid grid-cols-2 gap-5 w-fit mx-auto'>
@@ -220,9 +216,9 @@ export default function ProjectCarousel() {
                   Shopify custom theme
                 </h1>
                 <div className='flex items-center gap-2 mb-2 mt-[2px] text-[var(--color-text-header-secondary)]'>
-                  <img src={javascriptLogo} alt="javascript logo" className='size-4'/>
+                  <img src={techLogos['javascript']} alt="javascript logo" className='size-4'/>
                   <p className='text-xs'>+</p>
-                  <img src={ theme == 'dark' ? shopifyLogoDark : shopifyLogoLight}
+                  <img src={ theme == 'dark' ? techLogos['shopify-dark'] : techLogos['shopify-light']}
                     alt="shopify logo" className='size-4'/>
                 </div>
               </div>
