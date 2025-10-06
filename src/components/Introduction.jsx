@@ -1,5 +1,6 @@
-export default function Introduction() {
-  
+import { BulletArrow } from "./icons/Icons"
+
+export default function Introduction() {  
   return(
     <div className="page-width px-4 sm:px-10 my-14">
       <hr className="section-hr"></hr>
@@ -49,58 +50,19 @@ export default function Introduction() {
               </p>
             </li> */}
             <li className="mb-3 flex items-center text-base">
-              <svg className='' width="17px" height="17px" viewBox="0 -4 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
-                <g id="Vivid.JS" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
-                  <g id="Vivid-Icons" transform="translate(-515.000000, -651.000000)">
-                    <g id="Icons" transform="translate(37.000000, 169.000000)">
-                      <g id="arrow-right" transform="translate(468.000000, 468.000000)">
-                        <g transform="translate(10.000000, 14.000000)" id="Shape">
-                          <polygon fill="var(--color-decoration-emerald)" points="0 12 20 12 15 17 18 20 28 10 18 0 15 3 20 8 0 8"></polygon>
-                          <polygon fill="hsl(224.86 67% 33%)" points="8 8 8 12 0 12 0 8"></polygon>
-                        </g>
-                      </g>
-                    </g>
-                  </g>
-                </g>
-              </svg>
+              <BulletArrow height={17} width={17} />
               <p className="ml-3">
                 I write Javascript & Ruby, in React, Rails & Hotwire (+HTML & CSS of course).
               </p>
             </li>
             <li className="mb-3 flex items-center text-base">
-              <svg className='' width="17px" height="17px" viewBox="0 -4 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
-                <g id="Vivid.JS" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
-                  <g id="Vivid-Icons" transform="translate(-515.000000, -651.000000)">
-                    <g id="Icons" transform="translate(37.000000, 169.000000)">
-                      <g id="arrow-right" transform="translate(468.000000, 468.000000)">
-                        <g transform="translate(10.000000, 14.000000)" id="Shape">
-                          <polygon fill="var(--color-decoration-emerald)" points="0 12 20 12 15 17 18 20 28 10 18 0 15 3 20 8 0 8"></polygon>
-                          <polygon fill="hsl(224.86 67% 33%)" points="8 8 8 12 0 12 0 8"></polygon>
-                        </g>
-                      </g>
-                    </g>
-                  </g>
-                </g>
-              </svg>
+            <BulletArrow height={17} width={17} />
               <p className="ml-3">
                 I'm also comfortable with bash, Docker, Linux, and AWS.
               </p>
             </li>
             <li className="flex items-center text-base">
-              <svg className='' width="17px" height="17px" viewBox="0 -4 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
-                <g id="Vivid.JS" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
-                  <g id="Vivid-Icons" transform="translate(-515.000000, -651.000000)">
-                    <g id="Icons" transform="translate(37.000000, 169.000000)">
-                      <g id="arrow-right" transform="translate(468.000000, 468.000000)">
-                        <g transform="translate(10.000000, 14.000000)" id="Shape">
-                          <polygon fill="var(--color-decoration-emerald)" points="0 12 20 12 15 17 18 20 28 10 18 0 15 3 20 8 0 8"></polygon>
-                          <polygon fill="hsl(224.86 67% 33%)" points="8 8 8 12 0 12 0 8"></polygon>
-                        </g>
-                      </g>
-                    </g>
-                  </g>
-                </g>
-              </svg>
+            <BulletArrow height={17} width={17} />
               <p className="ml-3">
                 I'm always keen to learn new technologies.
               </p>
