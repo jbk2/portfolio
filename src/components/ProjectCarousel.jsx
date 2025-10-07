@@ -15,9 +15,6 @@ const techLogos = Object.fromEntries(
 );
 
 export default function ProjectCarousel() {
-  Object.entries(techLogos).forEach(([path, url]) => {
-    console.log('tech logo:', path, url)
-  })
   const dataTheme = getDataTheme();
   const [theme, setTheme] = useState(dataTheme);
 
