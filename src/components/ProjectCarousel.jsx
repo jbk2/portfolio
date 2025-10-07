@@ -52,7 +52,7 @@ export default function ProjectCarousel() {
 
   return(
     <div className='my-14 bg-transparent'>
-      <div className="page-width pl-40 sm:pl-10 lg:pl-[88px] xl:pl-40">
+      <div className="page-width pl-20 lg:pl-30 xl:pl-40">
         <h2 className="text-lg font-extrabold tracking-wider text-[var(--color-text-header-secondary)]
         underline underline-offset-4 decoration-4 decoration-[var(--color-decoration-emerald)] mb-10">PROJECTS</h2>
       </div>
