@@ -7,6 +7,9 @@ import railsTutorialImg from '../assets/images/course-images/ror-tutorial-7.jpeg
 import rspecImg from '../assets/images/course-images/testing-rspec-3.jpg';
 import topImg from '../assets/images/course-images/top.jpg';
 import leetImg from '../assets/images/course-images/leet.jpg';
+import devopsImg from '../assets/images/course-images/deployment-from-scratch.jpg';
+import learnUiImg from '../assets/images/course-images/learn-ui.jpg';
+import vidTutorialsImg from '../assets/images/course-images/vid-tutorials.jpg';
 
 export const courses = [
   {
@@ -15,7 +18,8 @@ export const courses = [
     progress: 100,
     image: makersImg,
     link: 'https://makers.tech/',
-    description: `UK's best renowned in person immersive Bootcamp, full stack Ruby & JS syllabus via TDD & agile.`,
+    // description: `UK's best renowned in person immersive Bootcamp, full stack Ruby & JS syllabus via TDD & agile. `,
+    description: `UK's best renowned in-person bootcamp, full-stack Ruby & JS syllabus via TDD & agile. Trusted by teams at Google, Microsoft & Deloitte.`,
   },
   {
     id: 'odin-project',
@@ -81,4 +85,28 @@ export const courses = [
     link: 'https://www.leetcode.com/',
     description: `DSA practice - so far I've completed recursion, DP, linked list and binary tree modules.`,
   },
+  {
+    id: 'devops',
+    title: "Linux devops, docker, db's",
+    progress: 100,
+    image: devopsImg,
+    link: 'https://deploymentfromscratch.com/',
+    description: `Set up and mngmnt of Linux virtual servers, deployment and management of apps to them. Networking, security, DNS, containerisation via Docker.`,
+  },
+  {
+    id: 'learnUi',
+    title: "Learn UI Design",
+    progress: 100,
+    image: learnUiImg,
+    link: 'https://learnui.design/',
+    description: `Complete UI design vid course and resource library; colour, design patterns, typography, components. 54 lessons & excercises.`,
+  },
+  {
+    id: 'vids',
+    title: "Video Tutorial Courses",
+    progress: 75,
+    image: vidTutorialsImg,
+    link: 'https://frontendMasters.com/',
+    description: `Watched many 1000's of hours of video tutorials and guides over the years covering Ruby, RoR, JS, React, HTML, CSS. Many thanks to all content producers.`,
+  }
 ];
