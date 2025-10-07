@@ -17,9 +17,6 @@ export default function Course({key, title, progress, image, link, description})
           line-clamp-4 hover:line-clamp-none hover:max-h-24 hover:overflow-y-auto">
           {description}
         </p>
-        {/* <div className="card-actions justify-end">
-          <button className="btn btn-primary">Buy Now</button>
-          </div> */}
       </div>
       <progress className="progress h-[7px] text-[var(--color-decoration-emerald)]/40 [--radius-box:0]" value={progress} max="100"></progress>
     </div>

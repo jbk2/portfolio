@@ -81,7 +81,7 @@ export function MoonIcon() {
 
 export function BulletArrow({height, width}) {
   return (
-    <svg className='' width={width} height={height} viewBox="0 -4 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+    <svg className='shrink-0' width={width} height={height} viewBox="0 -4 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
       <g id="Vivid.JS" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
         <g id="Vivid-Icons" transform="translate(-515.000000, -651.000000)">
           <g id="Icons" transform="translate(37.000000, 169.000000)">

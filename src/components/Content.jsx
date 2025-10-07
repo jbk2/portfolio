@@ -1,5 +1,4 @@
 export default function Content() {
-
   return(
     <div className='my-18 page-width '>
       <hr className="section-hr my-14"></hr>
