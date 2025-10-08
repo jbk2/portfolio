@@ -64,7 +64,20 @@ export default function Introduction() {
             <li className="flex items-center text-base">
             <BulletArrow height={17} width={17} />
               <p className="ml-3">
-                I'm always keen to learn new technologies.
+                {/* I'm always keen to learn new technologies. */}
+                {/* Comfortable with clients and colleagues as well as developers. */}
+                {/* Also works well with clients as well as colleagues. */}
+                {/* And well experienced in client facing roles. */}
+                {/* I'm very experienced with client facing roles too. */}
+                {/* I have lots of experience in client facing roles too. */}
+                {/* I have lots of client facing experience too. */}
+                {/* I've lots of client facing experience too. */}
+                {/* And I'm as comfortable in front of clients as in front of a screen. */}
+                {/* And I'm as comfortable with clients as i am with developers. */}
+                {/* And I'm as comfortable with clients, as I am with colleagues. */}
+                {/* And I'm as comfortable with clients, as colleageues, as i am with developers. */}
+                {/* And I'm as comfortable with clients, as I am with developers. */}
+                I've lots of client facing and management experience too.
               </p>
             </li>
           </ul>
