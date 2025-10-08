@@ -37,10 +37,8 @@ export default function Courses() {
           </ul>
         </section> */}
       </div>
-      <section ref={coursesRef} className='grid gap-6 mt-10 mx-auto px-4 sm:px-10
-        max-w-[2000px] justify-center
-        [grid-template-columns:repeat(2,18rem)]
-        md:[grid-template-columns:repeat(auto-fit,minmax(18rem,18rem))]
+      <section ref={coursesRef} className='grid justify-center mt-10 max-w-[2000px] gap-6
+        [grid-template-columns:repeat(auto-fit,minmax(18rem,18rem))]
         translate-y-[var(--scroll-shift,0px)]'>
         {
           courses.map(course => (
