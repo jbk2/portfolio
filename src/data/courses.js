@@ -9,7 +9,7 @@ import topImg from '../assets/images/course-images/top.jpg';
 import leetImg from '../assets/images/course-images/leet.jpg';
 import devopsImg from '../assets/images/course-images/deployment-from-scratch.jpg';
 import learnUiImg from '../assets/images/course-images/learn-ui.jpg';
-import vidTutorialsImg from '../assets/images/course-images/vid-tutorials.jpg';
+import vidTutorialsImg from '../assets/images/course-images/vid-tutorials.svg';
 
 export const courses = [
   {
