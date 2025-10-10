@@ -97,7 +97,7 @@ export default function Introduction() {
             title="Email Me">
             Contact me
           </a>
-          <a href="#" className="btn w-[120px] sm:w-[136px] rounded-lg border-none
+          <a href="https://www.linkedin.com/in/jamesbkemp" className="btn w-[120px] sm:w-[136px] rounded-lg border-none
             bg-[image:var(--btn-gradient-primary-lighttodark)] text-[var(--btn-light-text)]
             hover:opacity-90 hover:scale-99" title="Download My C.V.">
             C.V.
