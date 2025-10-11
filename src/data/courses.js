@@ -107,6 +107,6 @@ export const courses = [
     progress: 75,
     image: vidTutorialsImg,
     link: 'https://frontendMasters.com/',
-    description: `Watched many 1000's of hours of video tutorials and guides over the years covering Ruby, RoR, JS, React, HTML, CSS. Many thanks to all content producers.`,
+    description: `Many 1000's of hrs of video tutorials and guides over the years covering Ruby, RoR, JS, React, HTML, CSS. Many thanks to those producers of content that I've benefited from.`,
   }
 ];
