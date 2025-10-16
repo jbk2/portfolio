@@ -14,28 +14,11 @@ export default function Courses() {
   });
 
   return(
-    <div className='page-width px-4 sm:px-10'>
-      <div className=''>
-        {/* <hr className="mx-auto border-[var(--color-border-primary)]"></hr> */}
-        <hr className="section-hr"></hr>
-        <div className="pl-20 lg:pl-30 xl:pl-40 mt-14">
-          <h2 className="text-lg font-extrabold tracking-wider text-[var(--color-text-header-secondary)]
-          underline underline-offset-4 decoration-4 decoration-[var(--color-decoration-emerald)] ">COURSES / TUTORIALS / BOOKS</h2>
-        </div>
-        {/* <section className="flex justify-center gap-20">
-          <h2>Studied:</h2>
-          <ul>
-
-            <li><a href="https://deploymentfromscratch.com/">Deployment from Scratch</a></li>
-            <li>AWS Cert</li>
-            <li>Hotwire</li>
-            <li><a href="https://www.learnui.design/">Learn UI</a></li>
-            <li>Attend conferences - Brighton Ruby</li>
-            <li>React docs </li>
-            <li>Hotwire Docs </li>
-            <li>Rails guides </li>
-          </ul>
-        </section> */}
+    <div className='page-width'>
+      <hr className="section-hr"></hr>
+      <div className="pl-20 lg:pl-30 xl:pl-40 mt-14">
+        <h2 className="text-lg font-extrabold tracking-wider text-[var(--color-text-header-secondary)]
+        underline underline-offset-4 decoration-4 decoration-[var(--color-decoration-emerald)] ">COURSES / TUTORIALS / BOOKS</h2>
       </div>
       <section ref={coursesRef} className='grid mx-auto justify-center mt-14 max-w-[2000px] gap-6
         [grid-template-columns:repeat(auto-fit,minmax(18rem,18rem))]

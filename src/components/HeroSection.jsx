@@ -35,7 +35,7 @@ export default function HeroSection() {
       
       
       {/* Col-2 */}
-      <div className="col-start-1 xl:col-start-2 mx-auto xl:ml-0 md:min-w-[800px] px-4">
+      <div className="col-start-1 xl:col-start-2 mx-auto xl:ml-0 md:min-w-[800px]">
         <h1 className="text-[3.15rem] sm:text-6xl md:text-7xl font-black
           text-[var(--color-text-header-primary)] sm:mb-6 md:mb-8 lg:mb-10">I'm 
           <div className="inline-block bg-clip-text text-transparent hero-header-gradient">
