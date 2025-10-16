@@ -138,6 +138,20 @@ body {
   animation: gradient 10s linear infinite;
 }
 
+/* Firefox (non-macOS will show this) */
+.scrollbar-colored {
+  scrollbar-color: var(--color-gray-300) transparent; /* thumb, track */
+  scrollbar-width: thin;
+}
+
+/* Chrome/Safari/Edge */
+/* .scrollbar-colored::-webkit-scrollbar { height: 10px; } */
+/* .scrollbar-colored::-webkit-scrollbar-thumb {
+  background-color: var(--color-red-600);
+  border-radius: 8px;
+} */
+/* .scrollbar-colored::-webkit-scrollbar-track { background: transparent; } */
+
 /* --------------------- Classes for updateText() fn ----------------------- */
 .typing {
   position: relative;
