@@ -68,7 +68,7 @@ export default function HeroSection() {
       </div>
 
       {/* Col-3 */}
-      <div className="absolute right-3 top-2 md:right-5 lg:top-3 xl:right-8 xl:top-5">
+      <div className="absolute right-2 top-2 md:right-5 lg:top-3 xl:right-8 xl:top-5">
         <NavLinks />
       </div>
     </div>
