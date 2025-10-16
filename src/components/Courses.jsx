@@ -14,8 +14,8 @@ export default function Courses() {
   });
 
   return(
-    <>
-      <div className='my-18 page-width'>
+    <div className='page-width px-4 sm:px-10'>
+      <div className=''>
         {/* <hr className="mx-auto border-[var(--color-border-primary)]"></hr> */}
         <hr className="section-hr"></hr>
         <div className="pl-20 lg:pl-30 xl:pl-40 mt-14">
@@ -37,7 +37,7 @@ export default function Courses() {
           </ul>
         </section> */}
       </div>
-      <section ref={coursesRef} className='grid mx-auto justify-center mt-10 max-w-[2000px] gap-6
+      <section ref={coursesRef} className='grid mx-auto justify-center mt-14 max-w-[2000px] gap-6
         [grid-template-columns:repeat(auto-fit,minmax(18rem,18rem))]
         translate-y-[var(--scroll-shift,0px)]'>
         {
@@ -46,7 +46,7 @@ export default function Courses() {
           ))
         }
       </section>
-      <hr className="section-hr my-14 pb-6"></hr>
-    </>
+      <hr className="section-hr mt-14 pb-6"></hr>
+    </div>
   )
 }

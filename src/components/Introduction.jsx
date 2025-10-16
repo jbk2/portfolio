@@ -2,7 +2,7 @@ import { BulletArrow } from "./icons/Icons"
 
 export default function Introduction() {  
   return(
-    <div className="page-width px-4 sm:px-10 my-8 md:my-14">
+    <div className="page-width px-4 sm:px-10 md:my-14">
       <hr className="section-hr"></hr>
       
       {/* Summary stats and intro bullet sections */}
@@ -113,7 +113,7 @@ export default function Introduction() {
           </div>
         </section>
       </div>
-      <hr className="section-hr mt-20"></hr>
+      <hr className="section-hr mt-16 sm:mt-20"></hr>
     </div>
   )
 }
