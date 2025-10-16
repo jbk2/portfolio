@@ -14,7 +14,7 @@ export default function Courses() {
   });
 
   return(
-    <div className='page-width'>
+    <div className='page-width px-4 sm:px-10'>
       <hr className="section-hr"></hr>
       <div className="pl-20 lg:pl-30 xl:pl-40 mt-14">
         <h2 className="text-lg font-extrabold tracking-wider text-[var(--color-text-header-secondary)]
