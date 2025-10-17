@@ -1,9 +1,10 @@
 // import flightBooker from '/src/assets/images/project-images/flight-booker.png';
 import fakebook from '/src/assets/images/project-images/fakebook.png';
-import chess from '/src/assets/images/project-images/chess.png';
+import chess from '/src/assets/images/project-images/chess.jpg';
 import waldo from '/src/assets/images/project-images/waldo.png';
 import forhm from '/src/assets/images/project-images/forhm.jpg';
-import ubuntu from '/src/assets/images/project-images/ubuntu.png';
+import battleships from '/src/assets/images/project-images/battleships.jpg';
+import ubuntu from '/src/assets/images/project-images/ubuntu.jpg';
 import { useState, useRef, useEffect } from 'react';
 import { getDataTheme } from '../utils/theme';
 const techFiles = import.meta.glob('../assets/images/technology-images/*.svg', {eager: true, import: 'default'});
@@ -62,7 +63,7 @@ export default function ProjectCarousel() {
         <div className={`flex w-max mx-auto gap-8 snap-x snap-mandatory
           ${projectsInView ? `animate-projects-in` : ``}`}>
 
-          <div id="slide1" className="carousel-item flex flex-col">
+          <div id="slide1" className="carousel-item flex flex-col w-[420px]">
             <div className='rotate-1 p-1'>
               <a href="https://fakebook.bibble.com">
                 <img src={fakebook} className="mx-auto rounded h-[280px] drop-shadow-lg
@@ -84,7 +85,7 @@ export default function ProjectCarousel() {
                   <img src={techLogos['rspec']} alt="rspec logo" className='size-4'/>
                 </div>
               </div>
-              <div className='grid grid-cols-2 gap-5 w-fit mx-auto'>
+              <div className='grid grid-cols-[max-content_max-content] gap-5 justify-center'>
                 <ul className="font-light text-sm">
                   <li className="[&::marker]:content-['•'] [&::marker]:text-[var(--color-teal-dark)]">&nbsp;Complex forms & assoc'ns</li>
                   <li className="[&::marker]:content-['•'] [&::marker]:text-[var(--color-teal-dark)]">&nbsp;ActiveStorage</li>
@@ -98,7 +99,7 @@ export default function ProjectCarousel() {
               </div>
             </div>
           </div>
-          <div id="slide2" className="carousel-item flex flex-col">
+          <div id="slide2" className="carousel-item flex flex-col w-[420px]">
             <div className='-rotate-1 p-1'>
               <a href="https://waldo.bibble.com">
                 <img src={waldo} className="mx-auto rounded h-[280px] drop-shadow-lg
@@ -117,11 +118,11 @@ export default function ProjectCarousel() {
                   <img src={techLogos['rails']} alt="rails logo" className='size-10'/>
                 </div>
               </div>
-              <div className='grid grid-cols-2 gap-5 w-fit mx-auto'>
+              <div className='grid grid-cols-[max-content_max-content] gap-5 justify-center'>
                 <ul className="font-light text-sm">
                   <li className="[&::marker]:content-['•'] [&::marker]:text-[var(--color-teal-dark)]">&nbsp;React Router, Context API</li>
-                  <li className="[&::marker]:content-['•'] [&::marker]:text-[var(--color-teal-dark)]">&nbsp;callbk memo ref nav params</li>
-                  <li className="[&::marker]:content-['•'] [&::marker]:text-[var(--color-teal-dark)]">&nbsp;Custom hooks</li>
+                  <li className="[&::marker]:content-['•'] [&::marker]:text-[var(--color-teal-dark)]">&nbsp;Many React hooks used</li>
+                  <li className="[&::marker]:content-['•'] [&::marker]:text-[var(--color-teal-dark)]">&nbsp;Custom hooks built</li>
                 </ul>
                 <ul className="font-light text-sm">
                   <li className="[&::marker]:content-['•'] [&::marker]:text-[var(--color-teal-dark)]">&nbsp;Rails API + Postgres</li>
@@ -131,7 +132,7 @@ export default function ProjectCarousel() {
               </div>
             </div>
           </div>
-          <div id="slide3" className="carousel-item flex flex-col">
+          <div id="slide3" className="carousel-item flex flex-col w-[420px]">
             <div className='rotate-1 p-1'>
               <a href="https://replit.com/@jbk1/Chess">
                 <img src={chess} className="mx-auto h-[280px] rounded drop-shadow-lg
@@ -150,13 +151,13 @@ export default function ProjectCarousel() {
                   <img src={techLogos['rspec']} alt="rspec logo" className='size-4'/>
                 </div>
               </div>
-              <div className='grid grid-cols-2 gap-5 w-fit mx-auto'>
-                <ul className="font-light text-sm">
+              <div className='grid grid-cols-[max-content_max-content] gap-5 justify-center'>
+                <ul className="font-light text-sm w-fit">
                   <li className="[&::marker]:content-['•'] [&::marker]:text-[var(--color-teal-dark)]">&nbsp;Chess in pure Ruby</li>
                   <li className="[&::marker]:content-['•'] [&::marker]:text-[var(--color-teal-dark)]">&nbsp;Built via TDD & rspec</li>
                   {/* <li className="[&::marker]:content-['•'] [&::marker]:text-[var(--color-teal-dark)]">&nbsp;</li> */}
                 </ul>
-                <ul className="font-light text-sm">
+                <ul className="font-light text-sm w-fit">
                   <li className="[&::marker]:content-['•'] [&::marker]:text-[var(--color-teal-dark)]">&nbsp;Unit & integration tested</li>
                   <li className="[&::marker]:content-['•'] [&::marker]:text-[var(--color-teal-dark)]">&nbsp;Game persistency</li>
                   {/* <li className="[&::marker]:content-['•'] [&::marker]:text-[var(--color-teal-dark)]">&nbsp;</li> */}
@@ -164,7 +165,7 @@ export default function ProjectCarousel() {
               </div>
             </div>
           </div>
-          <div id="slide4" className="carousel-item flex flex-col">
+          <div id="slide4" className="carousel-item flex flex-col w-[420px]">
             <div className='rotate-1 p-1'>
               <a href="https://ubuntu.bibble.com">
                 <img src={ubuntu} className="mx-auto h-[280px] rounded drop-shadow-lg
@@ -185,7 +186,7 @@ export default function ProjectCarousel() {
                   <img src={techLogos['bash-dark']} alt="bash logo" className='size-[22px]'/>
                 </div>
               </div>
-              <div className='grid grid-cols-2 gap-5 w-fit mx-auto'>
+              <div className='grid grid-cols-[max-content_max-content] gap-5 justify-center'>
                 <ul className="font-light text-sm">
                   <li className="[&::marker]:content-['•'] [&::marker]:text-[var(--color-teal-dark)]">&nbsp;Ubuntu provisioning</li>
                   <li className="[&::marker]:content-['•'] [&::marker]:text-[var(--color-teal-dark)]">&nbsp;Server maintenance</li>
@@ -199,7 +200,7 @@ export default function ProjectCarousel() {
               </div>
             </div>
           </div>
-          <div id="slide5" className="carousel-item flex flex-col">
+          <div id="slide5" className="carousel-item flex flex-col w-[420px]">
             <div className="-rotate-1 p-1">
               <a href="https://forhm.com/">
                 <img src={forhm} className="mx-auto h-[280px] rounded drop-shadow-lg
@@ -219,7 +220,7 @@ export default function ProjectCarousel() {
                     alt="shopify logo" className='size-4'/>
                 </div>
               </div>
-              <div className='grid grid-cols-2 gap-5 w-fit mx-auto'>
+              <div className='grid grid-cols-[max-content_max-content] gap-5 justify-center'>
                 <ul className="font-light text-sm">
                   <li className="[&::marker]:content-['•'] [&::marker]:text-[var(--color-teal-dark)]">&nbsp;CSS customisation</li>
                   <li className="[&::marker]:content-['•'] [&::marker]:text-[var(--color-teal-dark)]">&nbsp;HTML customisation</li>
@@ -227,6 +228,39 @@ export default function ProjectCarousel() {
                 <ul className="font-light text-sm">
                   <li className="[&::marker]:content-['•'] [&::marker]:text-[var(--color-teal-dark)]">&nbsp;Vanilla JS</li>
                   <li className="[&::marker]:content-['•'] [&::marker]:text-[var(--color-teal-dark)]">&nbsp;Liquid templating</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="slide6" className="carousel-item flex flex-col w-[420px]">
+            <div className="-rotate-1 p-1">
+              <a href="https://battleships.bibble.com/">
+                <img src={battleships} className="mx-auto h-[270px] rounded drop-shadow-lg
+                transition ease-in-out hover:scale-[101%]"/>
+              </a>
+            </div>
+            <div className="mt-5 ml-6 text-[var(--color-text-secondary)]">
+              <div className='flex flex-col items-center'>
+                <h1 className="font-bold text-[var(--color-text-header-secondary)]
+                  [html[data-theme=dark]_&]:text-[var(--color-text-header-primary)]">
+                  Battleships in JS
+                </h1>
+                <div className='flex items-center gap-2 mb-2 mt-[2px] text-[var(--color-text-header-secondary)]'>
+                  <img src={techLogos['javascript']} alt="javascript logo" className='size-4'/>
+                  <p className='text-xs'>+</p>
+                  <img src={techLogos['jest']} alt="jest logo" className='size-4'/>
+                  <p className='text-xs'>+</p>
+                  <img src={techLogos['webpack']} alt="weboack logo" className='size-4'/>
+                </div>
+              </div>
+              <div className='grid grid-cols-[max-content_max-content] gap-5 justify-center'>
+                <ul className="font-light text-sm">
+                  <li className="[&::marker]:content-['•'] [&::marker]:text-[var(--color-teal-dark)]">&nbsp;Written in pure JS</li>
+                  <li className="[&::marker]:content-['•'] [&::marker]:text-[var(--color-teal-dark)]">&nbsp;Full Jest coverage</li>
+                </ul>
+                <ul className="font-light text-sm ">
+                  <li className="[&::marker]:content-['•'] [&::marker]:text-[var(--color-teal-dark)]">&nbsp;Bundled with Webpack</li>
+                  <li className="[&::marker]:content-['•'] [&::marker]:text-[var(--color-teal-dark)]">&nbsp;Nginx served & Dockerised</li>
                 </ul>
               </div>
             </div>
