@@ -1,3 +1,4 @@
+import DownloadBtn from "./DownloadBtn"
 import { BulletArrow } from "./icons/Icons"
 
 export default function Introduction() {  
@@ -64,19 +65,6 @@ export default function Introduction() {
             <li className="flex items-center text-base">
             <BulletArrow height={17} width={17} />
               <p className="ml-3">
-                {/* I'm always keen to learn new technologies. */}
-                {/* Comfortable with clients and colleagues as well as developers. */}
-                {/* Also works well with clients as well as colleagues. */}
-                {/* And well experienced in client facing roles. */}
-                {/* I'm very experienced with client facing roles too. */}
-                {/* I have lots of experience in client facing roles too. */}
-                {/* I have lots of client facing experience too. */}
-                {/* I've lots of client facing experience too. */}
-                {/* And I'm as comfortable in front of clients as in front of a screen. */}
-                {/* And I'm as comfortable with clients as i am with developers. */}
-                {/* And I'm as comfortable with clients, as I am with colleagues. */}
-                {/* And I'm as comfortable with clients, as colleageues, as i am with developers. */}
-                {/* And I'm as comfortable with clients, as I am with developers. */}
                 I've lots of client facing and management experience too.
               </p>
             </li>
@@ -97,11 +85,7 @@ export default function Introduction() {
             title="Email Me">
             Contact me
           </a>
-          <a href="https://www.linkedin.com/in/jamesbkemp" className="btn w-[120px] sm:w-[136px] rounded-lg border-none
-            bg-[image:var(--btn-gradient-primary-lighttodark)] text-[var(--btn-light-text)]
-            hover:opacity-90 hover:scale-99" title="Download My C.V.">
-            C.V.
-          </a>
+          <DownloadBtn fileName="JBK-CV-20" format="pdf" />
           {/* Terminal mock up section */}
           <div className="mockup-code hidden xl:inline-block ml-24 mr-6 -mb-3 rounded-md text-sm
             bg-[var(--color-foreground-light)] font-jetbrains border

@@ -233,7 +233,7 @@ export default function ProjectCarousel() {
             </div>
           </div>
           <div id="slide6" className="carousel-item flex flex-col w-[420px]">
-            <div className="-rotate-1 p-1">
+            <div className="rotate-1 p-1">
               <a href="https://battleships.bibble.com/">
                 <img src={battleships} className="mx-auto h-[270px] rounded drop-shadow-lg
                 transition ease-in-out hover:scale-[101%]"/>
