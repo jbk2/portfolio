@@ -77,7 +77,7 @@ export default function Introduction() {
         <section className="flex w-full gap-4 sm:gap-14 justify-center xl:items-end xl:-mt-18" > {/*  gap-4 sm:gap-10 md:gap-14  */}
           <a href="https://github.com/jbk2" className="btn w-[120px] sm:w-[136px] rounded-lg border-none
             bg-[image:var(--btn-gradient-primary-darktolight)] text-[var(--btn-light-text)] hover:opacity-90
-            hover:scale-99 text-nowrap" title="My Github Profile">
+            hover:scale-99 text-nowrap" target="_blank" rel="noopener" title="My Github Profile">
             Github profile
           </a>
           <a href="mailto:james@bibble.com" className="btn w-[120px] sm:w-[136px] rounded-lg border-none
@@ -85,7 +85,7 @@ export default function Introduction() {
             title="Email Me">
             Contact me
           </a>
-          <DownloadBtn fileName="JBK-CV-20" format="pdf" />
+          <DownloadBtn fileName="CV-JBK-10.25-Final-Public" format="pdf" />
           {/* Terminal mock up section */}
           <div className="mockup-code hidden xl:inline-block ml-24 mr-6 -mb-3 rounded-md text-sm
             bg-[var(--color-foreground-light)] font-jetbrains border
