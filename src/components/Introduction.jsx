@@ -85,7 +85,7 @@ export default function Introduction() {
             title="Email Me">
             Contact me
           </a>
-          <DownloadBtn fileName="CV-JBK-10.25-Final-Public" format="pdf" />
+          <DownloadBtn fileName="CV-JBK-11.25" format="pdf" />
           {/* Terminal mock up section */}
           <div className="mockup-code hidden xl:inline-block ml-24 mr-6 -mb-3 rounded-md text-sm
             bg-[var(--color-foreground-light)] font-jetbrains border
