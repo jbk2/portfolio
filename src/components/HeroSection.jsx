@@ -36,11 +36,12 @@ export default function HeroSection() {
       
       {/* Col-2 */}
       <div className="col-start-1 xl:col-start-2 mx-auto xl:ml-0 md:min-w-[800px]">
-        <h1 className="text-[3.15rem] sm:text-6xl md:text-7xl font-black
-          text-[var(--color-text-header-primary)] sm:mb-6 md:mb-8 lg:mb-10">I'm 
+        <h1 className="text-[3.15rem] sm:text-6xl md:text-7xl font-black leading-[1.3]
+          text-[var(--color-text-header-primary)] sm:mb-5 md:mb-7 lg:mb-8">
+          <div className='hidden sm:inline-block'>I'm&nbsp;</div>
           <div className="inline-block bg-clip-text text-transparent hero-header-gradient">
-            &nbsp;James
-            <span className="hidden sm:inline-block">&nbsp;Kemp</span>
+            James 
+            <span className="inline-block">&nbsp;Kemp</span>
           </div>
           <span className="text-3xl sm:text-4xl ">,</span>
           <div onClick={rerunWaveAnimation}  title="Click me to say hi"
@@ -53,7 +54,7 @@ export default function HeroSection() {
 
         <div className="flex flex-wrap">
           <h1 className="inline-block sm:hidden text-[3.15rem]/12 md:text-7xl font-extrabold
-            text-[var(--color-text-header-primary)] sm:whitespace-nowrap">a web developer
+            text-[var(--color-text-header-primary)] sm:whitespace-nowrap">web developer
             <span className="text-4xl -ml-1">.</span>
           </h1>
           <span className="whitespace-nowrap">

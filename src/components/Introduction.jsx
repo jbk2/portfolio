@@ -9,8 +9,8 @@ export default function Introduction() {
       {/* Summary stats and intro bullet sections */}
       <div className="xl:ml-0 mt-6">
         {/* Summary stats section */}
-        <section className="font-semibold text-sm mb-4 md:mb-9">
-          <div className="flex justify-between md:justify-around gap-8 p-6
+        <section className="font-semibold text-sm mb-4 md:mb-9 max-w-screen">
+          <div className="flex justify-between md:justify-around gap-4 sm:gap-8 p-4 sm:p-6
             text-[var(--color-text-header-secondary)]">
             <div className="flex flex-col md:items-center">
               <div className="underline underline-offset-4 decoration-4 decoration-[var(--color-decoration-emerald)]">
@@ -28,7 +28,7 @@ export default function Introduction() {
                 <span className="font-extrabold italic text-sm diagonal-fractions">1/2</span>
                 <span className="font-black text-xs">&nbsp;YRS</span>
               </div>
-              <p className="my-1 w-24 md:w-fit">Full time coding</p>
+              <p className="my-1 w-16 md:w-fit">Full time coding</p>
             </div>
             <div className="flex flex-col md:items-center">
               <div className="underline underline-offset-4 decoration-4 decoration-[var(--color-decoration-emerald)]">
@@ -74,7 +74,7 @@ export default function Introduction() {
 
       {/* Buttons & terminal mockup section */}
       <div className="mt-8">
-        <section className="flex w-full gap-4 sm:gap-14 justify-center xl:items-end xl:-mt-18" > {/*  gap-4 sm:gap-10 md:gap-14  */}
+        <section className="flex w-full gap-3 sm:gap-14 justify-center xl:items-end xl:-mt-18" > {/*  gap-4 sm:gap-10 md:gap-14  */}
           <a href="https://github.com/jbk2" className="btn btn-glow-transition btn-glow-gradient w-[120px] sm:w-[136px] rounded-lg border-none
             bg-[image:var(--btn-gradient-primary-darktolight)] text-[var(--btn-light-text)] hover:opacity-90
             hover:scale-99 text-nowrap" target="_blank" rel="noopener" title="My Github Profile">
