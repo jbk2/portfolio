@@ -53,19 +53,19 @@ export default function Introduction() {
             <li className="mb-3 flex items-center text-base">
               <BulletArrow height={17} width={17} />
               <p className="ml-3">
-                I write Javascript & Ruby, in React, Rails & Hotwire (+HTML & CSS of course).
+                I build in Javascript & Ruby with React, Rails & Hotwire (+HTML & CSS of course).
               </p>
             </li>
             <li className="mb-3 flex items-center text-base">
             <BulletArrow height={17} width={17} />
               <p className="ml-3">
-                I'm also comfortable with bash, Docker, Linux, and AWS.
+                I manage with bash, Linux, Docker & AWS, amongst others.
               </p>
             </li>
             <li className="flex items-center text-base">
             <BulletArrow height={17} width={17} />
               <p className="ml-3">
-                I've lots of client facing and management experience too.
+                And I've a career's worth of client, management and business experience.
               </p>
             </li>
           </ul>
