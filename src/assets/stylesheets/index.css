@@ -100,25 +100,25 @@ body {
 
 /* Single-color teal glow (matches --color-btn-primary) */
 html[data-theme="dark"] .btn-glow-teal {
-  box-shadow: 0 0 30px 11px hsl(from var(--color-btn-primary) h s l / 0.30);
+  box-shadow: 0 0 30px 11px hsl(from var(--color-btn-primary) h s l / 0.20);
 }
 
 html[data-theme="dark"] .btn-glow-teal:hover {
-  box-shadow: 0 0 40px 10px hsl(from var(--color-btn-primary) h s l / 0.42);
+  box-shadow: 0 0 40px 10px hsl(from var(--color-btn-primary) h s l / 0.4);
   transform: translateY(-1px);
 }
 
 /* Gradient glow to match gradient coloured buttons */
 html[data-theme="dark"] .btn-glow-gradient {
   box-shadow:
-    0 0 30px 8px hsl(from var(--color-btn-primary) h s l / 0.28),
-    0 0 30px 8px hsl(from var(--color-dark-blue) h s l / 0.22);
+    0 0 30px 8px hsl(from var(--color-btn-primary) h s l / 0.1),
+    0 0 30px 8px hsl(from var(--color-dark-blue) h s l / 0.1);
 }
 
 html[data-theme="dark"] .btn-glow-gradient:hover {
   box-shadow:
-  0 0 40px 8px hsl(from var(--color-btn-primary) h s l / 0.38),
-  0 0 40px 8px hsl(from var(--color-dark-blue) h s l / 0.28);
+  0 0 40px 8px hsl(from var(--color-btn-primary) h s l / 0.3),
+  0 0 40px 8px hsl(from var(--color-dark-blue) h s l / 0.3);
   transform: translateY(-1px);
 }
 
