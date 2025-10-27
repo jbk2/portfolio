@@ -6,17 +6,15 @@
   --color-dark-blue: hsla(236, 77%, 20%, 1);
   --color-light-teal: hsla(182, 100%, 42%, 1);
   /* Layout */
-  --scroll-shift: 70px; /* variable which the scroll animation adjusts */
+  --scroll-shift: 70px; /* the variable which the scroll animation adjusts */
 }
 
 :root[data-theme='light'] {
   color-scheme: light;
-  
   /* Surfaces */
   --btn-gradient-primary-darktolight: linear-gradient(90deg, var(--color-dark-blue) 30%, var(--color-btn-primary) 95%);
   --btn-gradient-primary-lighttodark: linear-gradient(90deg, var(--color-btn-primary) 5%, var(--color-dark-blue) 70%);
   --color-bg: var(--color-white);
-
 
   /* Text */
   --color-text-header-primary: var(--color-blue-900);
@@ -37,32 +35,11 @@
   --color-decoration-emerald: var(--color-emerald-200);
   --color-teal-dark: var(--color-teal-500);
   --color-foreground-light: var(--color-neutral-50);
-
-  /* gradients */
-
-/* ---- above are sorted -----  */
-  
-  /* Base palette (from Tailwind) */
-  /* --color-emerald-light: var(--color-emerald-200); */
-  /* --color-teal-light: var(--color-teal-300); */
-  /* --color-teal-md: var(--color-teal-400); */
-  
-  /* Brand palette (light defaults) */
-  /* --color-primary-light: var(--color-teal-300); */
-  /* Deep blue used by gradients (fallback to HSLA if custom var absent) */
-  /* --color-primary-dark: var(--color-deep-blue, hsl(236, 76%, 20%)); */
-  
-  /* Semantic (light defaults) */
-  /* Unified button tokens */
-  /* --btn-bg: var(--color-primary-light); */
-  /* --btn-bg-hover: var(--color-teal-400); */
-  /* Page background */
 }
 
 
 :root[data-theme='dark'] {
   color-scheme: dark;
-
   /* Surfaces */
   --btn-gradient-primary-darktolight: linear-gradient(90deg, var(--color-dark-blue) 20%, var(--color-btn-primary) 100%);
   --btn-gradient-primary-lighttodark: linear-gradient(90deg, var(--color-btn-primary) 5%, var(--color-dark-blue) 95%);
@@ -87,16 +64,6 @@
   --color-decoration-emerald: hsl(from var(--color-emerald-400) h s l/0.8);
   --color-teal-dark: var(--color-teal-500);
   --color-border-primary: var(--color-slate-700);
-
-
-  /* Semantic overrides only for dark mode */
-  /* Page background */
-  /* Keep gradients consistent in dark mode */
-  /* --color-primary-dark: var(--color-deepblue, hsla(236, 77%, 20%, 1)); */
-  /* Unified button tokens */
-  /* --btn-bg: var(--color-teal-400); */
-  /* --btn-bg-hover: var(--color-teal-300); */
-  /* --btn-text: var(--color-gray-100); */
 }
 
 .page-width {
@@ -121,6 +88,38 @@ body {
   margin-right: auto;
   border: 0;
   border-top: 1px solid var(--color-border-primary);
+}
+
+
+/* -------------------------------------------- */
+/* Information section button glows */
+.btn-glow-transition {
+  transition: box-shadow 300ms ease, transform 300ms ease;
+  will-change: box-shadow, transform;
+}
+
+/* Single-color teal glow (matches --color-btn-primary) */
+html[data-theme="dark"] .btn-glow-teal {
+  box-shadow: 0 0 30px 11px hsl(from var(--color-btn-primary) h s l / 0.30);
+}
+
+html[data-theme="dark"] .btn-glow-teal:hover {
+  box-shadow: 0 0 40px 10px hsl(from var(--color-btn-primary) h s l / 0.42);
+  transform: translateY(-1px);
+}
+
+/* Gradient glow to match gradient coloured buttons */
+html[data-theme="dark"] .btn-glow-gradient {
+  box-shadow:
+    0 0 30px 8px hsl(from var(--color-btn-primary) h s l / 0.28),
+    0 0 30px 8px hsl(from var(--color-dark-blue) h s l / 0.22);
+}
+
+html[data-theme="dark"] .btn-glow-gradient:hover {
+  box-shadow:
+  0 0 40px 8px hsl(from var(--color-btn-primary) h s l / 0.38),
+  0 0 40px 8px hsl(from var(--color-dark-blue) h s l / 0.28);
+  transform: translateY(-1px);
 }
 
 /* -------------------------------------------- */
