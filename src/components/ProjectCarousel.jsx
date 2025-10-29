@@ -62,15 +62,8 @@ export default function ProjectCarousel() {
       <div ref={projectsRef} className='py-2 bg-transparent overflow-x-auto pl-6 pb-6 scrollbar-colored'>
         <div className={`flex w-max mx-auto gap-8 snap-x snap-mandatory
           ${projectsInView ? `animate-projects-in` : ``}`}>
-
           <div id="slide1" className="carousel-item flex flex-col w-[420px]">
-            <div className='rotate-1 p-1'>
-              <a href="https://fakebook.bibble.com">
-                <img src={fakebook} className="mx-auto rounded h-[280px] drop-shadow-lg
-                  transition ease-in-out hover:scale-[101%]"/>
-              </a>
-            </div>
-            <div className="mt-5 ml-6 text-[var(--color-text-secondary)]">
+            <div className="mb-5 ml-6 text-[var(--color-text-secondary)]">
               <div className='flex flex-col items-center'>
                 <h1 className="flex font-bold text-[var(--color-text-header-secondary)]
                   [html[data-theme=dark]_&]:text-[var(--color-text-header-primary)]">
@@ -98,15 +91,15 @@ export default function ProjectCarousel() {
                 </ul>
               </div>
             </div>
-          </div>
-          <div id="slide2" className="carousel-item flex flex-col w-[420px]">
-            <div className='-rotate-1 p-1'>
-              <a href="https://waldo.bibble.com">
-                <img src={waldo} className="mx-auto rounded h-[280px] drop-shadow-lg
+            <div className='rotate-1 p-1'>
+              <a href="https://fakebook.bibble.com">
+                <img src={fakebook} className="mx-auto rounded h-[280px] drop-shadow-lg
                   transition ease-in-out hover:scale-[101%]"/>
               </a>
             </div>
-            <div className="mt-5 ml-6 text-[var(--color-text-secondary)]">
+          </div>
+          <div id="slide2" className="carousel-item flex flex-col w-[420px]">
+            <div className="mb-5 ml-6 text-[var(--color-text-secondary)]">
               <div className='flex flex-col items-center'>
                 <h1 className="font-bold text-[var(--color-text-header-secondary)]
                   [html[data-theme=dark]_&]:text-[var(--color-text-header-primary)]">
@@ -131,15 +124,15 @@ export default function ProjectCarousel() {
                 </ul>
               </div>
             </div>
-          </div>
-          <div id="slide3" className="carousel-item flex flex-col w-[420px]">
-            <div className='rotate-1 p-1'>
-              <a href="https://replit.com/@jbk1/Chess">
-                <img src={chess} className="mx-auto h-[280px] rounded drop-shadow-lg
-                transition ease-in-out hover:scale-[101%]"/>
+            <div className='-rotate-1 p-1'>
+              <a href="https://waldo.bibble.com">
+                <img src={waldo} className="mx-auto rounded h-[280px] drop-shadow-lg
+                  transition ease-in-out hover:scale-[101%]"/>
               </a>
             </div>
-            <div className="mt-5 ml-6 text-[var(--color-text-secondary)]">
+          </div>
+          <div id="slide3" className="carousel-item flex flex-col w-[420px]">
+            <div className="mb-9 ml-6 text-[var(--color-text-secondary)]">
               <div className='flex flex-col items-center'>
                 <h1 className="font-bold text-[var(--color-text-header-secondary)]
                   [html[data-theme=dark]_&]:text-[var(--color-text-header-primary)]">
@@ -164,15 +157,15 @@ export default function ProjectCarousel() {
                 </ul>
               </div>
             </div>
-          </div>
-          <div id="slide4" className="carousel-item flex flex-col w-[420px]">
             <div className='rotate-1 p-1'>
-              <a href="https://ubuntu.bibble.com">
-                <img src={ubuntu} className="mx-auto h-[280px] rounded drop-shadow-lg
+              <a href="https://replit.com/@jbk1/Chess">
+                <img src={chess} className="mx-auto h-[280px] rounded drop-shadow-lg
                 transition ease-in-out hover:scale-[101%]"/>
               </a>
             </div>
-            <div className="mt-5 ml-6 text-[var(--color-text-secondary)]">
+          </div>
+          <div id="slide4" className="carousel-item flex flex-col w-[420px]">
+            <div className="mb-5 ml-6 text-[var(--color-text-secondary)]">
               <div className='flex flex-col items-center'>
                 <h1 className="font-bold text-[var(--color-text-header-primary)]
                   [html[data-theme=dark]_&]:text-[var(--color-text-header-primary)]">
@@ -199,15 +192,15 @@ export default function ProjectCarousel() {
                 </ul>
               </div>
             </div>
-          </div>
-          <div id="slide5" className="carousel-item flex flex-col w-[420px]">
-            <div className="-rotate-1 p-1">
-              <a href="https://forhm.com/">
-                <img src={forhm} className="mx-auto h-[280px] rounded drop-shadow-lg
+            <div className='rotate-1 p-1'>
+              <a href="https://ubuntu.bibble.com">
+                <img src={ubuntu} className="mx-auto h-[280px] rounded drop-shadow-lg
                 transition ease-in-out hover:scale-[101%]"/>
               </a>
             </div>
-            <div className="mt-5 ml-6 text-[var(--color-text-secondary)]">
+          </div>
+          <div id="slide5" className="carousel-item flex flex-col w-[420px]">
+            <div className="mb-9 ml-6 text-[var(--color-text-secondary)]">
               <div className='flex flex-col items-center'>
                 <h1 className="font-bold text-[var(--color-text-header-secondary)]
                   [html[data-theme=dark]_&]:text-[var(--color-text-header-primary)]">
@@ -231,15 +224,15 @@ export default function ProjectCarousel() {
                 </ul>
               </div>
             </div>
-          </div>
-          <div id="slide6" className="carousel-item flex flex-col w-[420px]">
-            <div className="rotate-1 p-1">
-              <a href="https://battleships.bibble.com/">
-                <img src={battleships} className="mx-auto h-[270px] rounded drop-shadow-lg
+            <div className="-rotate-1 p-1">
+              <a href="https://forhm.com/">
+                <img src={forhm} className="mx-auto h-[280px] rounded drop-shadow-lg
                 transition ease-in-out hover:scale-[101%]"/>
               </a>
             </div>
-            <div className="mt-5 ml-6 text-[var(--color-text-secondary)]">
+          </div>
+          <div id="slide6" className="carousel-item flex flex-col w-[420px]">
+            <div className="mb-9 ml-6 text-[var(--color-text-secondary)]">
               <div className='flex flex-col items-center'>
                 <h1 className="font-bold text-[var(--color-text-header-secondary)]
                   [html[data-theme=dark]_&]:text-[var(--color-text-header-primary)]">
@@ -263,6 +256,12 @@ export default function ProjectCarousel() {
                   <li className="[&::marker]:content-['•'] [&::marker]:text-[var(--color-teal-dark)]">&nbsp;Nginx served & Dockerised</li>
                 </ul>
               </div>
+            </div>
+            <div className="rotate-1 p-1">
+              <a href="https://battleships.bibble.com/">
+                <img src={battleships} className="mx-auto h-[270px] rounded drop-shadow-lg
+                transition ease-in-out hover:scale-[101%]"/>
+              </a>
             </div>
           </div>
         </div>
