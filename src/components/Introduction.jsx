@@ -53,13 +53,22 @@ export default function Introduction() {
             <li className="mb-3 flex items-center text-base">
               <BulletArrow height={17} width={17} />
               <p className="ml-3">
-                I build in Javascript & Ruby with React, Rails & Hotwire (+HTML & CSS of course).
+                I build in&nbsp;
+                <span className="text-emphasis">Javascript</span>&nbsp;and&nbsp;
+                <span className="text-emphasis">Ruby</span>&nbsp;with&nbsp;
+                <span className="text-emphasis">React</span>,&nbsp; 
+                <span className="text-emphasis">Rails</span>&nbsp;&&nbsp; 
+                <span className="text-emphasis">Hotwire</span>&nbsp;(+HTML & CSS of course).
               </p>
             </li>
             <li className="mb-3 flex items-center text-base">
             <BulletArrow height={17} width={17} />
               <p className="ml-3">
-                I manage with bash, Linux, Docker & AWS, amongst others.
+                I manage with&nbsp;
+                <span className="text-emphasis">Bash</span>&nbsp;,&nbsp;
+                <span className="text-emphasis">Linux</span>&nbsp;,&nbsp;
+                <span className="text-emphasis">Docker</span>&nbsp;&&nbsp;
+                <span className="text-emphasis">AWS</span>, amongst others.
               </p>
             </li>
             <li className="flex items-center text-base">

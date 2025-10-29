@@ -14,6 +14,7 @@
   /* Surfaces */
   --btn-gradient-primary-darktolight: linear-gradient(90deg, var(--color-dark-blue) 30%, var(--color-btn-primary) 95%);
   --btn-gradient-primary-lighttodark: linear-gradient(90deg, var(--color-btn-primary) 5%, var(--color-dark-blue) 70%);
+  --underline-gradient: linear-gradient(red, red);
   --color-bg: var(--color-white);
 
   /* Text */
@@ -43,6 +44,7 @@
   /* Surfaces */
   --btn-gradient-primary-darktolight: linear-gradient(90deg, var(--color-dark-blue) 20%, var(--color-btn-primary) 100%);
   --btn-gradient-primary-lighttodark: linear-gradient(90deg, var(--color-btn-primary) 5%, var(--color-dark-blue) 95%);
+  --underline-gradient: linear-gradient(#cc0000, purple);
   --color-bg: var(--color-slate-900);
 
   /* Text */
@@ -81,6 +83,26 @@ body {
   margin: 0;
 }
 
+.text-emphasis {
+  color: var(--color-text-primary);
+  font-weight: var(--font-weight-medium);
+  /* font-style: italic; */
+  /* text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px; */
+  /* padding-inline: 1px; */
+  padding-bottom: 2px;
+  background-image: var(--underline-gradient);
+  /* background-image: linear-gradient(var(--color-decoration-emerald), var(--color-teal-dark)); */
+  background-size: 60% 0.5px;
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+}
+
+html[data-theme='light'] .text-emphasis {
+  padding-bottom: 1px;
+}
+
 .section-hr { 
   width: 100%;
   max-width: 1280px;
@@ -89,7 +111,6 @@ body {
   border: 0;
   border-top: 1px solid var(--color-border-primary);
 }
-
 
 /* -------------------------------------------- */
 /* Information section button glows */
