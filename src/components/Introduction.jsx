@@ -74,7 +74,7 @@ export default function Introduction() {
             <li className="flex items-center text-base">
             <BulletArrow height={17} width={17} />
               <p className="ml-3">
-                And I've a career's worth of client, management and business experience.
+                And I have a career's worth of client, management and business experience.
               </p>
             </li>
           </ul>
