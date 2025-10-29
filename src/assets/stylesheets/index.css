@@ -86,14 +86,8 @@ body {
 .text-emphasis {
   color: var(--color-text-primary);
   font-weight: var(--font-weight-medium);
-  /* font-style: italic; */
-  /* text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 4px; */
-  /* padding-inline: 1px; */
   padding-bottom: 2px;
   background-image: var(--underline-gradient);
-  /* background-image: linear-gradient(var(--color-decoration-emerald), var(--color-teal-dark)); */
   background-size: 60% 0.5px;
   background-repeat: no-repeat;
   background-position: 50% 100%;
@@ -101,6 +95,8 @@ body {
 
 html[data-theme='light'] .text-emphasis {
   padding-bottom: 1px;
+  font-weight: var(--font-weight-normal);
+  color: var(--color-text-primary)
 }
 
 .section-hr { 

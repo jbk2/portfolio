@@ -15,9 +15,9 @@ export default function Introduction() {
             <div className="flex flex-col md:items-center">
               <div className="underline underline-offset-4 decoration-4 decoration-[var(--color-decoration-emerald)]">
                 <span className="font-extrabold italic text-lg">11</span>
-                <span className="font-black text-xs">&nbsp;YRS</span>
+                <span className="font-black text-xs">&#32;YRS</span>
               </div>
-              <p className="my-1 w-32 md:w-fit">Coding&nbsp;since&#32;
+              <p className="my-1 w-32 md:w-fit">Coding&#32;since&#32;
                 <a href="https://makers.tech/learn/curriculum">Makers</a>
                 &#32;bootcamp
               </p>
@@ -26,14 +26,14 @@ export default function Introduction() {
               <div className="underline underline-offset-4 decoration-4 decoration-[var(--color-decoration-emerald)]">
                 <span className="font-extrabold italic text-lg">2</span>
                 <span className="font-extrabold italic text-sm diagonal-fractions">1/2</span>
-                <span className="font-black text-xs">&nbsp;YRS</span>
+                <span className="font-black text-xs">&#32;YRS</span>
               </div>
               <p className="my-1 w-16 md:w-fit">Full time coding</p>
             </div>
             <div className="flex flex-col md:items-center">
               <div className="underline underline-offset-4 decoration-4 decoration-[var(--color-decoration-emerald)]">
                 <span className="font-extrabold italic text-lg ">15</span>
-                <span className="font-black text-xs">&nbsp;YRS</span>
+                <span className="font-black text-xs">&#32;YRS</span>
               </div>
               <p className="my-1 w-32 md:w-fit">Digital product mgmt</p>
             </div>
@@ -53,21 +53,21 @@ export default function Introduction() {
             <li className="mb-3 flex items-center text-base">
               <BulletArrow height={17} width={17} />
               <p className="ml-3">
-                I build in&ensp;
-                <span className="text-emphasis">Javascript</span>&ensp;and&ensp;
-                <span className="text-emphasis">Ruby</span>&ensp;with&ensp;
-                <span className="text-emphasis">React</span>,&ensp; 
-                <span className="text-emphasis">Rails</span>&ensp;&&ensp; 
-                <span className="text-emphasis">Hotwire</span>&ensp;(+HTML & CSS of course).
+                I build in&#32;
+                <span className="text-emphasis">Javascript</span>&#32;and&#32;
+                <span className="text-emphasis">Ruby</span>&#32;with&#32;
+                <span className="text-emphasis">React</span>,&#32; 
+                <span className="text-emphasis">Rails</span>&#32;&&#32; 
+                <span className="text-emphasis">Hotwire</span>&#32;(+HTML & CSS of course).
               </p>
             </li>
             <li className="mb-3 flex items-center text-base">
             <BulletArrow height={17} width={17} />
               <p className="ml-3">
-                I manage with&nbsp;
-                <span className="text-emphasis">Bash</span>&nbsp;,&nbsp;
-                <span className="text-emphasis">Linux</span>&nbsp;,&nbsp;
-                <span className="text-emphasis">Docker</span>&nbsp;&&nbsp;
+                I manage with&#32;
+                <span className="text-emphasis">Bash</span>&#32;,&#32;
+                <span className="text-emphasis">Linux</span>&#32;,&#32;
+                <span className="text-emphasis">Docker</span>&#32;&&#32;
                 <span className="text-emphasis">AWS</span>, amongst others.
               </p>
             </li>
