@@ -53,12 +53,12 @@ export default function Introduction() {
             <li className="mb-3 flex items-center text-base">
               <BulletArrow height={17} width={17} />
               <p className="ml-3">
-                I build in&nbsp;
-                <span className="text-emphasis">Javascript</span>&nbsp;and&nbsp;
-                <span className="text-emphasis">Ruby</span>&nbsp;with&nbsp;
-                <span className="text-emphasis">React</span>,&nbsp; 
-                <span className="text-emphasis">Rails</span>&nbsp;&&nbsp; 
-                <span className="text-emphasis">Hotwire</span>&nbsp;(+HTML & CSS of course).
+                I build in&ensp;
+                <span className="text-emphasis">Javascript</span>&ensp;and&ensp;
+                <span className="text-emphasis">Ruby</span>&ensp;with&ensp;
+                <span className="text-emphasis">React</span>,&ensp; 
+                <span className="text-emphasis">Rails</span>&ensp;&&ensp; 
+                <span className="text-emphasis">Hotwire</span>&ensp;(+HTML & CSS of course).
               </p>
             </li>
             <li className="mb-3 flex items-center text-base">
@@ -84,12 +84,12 @@ export default function Introduction() {
       {/* Buttons & terminal mockup section */}
       <div className="mt-8">
         <section className="flex w-full gap-3 sm:gap-14 justify-center xl:items-end xl:-mt-18" > {/*  gap-4 sm:gap-10 md:gap-14  */}
-          <a href="https://github.com/jbk2" className="btn btn-glow-transition btn-glow-gradient w-[120px] sm:w-[136px] rounded-lg border-none
+          <a href="https://github.com/jbk2" className="btn btn-glow-transition btn-glow-gradient w-[110px] sm:w-[136px] rounded-lg border-none
             bg-[image:var(--btn-gradient-primary-darktolight)] text-[var(--btn-light-text)] hover:opacity-90
             hover:scale-99 text-nowrap" target="_blank" rel="noopener" title="My Github Profile">
             Github profile
           </a>
-          <a href="mailto:james@bibble.com" className="btn btn-glow-transition btn-glow-teal w-[120px] sm:w-[136px] rounded-lg border-none
+          <a href="mailto:james@bibble.com" className="btn btn-glow-transition btn-glow-teal w-[105px] sm:w-[136px] rounded-lg border-none
             bg-[var(--color-btn-primary)] text-[var(--btn-dark-text)] hover:opacity-90 hover:scale-99 text-nowrap"
             title="Email Me">
             Contact me
