@@ -16,6 +16,7 @@
   --btn-gradient-primary-lighttodark: linear-gradient(90deg, var(--color-btn-primary) 5%, var(--color-dark-blue) 70%);
   --underline-gradient: linear-gradient(red, red);
   --color-bg: var(--color-white);
+  --color-foreground-light: var(--color-neutral-50);
 
   /* Text */
   --color-text-header-primary: var(--color-blue-900);
@@ -35,7 +36,6 @@
   --color-border-primary: var(--color-blue-100);
   --color-decoration-emerald: var(--color-emerald-200);
   --color-teal-dark: var(--color-teal-500);
-  --color-foreground-light: var(--color-neutral-50);
 }
 
 
@@ -46,6 +46,7 @@
   --btn-gradient-primary-lighttodark: linear-gradient(90deg, var(--color-btn-primary) 5%, var(--color-dark-blue) 95%);
   --underline-gradient: linear-gradient(#cc0000, purple);
   --color-bg: var(--color-slate-900);
+  --color-foreground-light: #282a37; /* #282a37 */
 
   /* Text */
   --color-text-header-primary: var(--color-sky-100);
@@ -58,7 +59,6 @@
   --color-btn-primary: var(--color-teal-300);
   --btn-dark-text: hsl(from var(--color-blue-900) h s l / 95%);
   --btn-light-text: var(--color-text-tertiary);
-  --color-foreground-light: var(--color-neutral-50);
   --color-surface-card: var(--color-slate-800);
   --color-socials: var(--color-zinc-200);
 
