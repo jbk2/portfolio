@@ -20,7 +20,7 @@ export default {
         'rotate-wave': 'rotate-wave 0.75s linear 1',
         'typing': 'typing 5s steps(40, end) 1',
         'blink-caret': 'blink-caret 0.4s steps(1, end) infinite',
-        'projects-in': 'projects-in 0.8s ease-in-out forwards',
+        'projects-in': 'projects-in 1.4s ease-in-out forwards',
       },
       keyframes: {
         'rotate-wave': {

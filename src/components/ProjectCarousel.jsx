@@ -45,6 +45,7 @@ export default function ProjectCarousel() {
     return () => observer.disconnect();
   }, [])
 
+  // Need to listen to the custom themeChange event due to some theme responsive logos
   useEffect(() => {
     const onThemeChange = (e) => setTheme(e.detail);
     window.addEventListener('themeChange', onThemeChange);
