@@ -11,23 +11,23 @@ export default function TechCarousel() {
   const [theme, setTheme] = useState(dataTheme);
   
   const LOGOS_META = [
-    { fileName: 'ec2', alt: 'ec2', className: "size-7 ml-3"},
-    { fileName: 'docker', alt: 'docker logo', className: "size-18"},
-    { fileName: 'linux', alt: 'linux logo', className: "size-7 ml-3"},
+    { fileName: 'ec2', alt: 'ec2', className: "size-7 -ml-3"},
+    { fileName: 'docker', alt: 'docker logo', className: "size-18 -ml-4"},
+    { fileName: 'linux', alt: 'linux logo', className: "size-7 ml-2"},
     // { fileName: 'nginx', alt: 'nginx logo', className: "size-10"},
-    { fileName: 'ruby', alt: 'ruby logo', className: "size-6 ml-3"},
-    { fileName: 'rails', alt: 'rails logo', className: "size-14"},
+    { fileName: 'ruby', alt: 'ruby logo', className: "size-6 ml-1"},
+    { fileName: 'rails', alt: 'rails logo', className: "size-14 -ml-2"},
     { fileName: theme == 'dark' ? 'hotwire-dark' : 'hotwire-light',
-      alt: 'hotwire logo', className: "size-14 mt-2"},
-    { fileName: 'javascript', alt: 'javascript logo', className: "size-8 ml-1"},
-    { fileName: 'react', alt: 'react logo', className: "size-7"},
+      alt: 'hotwire logo', className: "size-14 mt-2 mx-1"},
+    { fileName: 'javascript', alt: 'javascript logo', className: "size-7.5 ml-4"},
+    { fileName: 'react', alt: 'react logo', className: "size-8 ml-1"},
     { fileName: 'vite', alt: 'vite logo', className: "size-7"},
     // { fileName: 'postgres', alt: 'postgres logo', className: "size-10"},
     // { fileName: theme == 'dark' ? 'html5-dark' : 'html5-light',
     //   alt: 'html5 logo', className: "size-8"},
     // { fileName: theme == 'dark' ? 'css3-dark' : 'css3-light',
     //   alt: 'css3 logo', className: "size-8"},
-    { fileName: 'tailwindcss', alt: 'tailwindcss logo', className: "size-10"},
+    { fileName: 'tailwindcss', alt: 'tailwindcss logo', className: "size-7.5 -mx-3"},
     // { fileName: 'daisyui', alt: 'daisyui logo', className: "size-10"},
   ]
   const logos = LOGOS_META.map(({fileName, ...rest}) => ({
@@ -52,7 +52,12 @@ export default function TechCarousel() {
           </div>
         ))}
         {logos.map((logo, index) => (
-          <div key={index} className="w-20 sm:w-30">
+          <div key={`2nd+${index}`} className="w-20 sm:w-30">
+            <img src={logo.src} alt={logo.alt} className={logo.className + ' max-w-none'}/>
+          </div>
+        ))}
+        {logos.map((logo, index) => (
+          <div key={`3rd+${index}`} className="w-20 sm:w-30">
             <img src={logo.src} alt={logo.alt} className={logo.className + ' max-w-none'}/>
           </div>
         ))}
