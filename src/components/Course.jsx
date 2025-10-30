@@ -13,7 +13,7 @@ export default function Course({key, title, progress, image, link, description})
       <div className="card-body pt-4">
         <h2 className="card-title text-[var(--color-text-header-secondary)]
         [html[data-theme=dark]_&]:text-[var(--color-text-header-primary)]">{title}</h2>
-        <p className="text-[var(--color-text-secondary)] font-light whitespace-pre-line
+        <p className="text-[var(--color-text-secondary)] text-sm font-light whitespace-pre-line
           line-clamp-4 hover:line-clamp-none hover:max-h-24 hover:overflow-y-auto">
           {description}
         </p>
