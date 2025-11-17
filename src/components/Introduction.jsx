@@ -54,12 +54,13 @@ export default function Introduction() {
             <li className="mb-3 flex items-center text-base">
               <BulletArrow height={17} width={17} />
               <p className="ml-3">
-                I build in&#32;
-                <span className="text-emphasis">Javascript</span>&#32;and&#32;
-                <span className="text-emphasis">Ruby</span>&#32;with&#32;
+                I write&#32;
+                <span className="text-emphasis">Javascript</span>,&#32;
+                <span className="text-emphasis">TypeScript</span>&#32;and&#32;
+                <span className="text-emphasis">Ruby</span>,&#32;using&#32;
                 <span className="text-emphasis">React</span>,&#32; 
                 <span className="text-emphasis">Rails</span>&#32;&&#32; 
-                <span className="text-emphasis">Hotwire</span>&#32;(+HTML & CSS of course).
+                <span className="text-emphasis">Hotwire</span>.
               </p>
             </li>
             <li className="mb-3 flex items-center text-base">
@@ -75,7 +76,7 @@ export default function Introduction() {
             <li className="flex items-center text-base">
             <BulletArrow height={17} width={17} />
               <p className="ml-3">
-                And I have a career's worth of client, management and business experience.
+                I have a career's worth of client, product and management experience.
               </p>
             </li>
           </ul>

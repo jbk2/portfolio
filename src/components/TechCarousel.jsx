@@ -20,6 +20,7 @@ export default function TechCarousel() {
     { fileName: theme == 'dark' ? 'hotwire-dark' : 'hotwire-light',
       alt: 'hotwire logo', className: "size-14 mt-2 mx-1"},
     { fileName: 'javascript', alt: 'javascript logo', className: "size-7.5 ml-4"},
+    { fileName: 'typescript', alt: 'typescript logo', className: "size-7.5 ml-3.5"},
     { fileName: 'react', alt: 'react logo', className: "size-8 ml-1"},
     { fileName: 'vite', alt: 'vite logo', className: "size-7"},
     // { fileName: 'postgres', alt: 'postgres logo', className: "size-10"},
