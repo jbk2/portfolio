@@ -96,7 +96,7 @@ export default function Introduction() {
             title="Email Me">
             Contact me
           </a>
-          <DownloadBtn fileName="CV-JBK-11.25" format="pdf" />
+          <DownloadBtn fileName="CV-JBK-02.26" format="pdf" />
           {/* Terminal mock up section */}
           <Terminal />
         </section>
