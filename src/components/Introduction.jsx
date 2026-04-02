@@ -25,8 +25,7 @@ export default function Introduction() {
             </div>
             <div className="flex flex-col md:items-center">
               <div className="underline underline-offset-4 decoration-4 decoration-[var(--color-decoration-emerald)]">
-                <span className="font-extrabold italic text-lg">2</span>
-                <span className="font-extrabold italic text-sm diagonal-fractions">1/2</span>
+                <span className="font-extrabold italic text-lg">3</span>
                 <span className="font-black text-xs">&#32;YRS</span>
               </div>
               <p className="my-1 w-16 md:w-fit">Full time coding</p>
