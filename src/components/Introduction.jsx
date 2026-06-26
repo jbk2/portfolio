@@ -15,7 +15,7 @@ export default function Introduction() {
             text-[var(--color-text-header-secondary)]">
             <div className="flex flex-col md:items-center">
               <div className="underline underline-offset-4 decoration-4 decoration-[var(--color-decoration-emerald)]">
-                <span className="font-extrabold italic text-lg">11</span>
+                <span className="font-extrabold italic text-lg">12</span>
                 <span className="font-black text-xs">&#32;YRS</span>
               </div>
               <p className="my-1 w-32 md:w-fit">Coding&#32;since&#32;
@@ -95,7 +95,7 @@ export default function Introduction() {
             title="Email Me">
             Contact me
           </a>
-          <DownloadBtn fileName="CV-JBK-06.26" format="pdf" />
+          <DownloadBtn fileName="CV-JBK-07.26" format="pdf" />
           {/* Terminal mock up section */}
           <Terminal />
         </section>
